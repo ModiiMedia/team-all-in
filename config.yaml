@@ -1,0 +1,6 @@
+baseurl: "https://www.teamallin.net"
+languageCode: "en-us"
+title: "Team All In"
+enableRobotsTXT: true
+params:
+  cloudinaryBase: "https://res.cloudinary.com/modii/"
