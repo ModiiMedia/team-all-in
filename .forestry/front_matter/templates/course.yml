@@ -1,4 +1,59 @@
 ---
 label: Course
 hide_body: true
-fields: []
+fields:
+- name: title
+  type: text
+  config:
+    required: true
+  label: Title
+- name: short_description
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: Short Description
+- name: detailed_description
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: true
+    schema:
+      format: html-blocks
+  description: More detailed content to go at the start of the lesson. If left blank
+    the "short description" will be used. You can add photos or videos if you'd like.
+  label: Detailed Descripion
+- name: featured_image
+  type: file
+  config:
+    maxSize: 250
+  label: Banner Image
+- name: modules
+  type: field_group_list
+  fields:
+  - name: title
+    type: text
+    config:
+      required: false
+    label: Title
+  - name: featured_image
+    type: file
+    config:
+      maxSize: 250
+    label: Banner Image
+  - name: sections
+    type: blocks
+    label: Sections
+    template_types: []
+    config:
+      min: 
+      max: 
+  config:
+    min: 
+    max: 
+    labelField: title
+  label: Modules
