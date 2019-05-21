@@ -10,7 +10,7 @@ sections:
   create: all
   match: "*"
 - type: directory
-  path: videos
+  path: content/videos
   label: Videos For Members
   create: documents
   match: "**/*"
