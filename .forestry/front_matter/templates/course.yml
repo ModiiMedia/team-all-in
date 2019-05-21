@@ -40,6 +40,13 @@ fields:
     config:
       required: false
     label: Title
+  - name: heading
+    type: text
+    config:
+      required: false
+    label: Module Heading
+    description: More detailed version of the title to display at the top of this
+      lesson's module. (Leaving blank will default to the module title)
   - name: featured_image
     type: file
     config:
