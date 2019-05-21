@@ -4,16 +4,32 @@ hide_body: true
 fields:
 - type: text
   name: first_name
-  label: first_name
+  label: First Name
+  config:
+    required: true
 - type: text
   name: last_name
-  label: last_name
+  label: Last Name
 - type: text
   name: email_address
-  label: email_address
+  label: Email Address
 - type: text
-  name: phone
-  label: phone
-- type: text
-  name: profile_photo
-  label: profile_photo
+  name: phone_number
+  label: Phone Number
+- name: profile_photo
+  type: file
+  config:
+    maxSize: 250
+  label: Profile Photo
+- name: completed_courses
+  type: list
+  config:
+    use_select: true
+    min: 
+    max: 
+    source:
+      type: pages
+      section: courses-for-reps
+      path: ''
+      file: content/representatives/representative/linda-muth.md
+  label: Completed Courses
