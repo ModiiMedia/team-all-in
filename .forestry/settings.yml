@@ -38,10 +38,10 @@ sections:
   label: Representatives
   create: documents
   match: "**/*"
-upload_dir: static/uploads
-public_path: "/uploads"
+upload_dir: team-all-in
+public_path: https://res.cloudinary.com/modii/w_800,q_60,f_auto
 front_matter_path: ''
-use_front_matter_path: false
+use_front_matter_path: true
 file_template: ":filename:"
 build:
   preview_command: hugo -E -F -D -b $DEPLOY_URL -d public
