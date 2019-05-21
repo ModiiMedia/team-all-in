@@ -1,0 +1,19 @@
+---
+label: Representative
+hide_body: true
+fields:
+- type: text
+  name: first_name
+  label: first_name
+- type: text
+  name: last_name
+  label: last_name
+- type: text
+  name: email_address
+  label: email_address
+- type: text
+  name: phone
+  label: phone
+- type: text
+  name: profile_photo
+  label: profile_photo
