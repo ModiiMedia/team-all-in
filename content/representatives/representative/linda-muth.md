@@ -5,8 +5,8 @@ email_address: lovegolfing3@gmail.com
 phone: 
 profile_photo: "/v1558470702/team-all-in/welcome%20video.jpg"
 completed_courses:
-- representatives/courses/getting-started.md
 - representatives/courses/the-world-ventures-system.md
+- representatives/courses/getting-started.md
 phone_number: ''
 title: Linda Muth
 
