@@ -12,3 +12,5 @@ fields:
   config:
     required: false
   label: Video URL
+pages:
+- content/representatives/modules/The World Ventures System/make-your-list.md
