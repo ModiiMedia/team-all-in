@@ -4,15 +4,20 @@
   "description": "website for team all in",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile-css": "",
+    "watch-css": "node-sass -w ./styles/main.scss -o ./assets/css/",
+    "start": "concurrently --kill-others \"npm run watch-css\" \"hugo server\""
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "browserify": "^16.2.3",
-    "bulma": "^0.7.5"
+    "bulma": "^0.7.5",
+    "contentful-hugo": "^1.1.10"
   },
   "devDependencies": {
+    "concurrently": "^4.1.0",
     "node-sass": "^4.12.0"
   }
 }
