@@ -19,4 +19,5 @@ fields:
       path: ''
   label: Lesson Modules
 pages:
+- content/representatives/courses/getting-started.md
 - content/representatives/courses/the-worldventures-system.md
