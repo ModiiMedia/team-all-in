@@ -16,17 +16,17 @@ fields:
     schema:
       format: markdown
   label: Short Description
-- name: detailed_description
+- name: introduction
   type: textarea
   default: ''
   config:
     required: false
     wysiwyg: true
     schema:
-      format: html-blocks
-  description: More detailed content to go at the start of the lesson. If left blank
-    the "short description" will be used. You can add photos or videos if you'd like.
-  label: Detailed Descripion
+      format: markdown
+  description: Give a quick introduction to the course and what people will be learning.
+    You can add photos and videos here as well but keep it concise.
+  label: Introduction
 - name: featured_image
   type: file
   config:
