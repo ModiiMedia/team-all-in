@@ -5,5 +5,6 @@ first_name = "Joshua"
 last_name = "Sosso"
 phone_number = ""
 profile_photo = ""
+title = "Joshua Sosso"
 
 +++
