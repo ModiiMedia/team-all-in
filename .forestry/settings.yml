@@ -21,7 +21,7 @@ sections:
   label: Representative Area
 - type: directory
   path: content/representatives/courses
-  label: Courses for Reps
+  label: Courses
   create: documents
   match: "**/*"
   templates:
@@ -34,7 +34,7 @@ sections:
   templates:
   - lesson-module
 - type: directory
-  path: content/representative
+  path: content/representatives/representative
   label: Representatives
   create: documents
   match: "**/*"
