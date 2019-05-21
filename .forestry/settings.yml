@@ -15,6 +15,13 @@ sections:
   create: documents
   match: "**/*"
   exclude: _index.md
+- type: directory
+  path: content/representatives/courses
+  label: Courses for Reps
+  create: documents
+  match: "**/*"
+  templates:
+  - lesson
 upload_dir: static/uploads
 public_path: "/uploads"
 front_matter_path: ''
