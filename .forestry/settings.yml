@@ -30,7 +30,7 @@ sections:
   templates:
   - lesson-module
 - type: directory
-  path: content/representatives
+  path: content/representative
   label: Representatives
   create: documents
   match: "**/*"
