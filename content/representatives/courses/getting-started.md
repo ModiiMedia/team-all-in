@@ -8,7 +8,7 @@ featured_image = "/v1558467161/team-all-in/texting-photo.jpg"
 sections = []
 title = "1) Join Our Team Texts"
 [[modules]]
-featured_image = ""
+featured_image = "/v1558467489/team-all-in/gmail-screenshot.jpg"
 sections = []
 title = "2) Send Us Your Email"
 [[modules]]
