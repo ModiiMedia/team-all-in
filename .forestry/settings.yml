@@ -4,6 +4,8 @@ auto_deploy: false
 admin_path: 
 webhook_url: 
 sections:
+- type: heading
+  label: Members Area
 - type: directory
   path: content
   label: Pages
@@ -15,6 +17,8 @@ sections:
   create: documents
   match: "**/*"
   exclude: _index.md
+- type: heading
+  label: Representative Area
 - type: directory
   path: content/representatives/courses
   label: Courses for Reps
