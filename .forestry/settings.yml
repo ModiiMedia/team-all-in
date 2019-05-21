@@ -33,11 +33,6 @@ sections:
   match: "**/*"
   templates:
   - lesson-module
-- type: directory
-  path: content/representatives/representative
-  label: Representatives
-  create: documents
-  match: "/*"
 upload_dir: static/uploads
 public_path: "/uploads"
 front_matter_path: ''
