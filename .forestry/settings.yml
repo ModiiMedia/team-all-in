@@ -27,13 +27,6 @@ sections:
   templates:
   - course
 - type: directory
-  path: content/representatives/modules
-  label: Course Modules
-  create: all
-  match: "**/*"
-  templates:
-  - lesson-module
-- type: directory
   path: content/representatives/representative
   label: Representatives
   create: documents
