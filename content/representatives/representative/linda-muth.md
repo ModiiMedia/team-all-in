@@ -8,5 +8,6 @@ completed_courses:
 - representatives/courses/getting-started.md
 - representatives/courses/the-world-ventures-system.md
 phone_number: ''
+title: Linda Muth
 
 ---
