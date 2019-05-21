@@ -57,3 +57,5 @@ fields:
     max: 
     labelField: title
   label: Modules
+pages:
+- content/representatives/courses/getting-started.md
