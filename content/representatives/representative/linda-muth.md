@@ -3,5 +3,10 @@ first_name: Linda
 last_name: Muth
 email_address: lovegolfing3@gmail.com
 phone: 
-profile_photo:
+profile_photo: "/v1558470702/team-all-in/welcome%20video.jpg"
+completed_courses:
+- representatives/courses/getting-started.md
+- representatives/courses/the-world-ventures-system.md
+phone_number: ''
+
 ---
