@@ -12,7 +12,7 @@ featured_image = "/v1558467489/team-all-in/gmail-screenshot.jpg"
 sections = []
 title = "2) Send Us Your Email"
 [[modules]]
-featured_image = ""
+featured_image = "/v1558467604/team-all-in/facebook%20screenshot.jpg"
 sections = []
 title = "3) Join Our Facebook Groups"
 
