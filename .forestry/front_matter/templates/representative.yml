@@ -2,21 +2,18 @@
 label: Representative
 hide_body: true
 fields:
-- name: title
+- name: name
   type: text
   config:
     required: true
-  label: Title
-- type: text
-  name: first_name
-  label: First Name
+  label: Name
+- name: customer_id
+  type: text
   config:
-    required: true
+    required: false
+  label: Customer Id
 - type: text
-  name: last_name
-  label: Last Name
-- type: text
-  name: email_address
+  name: email
   label: Email Address
 - type: text
   name: phone_number
