@@ -5,10 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    {{- $sass := resources.Get "css/main.css" | resources.Minify -}}
-    <link rel="stylesheet" href="{{ $sass.RelPermalink }}">
+    {{- $css := resources.Get "css/main.css" | resources.Minify -}}
+    <link rel="stylesheet" href="{{ $css.RelPermalink }}">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,700,700i,900&display=swap" rel="stylesheet">
 </head>
 <body>
-    {{- block "main" . -}}{{- end -}}    
+    {{- block "header" . }}
+        <!-- display default footer -->
+        <!-- can be overriden by redefining the footer block -->
+        {{ partial "header.html" . }}
+    {{- end -}}
+
+    {{- block "main" . -}}
+        <!-- main content will go here -->
+    {{- end -}}
+
+    {{- block "footer" . }}
+        <!-- display default footer partial -->
+        <!-- can be overriden by redefining the footer block -->
+        {{- partial "footer.html" . }}
+    {{- end -}}
 </body>
 </html>

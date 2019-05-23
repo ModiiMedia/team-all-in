@@ -1,0 +1,33 @@
+.topHeader {
+    font-size: .9rem;
+    border-bottom: 1px solid $light-gray;
+}
+
+.mainHeader {
+    border-bottom: 1px solid $light-gray;
+}
+
+nav.headerTopNav {
+    margin: 0 -1rem;
+}
+
+nav.headerMainNav {
+    margin: 0 -1rem;
+    padding: 1rem 0;
+}
+nav > .navItem {
+    display: inline-block;
+    padding: 1.2rem;
+    color: $text;
+    &:hover {
+        color: blue;
+    }
+}
+
+nav > .navButton {
+    padding: .75rem 1rem;
+    background: $primary;
+    color: white;
+    font-weight: bold;
+    margin: 0 1rem;
+}
