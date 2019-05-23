@@ -1,4 +1,18 @@
 ---
 label: Site Settings
 hide_body: true
-fields: []
+fields:
+- name: branding
+  type: field_group
+  config: {}
+  label: Branding
+- name: logo
+  type: file
+  config:
+    maxSize: 250
+  label: Logo
+- name: favicon
+  type: file
+  config:
+    maxSize: 250
+  label: Favicon
