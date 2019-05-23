@@ -1,5 +1,5 @@
 ---
-name: Linda Muth
+title: Linda Muth
 customer_id: 
 email: lovegolfing3@gmail.com
 phone_number: 
