@@ -27,7 +27,7 @@ sections:
   templates:
   - course
 - type: directory
-  path: content/representatives/representative
+  path: content/representatives/users
   label: Representatives
   create: documents
   match: "**/*"

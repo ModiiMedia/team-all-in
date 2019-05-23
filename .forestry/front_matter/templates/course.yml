@@ -64,7 +64,3 @@ fields:
     max: 
     labelField: title
   label: Modules
-pages:
-- content/representatives/courses/success-roadmap.md
-- content/representatives/courses/the-world-ventures-system.md
-- content/representatives/courses/getting-started.md
