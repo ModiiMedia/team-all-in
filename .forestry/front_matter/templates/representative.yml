@@ -2,7 +2,7 @@
 label: Representative
 hide_body: true
 fields:
-- name: name
+- name: title
   type: text
   config:
     required: true
