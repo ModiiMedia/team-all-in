@@ -31,6 +31,8 @@ sections:
   label: Representatives
   create: documents
   match: "**/*"
+  templates:
+  - representative
 upload_dir: team-all-in
 public_path: https://res.cloudinary.com/modii/w_800,q_60,f_auto
 front_matter_path: ''

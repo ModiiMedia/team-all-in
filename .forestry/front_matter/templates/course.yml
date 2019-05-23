@@ -16,17 +16,17 @@ fields:
     schema:
       format: markdown
   label: Short Description
-- name: detailed_description
+- name: introduction
   type: textarea
   default: ''
   config:
     required: false
     wysiwyg: true
     schema:
-      format: html-blocks
-  description: More detailed content to go at the start of the lesson. If left blank
-    the "short description" will be used. You can add photos or videos if you'd like.
-  label: Detailed Descripion
+      format: markdown
+  description: Give a quick introduction to the course and what people will be learning.
+    You can add photos and videos here as well but keep it concise.
+  label: Introduction
 - name: featured_image
   type: file
   config:
@@ -40,6 +40,13 @@ fields:
     config:
       required: false
     label: Title
+  - name: heading
+    type: text
+    config:
+      required: false
+    label: Module Heading
+    description: More detailed version of the title to display at the top of this
+      lesson's module. (Leaving blank will default to the module title)
   - name: featured_image
     type: file
     config:
@@ -58,4 +65,6 @@ fields:
     labelField: title
   label: Modules
 pages:
+- content/representatives/courses/success-roadmap.md
+- content/representatives/courses/the-world-ventures-system.md
 - content/representatives/courses/getting-started.md
