@@ -31,3 +31,10 @@ nav > .navButton {
     font-weight: bold;
     margin: 0 1rem;
 }
+
+#logo {
+    display: flex;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    align-items: center;
+}
