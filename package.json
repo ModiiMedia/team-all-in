@@ -5,9 +5,12 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "compile-css": "",
+    "compile-css": "node-sass ./styles/main.scss -o ./assets/css/",
     "watch-css": "node-sass -w ./styles/main.scss -o ./assets/css/",
-    "start": "concurrently --kill-others \"npm run watch-css\" \"hugo server\""
+    "prestart": "npm run compile-css",
+    "start": "concurrently --kill-others \"npm run watch-css\" \"hugo server\"",
+    "predeploy": "npm run compile-css",
+    "deploy": "hugo --minify"
   },
   "author": "",
   "license": "ISC",
