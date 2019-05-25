@@ -1,6 +1,10 @@
 .container {
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    @media (max-width: $tablet){
+        padding-left: 20px;
+        padding-right: 20px;
+    }
 }
 
 .flexWrapper {
@@ -18,6 +22,29 @@
 }
 
 .heroBanner {
-    padding: 3rem 0;
-    background: $light-gray;
+    padding: 4rem 0;
+    background: $dark-gray;
+    color: white;
+    font-size: 1.5rem;
+    .titleText {
+        font-size: 3rem;
+        font-weight: bold;
+    }
+    &.homepageHero {
+        font-size: 3rem;
+        padding: 10rem 0;
+        text-align: center;
+        line-height: 100%;
+        .titleText {
+            font-size: 2.5em;
+            line-height: 100%;
+        }
+        @media (max-width: $tablet) {
+            padding: 7rem 0;
+            font-size: 1.5rem;
+        }
+    }
+    @media (max-width: $tablet){
+        text-align: center;
+    }
 }
