@@ -11,12 +11,10 @@ sections:
   label: Pages
   create: all
   match: "*"
-- type: directory
-  path: content/videos
-  label: Videos For Members
-  create: documents
+- type: document
+  path: content/dreamtrips-gallery.md
+  label: Photo Gallery
   match: "**/*"
-  exclude: _index.md
 - type: heading
   label: Representative Area
 - type: directory
