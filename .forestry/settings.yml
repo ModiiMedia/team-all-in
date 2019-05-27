@@ -11,12 +11,9 @@ sections:
   label: Pages
   create: all
   match: "*"
-- type: directory
-  path: content/videos
-  label: Videos For Members
-  create: documents
-  match: "**/*"
-  exclude: _index.md
+- type: document
+  path: content/gallery.md
+  label: Photo Gallery
 - type: heading
   label: Representative Area
 - type: directory
@@ -54,6 +51,5 @@ build:
   - HUGO_VERSION=0.55.2
   preview_output_directory: public
   output_directory: public
-  instant_preview_command: hugo server -D -E -F --port 8080 --bind 0.0.0.0 --renderToDisk
-    -d public
+  instant_preview_command: npm start
 version: 0.55.2
