@@ -12,7 +12,7 @@ sections:
   create: all
   match: "*"
 - type: document
-  path: content/dreamtrips-gallery.md
+  path: content/gallery.md
   label: Photo Gallery
 - type: heading
   label: Representative Area
