@@ -53,3 +53,5 @@ fields:
     max: 
     labelField: ''
   label: Images
+pages:
+- content/gallery.md
