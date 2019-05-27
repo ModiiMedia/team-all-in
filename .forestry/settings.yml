@@ -14,7 +14,6 @@ sections:
 - type: document
   path: content/dreamtrips-gallery.md
   label: Photo Gallery
-  match: "**/*"
 - type: heading
   label: Representative Area
 - type: directory
