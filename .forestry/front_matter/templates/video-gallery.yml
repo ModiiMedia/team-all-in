@@ -1,0 +1,26 @@
+---
+label: Video Gallery
+hide_body: true
+fields:
+- type: text
+  name: title
+  label: title
+- type: file
+  name: featured_image
+  label: featured_image
+- type: text
+  name: type
+  label: type
+- type: field_group_list
+  name: videos
+  label: videos
+  fields:
+  - type: text
+    name: title
+    label: title
+  - type: text
+    name: description
+    label: description
+  - type: text
+    name: url
+    label: url
