@@ -1,0 +1,40 @@
+---
+label: Video Gallery
+hide_body: true
+fields:
+- type: text
+  name: title
+  label: title
+  config:
+    required: true
+- type: file
+  name: featured_image
+  label: featured_image
+- name: type
+  type: select
+  default: video-gallery
+  config:
+    required: true
+    options:
+    - video-gallery
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: type
+- type: field_group_list
+  name: videos
+  label: videos
+  fields:
+  - type: text
+    name: title
+    label: title
+  - type: text
+    name: description
+    label: description
+  - type: text
+    name: url
+    label: url
+pages:
+- content/member-resources.md

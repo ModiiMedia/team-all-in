@@ -47,8 +47,7 @@ build:
   preview_command: npm run deploy
   publish_command: hugo -d public
   preview_env:
-  - HUGO_ENV=staging
-  - HUGO_VERSION=0.55.2
+  - HUGO_VERSION=0.55.5
   publish_env:
   - HUGO_ENV=production
   - HUGO_VERSION=0.55.2
