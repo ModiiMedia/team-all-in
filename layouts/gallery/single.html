@@ -36,7 +36,5 @@
 {{- end -}}
 
 {{ define "addJS"}}
-{{ $js := resources.Get "js/gallery.js" | resources.Minify }}
-<script src="https://cdn.jsdelivr.net/npm/lightgallery.js@1.1.3/lib/js/lightgallery.min.js"></script>
-<script src="{{ $js.RelPermalink }}"></script>
+
 {{ end }}

@@ -27,8 +27,6 @@
         <!-- can be overriden by redefining the footer block -->
         {{- partial "footer.html" . }}
     {{- end -}}
-    {{- $js := resources.Get "js/main.js" | resources.Minify -}}
-    <script src="{{ $js.RelPermalink }}"></script>
     {{- block "addJS" . -}}{{- end -}}
 </body>
 </html>
