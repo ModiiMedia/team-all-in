@@ -17,7 +17,6 @@ sections:
 - type: document
   path: content/member-resources.md
   label: Member Resources
-  match: "**/*"
 - type: heading
   label: Representative Area
 - type: directory
@@ -45,7 +44,7 @@ front_matter_path: ''
 use_front_matter_path: true
 file_template: ":filename:"
 build:
-  preview_command: hugo -E -F -D -b $DEPLOY_URL -d public
+  preview_command: npm run deploy
   publish_command: hugo -d public
   preview_env:
   - HUGO_ENV=staging
