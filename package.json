@@ -9,7 +9,7 @@
     "watch-gallery-js": "watchify scripts/gallery.js -o assets/js/gallery.js -v",
     "compile-js": "browserify scripts/main.js -o assets/js/main.js",
     "watch-js": "watchify scripts/main.js -o assets/js/main.js -v",
-    "compile-css": "node-sass ./assets/sass/main.scss -o ./assets/css/",
+    "compile-css": "node-sass ./assets/sass/main.scss -o ./assets/css/ || node-sass ./assets/sass/gallery.scss -o ./assets/css/",
     "watch-css": "node-sass -w ./assets/sass -o ./assets/css",
     "prestart": "npm run predeploy",
     "start": "concurrently --kill-others \"npm run watch-css\" \"hugo server\"",
