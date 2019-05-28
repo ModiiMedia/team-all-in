@@ -14,6 +14,10 @@ sections:
 - type: document
   path: content/gallery.md
   label: Photo Gallery
+- type: document
+  path: content/member-resources.md
+  label: Member Resources
+  match: "**/*"
 - type: heading
   label: Representative Area
 - type: directory
