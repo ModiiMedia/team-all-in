@@ -14,7 +14,9 @@
     "prestart": "npm run predeploy",
     "start": "concurrently --kill-others \"npm run watch-css\" \"hugo server\"",
     "predeploy": "npm run compile-css && npm run compile-js && npm run compile-gallery-js",
-    "deploy": "hugo --minify"
+    "deploy": "hugo --minify",
+    "prepreview": "run run predeploy",
+    "preview": "hugo server --renderToDisk --port 8080 --bind 0.0.0.0"
   },
   "author": "",
   "license": "ISC",
