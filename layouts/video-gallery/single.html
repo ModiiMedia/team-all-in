@@ -64,7 +64,7 @@
     let lightbox = document.getElementById("videoGalleryLightbox")
     let htmlObject = document.querySelector("html")
     let lightboxClosers = document.querySelectorAll(".lightboxClose")
-    let jsonURL = {{ print .Permalink "index.json" }};
+    let jsonURL = {{ print .RelPermalink "index.json" }};
     let lTitle = document.getElementById("lightboxTitle");
     let lAuthor = document.getElementById("lightboxAuthor");
     let lDate = document.getElementById("lightboxDate");
