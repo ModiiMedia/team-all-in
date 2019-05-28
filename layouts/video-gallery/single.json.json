@@ -1,0 +1,25 @@
+{{ $videoNum := len .Params.videos }}
+{
+    "title": "{{ .Title }}",
+    "featured_image": "{{ with .Params.featured_image }}{{ . }}{{ end }}",
+    "videos": [
+        {{- range $i, $e := .Params.videos -}}
+            {
+                "title": "{{ with .title }}{{ . }}{{ end }}",
+                "description": "{{ with .description }}{{ . }}{{ end }}",
+                {{- if in .url "vimeo" }}
+                    {{- $jsonURL := print "https://vimeo.com/api/oembed.json?url=" .url "&width=640" -}}
+                    {{- $json := getJSON $jsonURL -}}
+                    "author": {{ $json.author_name | jsonify }},
+                    "vimeo_description": {{ $json.description | jsonify }},
+                    "video_id": {{ $json.video_id | jsonify }},
+                    "upload_date": {{ $json.upload_date |jsonify }},
+                    "embed_code": {{ $json.html | jsonify }},
+                    "platform": "vimeo",
+                {{- end -}}
+                "url": "{{ with .url }}{{ . }}{{ end }}"
+
+            }{{ if ne $videoNum (add $i 1)}},{{ end }}
+        {{- end -}}
+    ]
+}

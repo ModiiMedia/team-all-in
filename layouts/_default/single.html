@@ -1,0 +1,12 @@
+{{ define "main" }}
+{{- $cloudinary := $.Site.Params.cloudinaryBase -}}
+<section class="heroBanner" style="background-image: url({{ $cloudinary }}w_1920,h_600,q_90{{ .Params.featured_image }})">
+    <div class="imageOverlay"></div>
+    <div class="container">
+        <h1 class="welcomeText">
+            Team All In<br>
+            <span class="titleText">{{ .Title }}</span>
+        </h1>
+    </div>
+</section>
+{{ end }}

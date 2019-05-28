@@ -1,0 +1,151 @@
+{{- define "addCSS" -}}
+{{ $css := resources.Get "css/gallery.css" | resources.Minify }}
+<link rel="stylesheet" href="{{ $css.RelPermalink }}">
+{{- end -}}
+
+{{- define "main" -}}
+    {{- $cloudinary := $.Site.Params.cloudinaryBase -}}
+    {{- partial "hero-banner.html" . -}}
+    <section class="section">
+        <div class="container">
+            <div class="columns is-multiline">
+                {{ range $i, $e := .Params.videos }}
+                <div class="column is-one-third">
+                    <div class="card videoGalleryItem" data-item-number="{{ $i }}"
+                        {{- if in .url "vimeo" -}}
+                            {{- $jsonURL := print "https://vimeo.com/api/oembed.json?url=" .url "&width=640" -}}
+                            {{- $json := getJSON $jsonURL -}}
+                            data-provider="vimeo" data-title="{{ $json.title }}" data-author="{{ $json.author_name }}" data-id="{{ $json.video_id | safeHTML }}" data-iframe="{{ $json.html }}"
+                        {{- end -}}
+                    >
+                        <div class="card-image">
+                            <figure class="image is-16by9">
+                                {{- if in .url "vimeo" -}}
+                                {{- $jsonURL := print "https://vimeo.com/api/oembed.json?url=" .url "&width=640" -}}
+                                {{- $json := getJSON $jsonURL -}}
+                                    <img class="videoThumbnail" src="{{ $json.thumbnail_url }}">
+                                {{- end -}}
+                            </figure>
+                        </div>
+                        <div class="card-content">
+                            <div class="subtitle">
+                                {{ .title }}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                {{ end }}
+            </div>
+        </div>
+    </section>
+    <div id="videoGalleryLightbox" class="lightboxContainer">
+        <div class="imageOverlay lightboxClose"></div>
+        <div class="lightboxContent">
+            <div class="iframeContainer" id="videoEmbed">
+                <iframe src="https://player.vimeo.com/video/321149475?app_id=122963\" width="" height="" frameborder="0" title="DreamTrips Membership_03.03.19" allow="autoplay; fullscreen" allowfullscreen></iframe>
+            </div>
+            <div class="content">
+                <h1 id="lightboxTitle">Title Goes Here</h1>
+                <p class="metadata"><span id="lightboxAuthor">Author Goes Here</span><span id="lightboxDate">Date Goes Here</span></p>
+                <div id="lightboxContent">testing 123</div>
+            </div>
+            <div class="lightboxNavBar">
+                <div id="previousVid" data-video='' class="navItem arrow"><i class="fas fa-arrow-left"></i> Prev</div>
+                <div id="allVids" class="navItem lightboxClose">View All</div>
+                <div id="nextVid" data-video='' class="navItem arrow">Next <i class="fas fa-arrow-right"></i></div>
+            </div>
+        </div>
+    </div>
+{{- end -}}
+
+{{- define "addJS" -}}
+<script>
+    let videos = document.querySelectorAll(".videoGalleryItem")
+    let lightbox = document.getElementById("videoGalleryLightbox")
+    let htmlObject = document.querySelector("html")
+    let lightboxClosers = document.querySelectorAll(".lightboxClose")
+    let jsonURL = {{ print .Permalink "index.json" }};
+    let lTitle = document.getElementById("lightboxTitle");
+    let lAuthor = document.getElementById("lightboxAuthor");
+    let lDate = document.getElementById("lightboxDate");
+    let lContent = document.getElementById("lightboxContent");
+    let lEmbed = document.getElementById("videoEmbed")
+    let navButtons = document.querySelectorAll(".lightboxNavBar .navItem.arrow")
+
+    for(let i = 0; i < videos.length; i++){
+        videos[i].addEventListener("click", function(){
+            let num = this.dataset.itemNumber
+            openVideo(num)
+        })
+    }
+
+    for(let i = 0; i < lightboxClosers.length; i++){
+        lightboxClosers[i].addEventListener("click", function(){
+            closeVideo()
+        })
+    }
+
+    for(let i = 0; i < navButtons.length; i++){
+        navButtons[i].addEventListener("click", function(){
+            let num = this.dataset.video;
+            openVideo(num)
+        })
+    }
+
+    function openVideo(videoNum){
+        lightbox.classList.add("open")
+        htmlObject.classList.add("lightboxOpen")
+        let req = new XMLHttpRequest();
+        req.addEventListener("load", function(){
+            showData(this, videoNum)
+        });
+        req.open("GET", jsonURL)
+        req.send();
+    }
+
+    function showData(json, videoNum){
+        let videos = JSON.parse(json.responseText).videos;
+        let currentVid = videos[videoNum];
+        lTitle.innerHTML = currentVid.title;
+        lAuthor.innerHTML = `<strong>Author:</strong> ${currentVid.author}`;
+        lDate.innerHTML = `<strong>Date:</strong> ${currentVid.upload_date}`;
+        lContent.innerHTML = currentVid.description;
+        lEmbed.innerHTML = currentVid.embed_code;
+
+        resetNavButtons();
+        
+        // previous button
+        let prev = document.getElementById('previousVid')
+        if (Number(videoNum) === 0){
+            prev.classList.add('hide')
+        } else {
+            prev.dataset.video = Number(videoNum) - 1
+        }
+
+        //next button
+        let next = document.getElementById('nextVid')
+        if (Number(videoNum) === Number(videos.length) - 1){
+            next.classList.add('hide')
+        } else {
+            next.dataset.video = Number(videoNum) + 1
+        }
+
+        window.history.pushState('Video ' + videoNum, currentVid.title, '{{ .RelPermalink }}' + '?model=open&item=' + videoNum)
+    }
+
+    function closeVideo(){
+        lightbox.classList.remove("open")
+        htmlObject.classList.remove("lightboxOpen")
+        window.history.pushState('', "{{ .Title }} | Team All In", '{{ .RelPermalink }}')
+        resetNavButtons();
+        lEmbed.innerHTML = ''
+    }
+
+    function resetNavButtons(){
+        for(let i = 0; i < navButtons.length; i++){
+            navButtons[i].classList.remove('hide')
+            navButtons[i].dataset.video = ''
+        }
+    }
+</script>
+{{- end -}}

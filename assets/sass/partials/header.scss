@@ -8,6 +8,10 @@
 
 .mainHeader {
     border-bottom: 1px solid $light-gray;
+    padding: 1rem 0;
+    @media (max-width: $tablet){
+        padding: 0.6rem 0;
+    }
 }
 
 nav.headerTopNav {
@@ -16,7 +20,10 @@ nav.headerTopNav {
 
 nav.headerMainNav {
     margin: 0 -1rem;
-    padding: 1rem 0;
+    display: flex;
+    display: -ms-flexbox;
+    display: -ms-flexbox;
+    align-items: center;
     @media (max-width: $tablet){
         display: none
     }
@@ -43,4 +50,9 @@ nav > .navButton {
     display: -ms-flexbox;
     display: -webkit-flex;
     align-items: center;
+    @media (max-width: $tablet){
+        img {
+            height: 60px;
+        }
+    }
 }
