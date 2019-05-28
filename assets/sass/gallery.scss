@@ -1,0 +1,118 @@
+@import './node_modules/lightgallery.js/src/sass/lightgallery.scss';
+@import 'partials/variables.scss';
+
+.modalButtonArea {
+    margin-bottom: 4rem;
+    @media(max-width: $tablet){
+        text-align: center;
+    }
+}
+
+.galleryItem {
+    font-size: 1.5rem;
+    font-weight: bold;
+    position: relative;
+    display: block;
+    color: white;
+    height: auto;
+    img {
+        margin: 0;
+        display: block;
+    }
+    .imageOverlay {
+        opacity: 0;
+        display: flex;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        background: rgba(0, 0, 0, 0.5);
+        color: white;
+        padding: 1rem;
+        transition: opacity 200ms ease;
+        -moz-transition: opacity 200ms ease;
+        -webkit-transition: opacity 200ms ease;
+        -o-transition: opacity 200ms ease;
+    }
+    &:hover {
+        .imageOverlay {
+            opacity: 1;
+        }
+    }
+}
+.lightboxContainer.open {
+    z-index: 100;
+    opacity: 1;
+}
+
+.lightboxContainer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: -10;
+    opacity: 0;
+    transition: opacity 200ms ease, z-index 200ms ease;
+    -o-transition: opacity 200ms ease, z-index 200ms ease;
+    -moz-transition: opacity 200ms ease, z-index 200ms ease;
+    -webkit-transition: opacity 200ms ease, z-index 200ms ease;
+    #closeLightbox {
+        cursor: pointer;
+    }
+    .imageOverlay {
+        opacity: 0.8;
+    }
+    .container {
+        width: auto;
+        max-width: 1080px;
+        padding: 0;
+    }
+    .lightboxItem {
+        position: relative;
+    }
+    .lightboxNavigation {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        display: flex;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        justify-content: space-between;
+        align-items: center;
+        z-index: 10;
+        color: black;
+        a {
+            padding: 1rem;
+            font-size: 3rem;
+            border: 1px solid $light-gray;
+            background: white;
+            opacity: 0.8;
+            color: black;
+            &.left {
+                margin-left: -3rem;
+                @media (max-width: 1100px) {
+                    margin-left: 0;
+                }
+            }
+            &.right {
+                margin-right: -3rem;
+                @media (max-width: 1100px) {
+                    margin-right: 0;
+                }
+            }
+            @media (max-width: $tablet){
+                font-size: 2rem;
+            }
+        }
+    }
+}

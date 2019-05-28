@@ -1,0 +1,11 @@
+.standardButton {
+    display: inline-block;
+    background: $primary;
+    padding: .5rem 1rem;
+    color: white;
+    &.is-large {
+        font-size: 1.5rem;
+        padding: 1rem 2rem;
+        font-weight: bold;
+    }
+}

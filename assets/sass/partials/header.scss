@@ -1,6 +1,9 @@
 .topHeader {
     font-size: .9rem;
     border-bottom: 1px solid $light-gray;
+    @media (max-width: $tablet) {
+        display: none;
+    }
 }
 
 .mainHeader {
@@ -14,6 +17,9 @@ nav.headerTopNav {
 nav.headerMainNav {
     margin: 0 -1rem;
     padding: 1rem 0;
+    @media (max-width: $tablet){
+        display: none
+    }
 }
 nav > .navItem {
     display: inline-block;

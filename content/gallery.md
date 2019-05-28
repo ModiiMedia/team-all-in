@@ -18,6 +18,5 @@ photos:
 - title: Team Trip To The Marival Residences
   description: ''
   url: "/v1558998221/team-all-in/team-trip-to-the-marival-residences.jpg"
-images: []
 
 ---

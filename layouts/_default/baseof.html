@@ -4,10 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>{{ .Title }} | Team All In</title>
     {{- $css := resources.Get "css/main.css" | resources.Minify -}}
     <link rel="stylesheet" href="{{ $css.RelPermalink }}">
+    {{- block "addCSS" . -}}{{- end -}}
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,700,700i,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
 </head>
 <body>
     {{- block "header" . }}
@@ -25,5 +27,8 @@
         <!-- can be overriden by redefining the footer block -->
         {{- partial "footer.html" . }}
     {{- end -}}
+    {{- $js := resources.Get "js/main.js" | resources.Minify -}}
+    <script src="{{ $js.RelPermalink }}"></script>
+    {{- block "addJS" . -}}{{- end -}}
 </body>
 </html>

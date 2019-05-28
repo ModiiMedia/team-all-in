@@ -4,3 +4,5 @@ title: "Team All In"
 enableRobotsTXT: true
 params:
   cloudinaryBase: "https://res.cloudinary.com/modii/"
+outputs:
+  page: ["html", "json"]

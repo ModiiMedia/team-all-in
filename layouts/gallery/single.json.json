@@ -1,0 +1,19 @@
+{{- $photos := .Params.photos -}}
+{{- $numPhotos := len $photos -}}
+{
+    "title": "{{ .Title }}",
+    "featured_image": "
+        {{- with .Params.featured_image -}}
+            {{- . -}}
+        {{- end -}}",
+    "photos": [
+        {{- range $i, $e := .Params.photos -}}
+            {
+                "title": "{{ .title }}",
+                "description": "{{ .description }}",
+                "url": "{{ .url }}"
+            }
+            {{- if ne $numPhotos (add $i 1) -}},{{- end -}}
+        {{- end -}}
+    ]
+}
