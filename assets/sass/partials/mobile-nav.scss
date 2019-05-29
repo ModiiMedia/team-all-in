@@ -1,0 +1,37 @@
+.mobileNavContainer {
+    display: none;
+    @media (max-width: $tablet){
+        display: block;
+        position: fixed;
+        top: auto;
+        left: 0;
+        right: 0;
+        bottom: 0;  
+        z-index: 50    
+    }
+}
+.mobileNav {
+    display: block;
+    display: flex;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    justify-content: space-between;
+    height: 75px;
+    border-top: 1px solid $light-gray;
+    background: white;
+    .navItem {
+        display: block;
+        display: flex;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        justify-content: center;
+        align-items: center;
+        width: 25%;
+        font-size: 1rem;
+        flex-direction: column;
+        i {
+            font-size: 1.5rem;
+            margin-bottom: 0.3rem;
+        }
+    }
+}
