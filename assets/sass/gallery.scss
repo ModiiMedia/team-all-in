@@ -12,6 +12,7 @@ html.lightboxOpen {
 }
 
 .galleryItem {
+    cursor: pointer;
     font-size: 1.5rem;
     font-weight: bold;
     position: relative;
@@ -80,7 +81,70 @@ html.lightboxOpen {
         padding: 0;
     }
     .lightboxItem {
+        max-height: 100%;
         position: relative;
+        .xButton {
+            position: absolute;
+            padding: 0.2rem .5rem;
+            z-index: 100;
+            top: 0;
+            right: 0;
+            left: auto;
+            bottom: auto;
+            background: white;
+            color: $text;
+            font-size: 2rem;
+            opacity: 0.75;
+        }
+        .content {
+            margin-bottom: 0!important;
+        }
+        figure {
+            position: relative;
+            display: block;
+            display: flex;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 400px;
+            min-width: 800px;
+            @media (max-width: $tablet){
+                min-height: 200px;
+                min-width: 100%;
+            }
+        }
+        img {
+            display: block;
+            position: relative;
+            z-index: 1;
+        }
+        .lightboxLoadingAnimation {
+            color: $light-gray;
+            background: $dark-gray;
+            position: absolute;
+            top: 0; 
+            left: 0;
+            right: 0;
+            bottom: 0;
+            display: flex;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 5rem;
+            z-index: 0;
+            background-position: center;
+            background-size: cover;
+            .imageOverlay {
+                opacity: 0.2;
+            }
+            i {
+                position: relative;
+                opacity: 0.5;
+                z-index: 1
+            }
+        }
     }
     .lightboxNavigation {
         position: absolute;
@@ -95,13 +159,19 @@ html.lightboxOpen {
         align-items: center;
         z-index: 10;
         color: black;
-        a {
+        .arrow {
+            cursor: pointer;
             padding: 1rem;
             font-size: 3rem;
             border: 1px solid $light-gray;
             background: white;
             opacity: 0.8;
             color: black;
+            &.hide {
+                opacity: 0;
+                z-index: -100;
+                cursor: default;
+            }
             &.left {
                 margin-left: -3rem;
                 @media (max-width: 1100px) {
@@ -224,4 +294,9 @@ html.lightboxOpen {
             margin-bottom: 0!important;
         }
     }
+}
+
+.lightboxPhotoContent {
+    padding: 2rem;
+    background: white;
 }

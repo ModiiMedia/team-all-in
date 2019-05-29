@@ -24,12 +24,23 @@
         </div>
     </section>
     <div id="lightboxGallery" class="lightboxContainer" data-json="{{ .RelPermalink }}index.json">
-        <div class="imageOverlay" id="closeLightbox"></div>
+        <div class="imageOverlay lightboxClose"></div>
         <div class="lightboxItem">
-            <img id="lightboxImage" src="{{ $cloudinary }}w_1080,q_90/v1558997362/team-all-in/1-fun-on-the-riverwalk.jpg">
+            <div class="lightboxClose xButton"><i class="fas fa-times-circle"></i></div>
+            <figure>
+                <img id="lightboxImage" src="" width="">                
+                <div id="loadingImage" class="lightboxLoadingAnimation" style>
+                    <div class="imageOverlay"></div>
+                    <i class="fas fa-spinner fa-pulse"></i>
+                </div>
+            </figure>
+            <div class="lightboxPhotoContent content">
+                <h1 id="lightboxTitle"></h1>
+                <div id="lightboxContent"></div>
+            </div>
             <div class="lightboxNavigation">
-                <a href="" id="previousButton" class="left"><i class="fas fa-chevron-left"></i></a>
-                <a href="" id="nextButton" class="right"><i class="fas fa-chevron-right"></i></a>        
+                <div id="previousButton" data-photo="" class="lightboxNavButton arrow left"><i class="fas fa-chevron-left"></i></div>
+                <div id="nextButton" data-photo="" class="lightboxNavButton arrow right"><i class="fas fa-chevron-right"></i></div>        
             </div>
         </div>
     </div>
