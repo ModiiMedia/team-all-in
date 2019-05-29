@@ -1,17 +1,18 @@
 {{- $photos := .Params.photos -}}
 {{- $numPhotos := len $photos -}}
+{{- $cloudinary := $.Site.Params.cloudinaryBase -}}
 {
     "title": "{{ .Title }}",
     "featured_image": "
         {{- with .Params.featured_image -}}
-            {{- . -}}
+            {{- $cloudinary -}}w_1920,q_80,f_auto{{- . -}}
         {{- end -}}",
     "photos": [
         {{- range $i, $e := .Params.photos -}}
             {
                 "title": "{{ .title }}",
                 "description": "{{ .description }}",
-                "url": "{{ .url }}"
+                "url": "{{- $cloudinary -}}w_1920,q_80,f_auto{{ .url }}"
             }
             {{- if ne $numPhotos (add $i 1) -}},{{- end -}}
         {{- end -}}
