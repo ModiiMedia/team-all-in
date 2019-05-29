@@ -110,7 +110,7 @@
         lAuthor.innerHTML = `<strong>Author:</strong> ${currentVid.author}`;
         lDate.innerHTML = `<strong>Date:</strong> ${currentVid.upload_date}`;
         lContent.innerHTML = currentVid.description;
-        lEmbed.innerHTML = currentVid.embed_code;
+        lEmbed.innerHTML = currentVid.embed_code.replace("?", "?autoplay=1&");
 
         resetNavButtons();
         
