@@ -75,7 +75,10 @@ fields:
   - name: sections
     type: blocks
     label: Sections
-    template_types: []
+    template_types:
+    - text-section
+    - course-video
+    - downloadable-file
     config:
       min: 
       max: 
