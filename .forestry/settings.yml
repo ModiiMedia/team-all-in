@@ -22,12 +22,12 @@ sections:
 - type: document
   path: content/representatives/courses/_index.md
   label: Course List Page
-  match: "**/*"
 - type: directory
   path: content/representatives/courses
   label: Courses
   create: documents
   match: "**/*"
+  exclude: _index.md
   templates:
   - course
 - type: directory
