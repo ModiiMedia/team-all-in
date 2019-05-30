@@ -32,6 +32,26 @@ fields:
   config:
     maxSize: 250
   label: Banner Image
+- name: restriction_settings
+  type: field_group
+  config: {}
+  fields:
+  - name: restrict_access
+    type: boolean
+    label: Restrict Access
+    description: When restrict access is toggled only the users listed below will
+      be able to access this course.
+  - name: access_list
+    type: list
+    config:
+      use_select: true
+      min: 
+      max: 
+      source:
+        type: pages
+        section: users
+    label: Access List
+  label: Restriction Settings
 - name: modules
   type: field_group_list
   fields:
