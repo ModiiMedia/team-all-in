@@ -1,14 +1,28 @@
-{{ $currentPage := .RelPermalink }}
+{{ $currentPage := .Page.RelPermalink }}
+{{ $site := .Site }}
 <div class="mobileNavContainer">
     <nav class="mobileNav">
-        {{- range $.Site.Data.menus.member_navigation.mobile -}}
-        <a class="navItem
-            {{- with $.Site.GetPage .page -}}
-                {{- if eq $currentPage .RelPermalink }} current{{ end -}}
-            {{- end -}}" href="{{ with $.Site.GetPage .page }}{{ .RelPermalink }}{{ end }}">
-            <i class="fas fa-{{ .fontawesome_icon }}"></i>
-            <div>{{ .label }}</div>
-        </a>
-        {{- end -}}
+        {{ if eq .Nav "representative" }}
+            {{- range .Site.Data.menus.representative_navigation.mobile -}}
+                <a class="navItem
+                    {{ if .page }}
+                    {{- with $site.GetPage .page -}}
+                        {{- if eq $currentPage .RelPermalink }} current{{ end -}}{{ end }}
+                    {{- end -}}" href="{{ if .page }}{{ with $site.GetPage .page }}{{ .RelPermalink }}{{ end }}{{ end }}">
+                    <i class="fas fa-{{ .fontawesome_icon }}"></i>
+                    <div>{{ .label }}</div>
+                </a>                
+            {{- end -}}
+        {{ else }}
+            {{- range .Site.Data.menus.member_navigation.mobile -}}
+            <a class="navItem
+                {{- with $site.GetPage .page -}}
+                    {{- if eq $currentPage .RelPermalink }} current{{ end -}}
+                {{- end -}}" href="{{ with $site.GetPage .page }}{{ .RelPermalink }}{{ end }}">
+                <i class="fas fa-{{ .fontawesome_icon }}"></i>
+                <div>{{ .label }}</div>
+            </a>
+            {{- end -}}
+        {{ end }}
     </nav>
 </div>

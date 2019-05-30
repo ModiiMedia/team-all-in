@@ -78,3 +78,51 @@ body {
         text-align: center;
     }
 }
+
+.card {
+    display: block;
+    &.courseCard {
+        border-radius: 5px;
+        overflow: hidden;
+        transition: transform 200ms ease;
+        -webkit-transition: transform 200ms ease;
+        -moz-transition: transform 200ms ease;
+        -o-transition: transform 200ms ease;
+        &:hover {
+            // opacity: 0.8;
+            transform: scale(1.025)
+        }
+        @media (max-width: $tablet){
+            display: block;
+            display: flex;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            .card-image {
+                width: 35%;
+                figure {
+                    padding-top: 100%;
+                    display: flex;
+                    display: -ms-flexbox;
+                    display: -webkit-flex;
+                    justify-content: center;
+                    align-items: center;
+                    position: relative;
+                    overflow: hidden;
+                    img {
+                        display: block;
+                        top: 0;
+                        bottom: 0;
+                        left: auto;
+                        right: auto;
+                        height: 100%;
+                        width: auto;
+                        max-width: none;
+                    }
+                }
+            }
+            .card-content {
+                width: 65%;
+            }
+        }
+    }
+}

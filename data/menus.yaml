@@ -33,7 +33,7 @@ representative_navigation:
     page:
     fontawesome_icon: video
   - label: Courses
-    page:
+    page: representatives/courses/_index.md
     fontawesome_icon: book
   - label: My Profile
     page:

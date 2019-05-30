@@ -16,7 +16,7 @@
     {{- block "header" . }}
         <!-- display default footer -->
         <!-- can be overriden by redefining the footer block -->
-        {{ partial "header.html" . }}
+        {{ partial "header.html" (dict "Page" . "Site" $.Site "Nav" "member") }}
     {{- end -}}
 
     {{- block "main" . -}}
