@@ -1,4 +1,24 @@
 ---
 label: Course List Page
 hide_body: false
-fields: []
+fields:
+- name: title
+  type: text
+  config:
+    required: false
+  label: Title
+- name: featured_image
+  type: file
+  config:
+    maxSize: 250
+  label: Featured Image
+- name: courses
+  type: list
+  config:
+    use_select: true
+    min: 
+    max: 
+    source:
+      type: pages
+      section: courses-for-reps
+  label: Courses To Show
