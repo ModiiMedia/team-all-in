@@ -24,15 +24,3 @@ fields:
   config:
     maxSize: 250
   label: Profile Photo
-- name: completed_courses
-  type: list
-  config:
-    use_select: true
-    min: 
-    max: 
-    source:
-      type: pages
-      section: courses-for-reps
-      path: ''
-      file: content/representatives/representative/linda-muth.md
-  label: Completed Courses
