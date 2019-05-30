@@ -16,7 +16,7 @@ featured_image = "/v1558467489/team-all-in/gmail-screenshot.jpg"
 heading = ""
 title = "2) Send Us Your Email"
 [[modules.sections]]
-content = "Send your email address to mataylor143@gmail.com​​\n\nWe will use your email address to keep you informed of important updates and events effecting your business"
+content = "Send your email address to [**mataylor143@gmail.com**](mailto:mataylor143@gmail.com)​​\n\nWe will use your email address to keep you informed of important updates and events effecting your business."
 template = "text-section"
 [[modules]]
 featured_image = "/v1558467604/team-all-in/facebook%20screenshot.jpg"
