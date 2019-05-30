@@ -24,3 +24,9 @@ fields:
   config:
     maxSize: 250
   label: Profile Photo
+- name: all_access
+  type: boolean
+  description: By switching on this person will be able to access all the pages on
+    the website regardless of any other restrictions. This includes being able to
+    view the complete list of users and their data.
+  label: Allow All-Access
