@@ -7,6 +7,26 @@ fields:
   config:
     required: true
   label: Title
+- name: restriction_settings
+  type: field_group
+  config: {}
+  fields:
+  - name: restrict_access
+    type: boolean
+    label: Restrict Access
+    description: When restrict access is toggled only the users listed below will
+      be able to access this course.
+  - name: access_list
+    type: list
+    config:
+      use_select: true
+      min: 
+      max: 
+      source:
+        type: pages
+        section: users
+    label: Access List
+  label: Restriction Settings
 - name: short_description
   type: textarea
   default: ''
@@ -64,23 +84,3 @@ fields:
     max: 
     labelField: title
   label: Modules
-- name: restriction_settings
-  type: field_group
-  config: {}
-  fields:
-  - name: restrict_access
-    type: boolean
-    label: Restrict Access
-    description: When restrict access is toggled only the users listed below will
-      be able to access this course.
-  - name: access_list
-    type: list
-    config:
-      use_select: true
-      min: 
-      max: 
-      source:
-        type: pages
-        section: users
-    label: Access List
-  label: Restriction Settings
