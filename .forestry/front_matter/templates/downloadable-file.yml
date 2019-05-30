@@ -1,4 +1,33 @@
 ---
 label: Downloadable File
 hide_body: true
-fields: []
+fields:
+- name: section_heading
+  type: text
+  config:
+    required: false
+  label: Section Heading
+- name: description
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: Description
+  description: Text area to add information about the file that users will download.
+    You can describe the file or say how it will help people.
+- name: file
+  type: file
+  config:
+    maxSize: 250
+  label: File
+  description: This is the file that users will be able to download
+- name: button_text
+  type: text
+  config:
+    required: true
+  label: Button Text
+  default: Download File
+  description: Text that will appear on the download button
