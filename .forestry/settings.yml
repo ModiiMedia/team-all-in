@@ -19,6 +19,10 @@ sections:
   label: Member Resources
 - type: heading
   label: Representative Area
+- type: document
+  path: content/representatives/courses/_index.md
+  label: Course List Page
+  match: "**/*"
 - type: directory
   path: content/representatives/courses
   label: Courses
