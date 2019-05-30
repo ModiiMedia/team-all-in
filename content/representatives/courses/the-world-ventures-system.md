@@ -2,7 +2,7 @@
 detailed_description = ""
 featured_image = "/v1558468064/team-all-in/test-%28test%29.jpg.jpg"
 introduction = ""
-short_description = "This course will help you develop seven essential skills that you will need to succeed here at WorldVentures."
+short_description = "This course will help you develop seven essential skills that you will need to succeed here at WorldVentures. "
 title = "The World Ventures System"
 [[modules]]
 featured_image = "/v1559241557/team-all-in/hand-writing-a-list.jpg"
