@@ -7,6 +7,20 @@ fields:
   config:
     required: true
   label: Title
+- name: type
+  type: select
+  default: course
+  config:
+    required: true
+    options:
+    - course
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Type
+  hidden: true
 - name: short_description
   type: textarea
   default: ''
