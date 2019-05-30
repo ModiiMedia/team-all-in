@@ -5,8 +5,8 @@
         <div class="container">
             <div class="flexWrapper flexEnd">
                 <nav class="headerTopNav">
-                    <a class="navItem" href="/">Representative Login</a>
-                    <a class="navItem" href="/contact">Contact Us</a>
+                    <a class="navItem" href="/representatives/">Representative Login</a>
+                    <a class="navItem" href="/contact/">Contact Us</a>
                 </nav>
             </div>            
         </div>
@@ -27,5 +27,5 @@
             </div>
         </div>
     </div>
-    {{ partial "mobile-nav.html" (dict "Page" . "Site" .Site "Nav" .Nav) }}
+    {{ partial "mobile-nav.html" (dict "Page" .Page "Site" .Site "Nav" .Nav) }}
 </header>

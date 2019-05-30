@@ -1,0 +1,23 @@
+{{ define "header" }}
+    {{ partial "header.html"  (dict "Page" . "Site" $.Site "Nav" "representative") }}
+{{ end }}
+
+{{ define "main" }}
+{{ $cloudinary := $.Site.Params.cloudinaryBase }}
+    <section class="section">
+        <div class="container">
+            <div class="columns is-mobile">
+                <div class="column is-one-fifth-desktop is-one-third-mobile">
+                    <figure class="image is-1by1">
+                        {{ if .Params.profile_photo }}
+                            <img src="{{ $cloudinary }}w_500,h_500,c_fill,f_auto,q_80{{ .Params.profilePhoto }}">
+                        {{ end }}
+                    </figure>
+                </div>
+                <div class="column is-flexible">
+                    <h1 class="title">{{ .Title }}</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+{{ end }}

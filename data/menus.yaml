@@ -36,5 +36,5 @@ representative_navigation:
     page: representatives/courses/_index.md
     fontawesome_icon: book
   - label: My Profile
-    page:
+    page: users/21580901.md
     fontawesome_icon: user
