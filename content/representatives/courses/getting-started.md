@@ -7,13 +7,17 @@ title = "Getting Started"
 [[modules]]
 featured_image = "/v1558467161/team-all-in/texting-photo.jpg"
 heading = ""
-sections = []
 title = "1) Join Our Team Texts"
+[[modules.sections]]
+content = "Text your name to Linda Muth at [**(850) 525-7547**](tel:8505257547)\n\nAfter doing this the we will add your to our Team Texts! These texts will keep you informed of important updates and events effecting your business."
+template = "text-section"
 [[modules]]
 featured_image = "/v1558467489/team-all-in/gmail-screenshot.jpg"
 heading = ""
-sections = []
 title = "2) Send Us Your Email"
+[[modules.sections]]
+content = "Send your email address to mataylor143@gmail.com​​\n\nWe will use your email address to keep you informed of important updates and events effecting your business"
+template = "text-section"
 [[modules]]
 featured_image = "/v1558467604/team-all-in/facebook%20screenshot.jpg"
 heading = ""
