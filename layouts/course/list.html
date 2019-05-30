@@ -1,0 +1,12 @@
+{{ define "main" }}
+    {{ partial "hero-banner.html" . }}
+    <section class="section">
+        <div class="container">
+            <div class="columns is-multiline">
+                {{ range $i, $e := .Pages }}
+                    <div class="column">{{ .Title }}</div>
+                {{ end }}
+            </div>
+        </div>
+    </section>
+{{ end }}

@@ -5,5 +5,6 @@ introduction = ""
 modules = []
 short_description = ""
 title = "Success Roadmap"
+type = "course"
 
 +++
