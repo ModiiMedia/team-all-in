@@ -1,4 +1,14 @@
 ---
 label: Course Video
 hide_body: true
-fields: []
+fields:
+- name: section_heading
+  type: text
+  config:
+    required: false
+  label: Section Heading
+- name: video_url
+  type: text
+  config:
+    required: true
+  label: Video Url
