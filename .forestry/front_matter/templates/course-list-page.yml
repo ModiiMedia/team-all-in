@@ -22,3 +22,5 @@ fields:
       type: pages
       section: courses-for-reps
   label: Courses To Show
+pages:
+- content/representatives/courses/_index.md
