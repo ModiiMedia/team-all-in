@@ -1,20 +1,14 @@
+{{ $currentPage := .RelPermalink }}
 <div class="mobileNavContainer">
     <nav class="mobileNav">
-        <a class="navItem" href="/">
-            <i class="fas fa-home"></i>
-            <div>Home</div>
+        {{- range $.Site.Data.menus.member_navigation.mobile -}}
+        <a class="navItem
+            {{- with $.Site.GetPage .page -}}
+                {{- if eq $currentPage .RelPermalink }} current{{ end -}}
+            {{- end -}}" href="{{ with $.Site.GetPage .page }}{{ .RelPermalink }}{{ end }}">
+            <i class="fas fa-{{ .fontawesome_icon }}"></i>
+            <div>{{ .label }}</div>
         </a>
-        <a class="navItem" href="/member-resources">
-            <i class="fas fa-play"></i>
-            <div>Videos</div>
-        </a>
-        <a class="navItem" href="/gallery">
-            <i class="fas fa-images"></i>
-            <div>Gallery</div>
-        </a>
-        <a class="navItem" href="/apps-to-download">
-            <i class="fas fa-download"></i>
-            <div>App</div>
-        </a>
+        {{- end -}}
     </nav>
 </div>

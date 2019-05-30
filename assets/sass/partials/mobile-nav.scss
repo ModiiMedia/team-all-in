@@ -33,5 +33,12 @@
             font-size: 1.5rem;
             margin-bottom: 0.3rem;
         }
+        &:hover {
+            color: inherit;
+            opacity: 0.6;
+        }
+        &.current {
+            color: $primary;
+        }
     }
 }

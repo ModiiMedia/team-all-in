@@ -1,0 +1,7 @@
+{
+    "title": {{ .Title | jsonify }},
+    "customer_id": {{ .Params.customer_id | jsonify }},
+    "email": {{ .Params.email | jsonify }},
+    "phone_number": {{ .Params.phone_number | jsonify }},
+    "profile_photo": {{ .Params.profile_photo | jsonify }}
+}

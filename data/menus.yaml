@@ -1,0 +1,40 @@
+member_navigation:
+  desktop:
+  - label: Home
+    page: _index.md
+  - label: Member Resources
+    page: member-resources.md
+  - label: Photos
+    page: gallery.md
+  - label: DreamTrips App
+    page: apps-to-download.md
+  mobile:
+  - label: Home
+    page: _index.md
+    fontawesome_icon: home
+  - label: Videos
+    page: member-resources.md
+    fontawesome_icon: play
+  - label: Gallery
+    page: gallery.md
+    fontawesome_icon: images
+  - label: App
+    page: apps-to-download.md
+    fontawesome_icon: download
+representative_navigation:
+  desktop:
+  - label: Home
+    page: 
+  mobile:
+  - label: Home
+    page: representatives/_index.md
+    fontawesome_icon: home
+  - label: Leader Videos
+    page:
+    fontawesome_icon: video
+  - label: Courses
+    page:
+    fontawesome_icon: book
+  - label: My Profile
+    page:
+    fontawesome_icon: user
