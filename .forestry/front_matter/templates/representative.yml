@@ -30,3 +30,5 @@ fields:
     pages on this website regardless of any other restrictions. This includes being
     able to view the complete list of users and their data.
   label: Is Administrator
+pages:
+- content/users/guest-user.md
