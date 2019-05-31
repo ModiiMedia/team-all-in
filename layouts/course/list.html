@@ -10,22 +10,15 @@
             <div class="columns is-multiline">
                 {{ range $i, $e := .Params.courses }}
                     {{ with $.Site.GetPage . }}
-                    <div class="column is-one-quarter-widescreen is-one-third-desktop">
-                        <a class="card courseCard" href="{{ .RelPermalink }}">
-                            <div class="card-image">
-                                <figure class="image is-16by9">
-                                    <img src="{{ $cloudinary }}w_500,h_281,c_fill,q_80{{ .Params.featured_image }}">
-                                </figure>
-                            </div>
-                            <div class="card-content">
-                                <h2 class="subtitle">{{ .Title }}</h2>
-                                <p>{{ .Params.short_description | truncate 100 }}</p>
-                            </div>
-                        </a>
-                    </div>
+                        {{ partial "course-card.html" (dict "Page" . "Cloudinary" $cloudinary)}}
                     {{ end }}
                 {{ end }}
             </div>
         </div>
     </section>
+{{ end }}
+
+{{ define "addJS" }}
+{{ $memJS := resources.Get "js/membership.js" | resources.Minify }}
+<script src="{{ $memJS.RelPermalink }}"></script>
 {{ end }}

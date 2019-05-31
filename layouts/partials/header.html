@@ -1,19 +1,54 @@
 <!-- default header -->
 {{ $cloudinary := .Site.Params.cloudinaryBase }}
+{{ $Site := .Site }}
 <header>
     <div class="topHeader">
         <div class="container">
-            <div class="flexWrapper flexEnd">
+            {{ if eq .Nav "representative"}}
+            <div class="flexWrapper spaceBetween">
                 <nav class="headerTopNav">
-                    <a class="navItem" href="/representatives/">Representative Login</a>
-                    <a class="navItem" href="/contact/">Contact Us</a>
+                        <a href="/" class="goBackButton navItem">
+                            <span>
+                                <i class="fas fa-chevron-left"></i>&nbsp;&nbsp;Return to Member Site
+                            </span>
+                        </a>
                 </nav>
-            </div>            
+                <nav class="headerTopNav">
+                        <a class="navItem profileLink">Welcome <span class="profileUserName"></span></a>
+                        <a class="navItem logoutButton">Logout</a>
+                        
+                </nav>
+            </div>
+            {{ else }}
+            <div class="flexWrapper flexEnd">
+                    <nav class="headerTopNav">
+                        <a class="navItem" href="/representatives/">Representative Login</a>
+                        <a class="navItem" href="/contact/">Contact Us</a>
+                    </nav>
+                </div>
+            {{ end }}
         </div>
     </div>
     <div class="mainHeader">
         <div class="container">
             <div class="flexWrapper spaceBetween">
+                {{ if eq .Nav "representative" }}
+                    <a href="/representatives/" id="logo">
+                        <img src="{{ $cloudinary }}w_90,q_80{{ $.Site.Data.site_settings.branding.logo }}">
+                        <div class="title">Rep Zone</div>
+                    </a>
+                    <nav class="headerMainNav">
+                        {{ range .Site.Data.menus.representative_navigation.desktop }}
+                            <a class="navItem" href="
+                                {{- if .page -}}
+                                    {{- with $Site.GetPage .page -}}
+                                        {{ .RelPermalink }}
+                                    {{- end -}}
+                                {{- end -}}">{{ .label }}</a>
+                        {{ end }}
+                            <a class="navButton profileLink" href="">My Profile</a>
+                    </nav>
+                {{ else }}
                 <a href="/" id="logo">
                     <img src="{{ $cloudinary }}w_90,q_80{{ $.Site.Data.site_settings.branding.logo }}">
                 </a>
@@ -24,6 +59,7 @@
                     <a class="navItem" href="/apps-to-download">DreamTrips App</a>
                     <a class="navButton" href="">Submit A Photo</a>
                 </nav>
+                {{ end }}
             </div>
         </div>
     </div>

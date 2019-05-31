@@ -1,0 +1,14 @@
+{{- define "header" -}}
+<!-- class header and navigation goes here -->
+    {{ partial "course-navigation.html" . }}
+{{- end -}}
+
+{{- define "main" -}}
+<!--  -->
+{{ .Title }}
+{{- end -}}
+
+{{ define "addJS" }}
+    {{ $memJS := resources.Get "js/membership.js" | resources.Minify }}
+    <script src="{{ $memJS.RelPermalink }}"></script>
+{{ end }}

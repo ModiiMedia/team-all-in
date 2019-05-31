@@ -2,9 +2,9 @@
 {
     "title": {{ .Title | jsonify }},
     "total": {{ $userCount | jsonify }},
-    "users": [
+    "users": {
         {{- range $i, $e := .Pages -}}
-            {
+            "{{ .Params.customer_id }}": {
                 "title": {{ .Title | jsonify }},
                 "customer_id": {{ .Params.customer_id | jsonify }},
                 "email": {{ .Params.email | jsonify }},
@@ -14,5 +14,5 @@
             }
             {{- if ne $userCount (add $i 1) -}},{{- end -}}
         {{- end -}}
-    ]
+    }
 }

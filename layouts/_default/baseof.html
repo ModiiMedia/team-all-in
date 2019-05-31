@@ -13,6 +13,7 @@
     <link rel="shortcut icon" href="{{ $.Site.Params.cloudinaryBase }}w_48,h_48,c_fit,f_png{{ $.Site.Data.site_settings.branding.favicon }}" type="image/x-icon">
 </head>
 <body>
+<div id="mainContentWrapper" class="">
     {{- block "header" . }}
         <!-- display default footer -->
         <!-- can be overriden by redefining the footer block -->
@@ -28,6 +29,41 @@
         <!-- can be overriden by redefining the footer block -->
         {{- partial "footer.html" . }}
     {{- end -}}
-    {{- block "addJS" . -}}{{- end -}}
+</div>
+
+<aside id="authenticationWrapper" class="">
+    <div class="imageOverlay"></div>
+    <div id="auth_standard_modal" class="authenticationModal">
+        <div class="title">Representative Login</div>
+        <div class="subtitle">This page is for Team All In representatives. To log into the site enter your WorldVentures ID, or if you have a <strong>guest password</strong> enter it in place of your ID.</div>
+        <form id="login_form" onsubmit="return false" class="form authenticationForm">
+            <div class="control">
+                <input id="login_form_user_id" name="user_id" class="input is-large" placeholder="Enter Your ID" type="text">
+            </div>
+            <div class="control formButtons">
+                <input type="submit" class="standardButton is-large" value="Login">
+            </div>
+            <div class="control">
+                <a href="/" class=""><i class="fas fa-chevron-left"></i>&nbsp;&nbsp;Return to Membership Site</a>
+            </div>
+        </form>
+    </div>
+    <div id="auth_id_not_found_modal" class="authenticationModal">
+        <div class="title">The following ID was not found in our list of representatives</div>
+        <div class="title userId"><span id="auth_user_id"></span></div>
+        <div class="subtitle">If you believe this is a mistake contact us to get added to the list. To contact us <strong><a href="/contact/">click here</a></strong> and fill out the form.</div>
+        <div class="authenticationForm">
+            <div class="control formButtons">
+                <div class="standardButton is-large logoutButton">Try A Different ID</div>
+            </div>
+            <div class="control formButtons">
+                <a href="/">Return to member website</a>
+            </div>            
+        </div>
+    </div>
+</aside>
+
+{{- block "addJS" . -}}{{- end -}}
+
 </body>
 </html>

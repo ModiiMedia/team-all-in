@@ -24,7 +24,11 @@ member_navigation:
 representative_navigation:
   desktop:
   - label: Home
-    page: 
+    page: representatives/_index.md
+  - label: Leader Videos
+    page:
+  - label: Courses
+    page: representatives/courses/_index.md
   mobile:
   - label: Home
     page: representatives/_index.md
@@ -38,3 +42,4 @@ representative_navigation:
   - label: My Profile
     page: users/21580901.md
     fontawesome_icon: user
+    class: "profileLink"

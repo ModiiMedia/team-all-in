@@ -1,3 +1,8 @@
 {{- define "header" -}}
     {{ partial "header.html"  (dict "Page" . "Site" $.Site "Nav" "representative") }}
 {{- end -}}
+
+{{- define "addJS" -}}
+    {{ $memJs := resources.Get "js/membership.js" | resources.Minify }}
+    <script src="{{ $memJs.RelPermalink }}"></script>
+{{- end -}}

@@ -3,21 +3,69 @@
 {{ end }}
 
 {{ define "main" }}
-{{ $cloudinary := $.Site.Params.cloudinaryBase }}
+    {{ $cloudinary := $.Site.Params.cloudinaryBase }}
+    {{ $admin := .Params.admin }}
+    {{ $id := .Params.customer_id }}
+    {{ $file := replace .File "\\" "/" }}
+    <section class="heroBanner" style="">
+        <!-- background-image: url({{ $cloudinary }}w_1920,h_600,c_fill,q_90/v1559254036/team-all-in/man-standing-on-a-mountain-during-sunset.jpg) -->
+        <div class="imageOverlay"></div>
+        <div class="container">
+            <h1 class="welcomeText">
+                <span class="titleText">My Profile</span>
+            </h1>
+        </div>
+    </section>
     <section class="section">
         <div class="container">
+            <p style="font-size: 1.1rem; margin-bottom:4rem; line-height: 180%;">If any of this information is incorrect or out of date contact Linda Muth at (850)525-7547 or lovegolfing3@gmail.com</p>
             <div class="columns is-mobile">
-                <div class="column is-one-fifth-desktop is-one-third-mobile">
-                    <figure class="image is-1by1">
+                <div class="column is-one-fifth-tablet is-one-third-mobile userProfileImage">
+                    <figure class="image is-1by1 {{ if not .Params.profile_photo }} icon{{- end -}}">
                         {{ if .Params.profile_photo }}
-                            <img src="{{ $cloudinary }}w_500,h_500,c_fill,f_auto,q_80{{ .Params.profilePhoto }}">
+                            <img src="{{ $cloudinary }}w_500,h_500,c_fill,g_face,f_auto,q_80{{ .Params.profile_photo }}">
+                        {{ else }}
+                            <i class="fas fa-user"></i>
                         {{ end }}
                     </figure>
                 </div>
                 <div class="column is-flexible">
-                    <h1 class="title">{{ .Title }}</h1>
+                    <div class="userProfileData">
+                        <h2 class="title">{{ .Title }}</h1>
+                        <p><strong>Customer ID</strong>: {{ .Params.customer_id }}</p>
+                        <p><strong>Phone</strong>: {{ .Params.phone_number }}</p>
+                        <p><strong>Email</strong>: {{ .Params.email }}</p>            
+                    </div>
                 </div>
             </div>
         </div>
     </section>
+    <section class="section" style="padding-top: 0">
+        <div class="container">
+            <h2 class="title">Available Courses</h2>
+            <p class="subtitle">These are all the courses you have access to</p>
+            <hr>
+            <div class="columns">
+                {{ range $i, $e := where $.Site.RegularPages ".Params.type" "course" }}
+                    {{ if $admin }}
+                        {{ partial "course-card.html" (dict "Page" . "Cloudinary" $cloudinary)}}
+                    {{ else if ne .Params.restriction_settings.restrict_access true }}
+                        {{ partial "course-card.html" (dict "Page" . "Cloudinary" $cloudinary)}}
+                    {{ else }}
+                        {{ $Page := . }}
+                        {{ range .Params.restriction_settings.access_list }}
+                            {{ if eq $file . }}
+                                {{ partial "course-card.html" (dict "Page" $Page "Cloudinary" $cloudinary)}}
+                            {{ end }}
+                        {{ end }}
+                    {{ end }}
+                {{ end }}
+            </div>
+        </div>
+    </section>
+{{ end }}
+
+{{ define "addJS" }}
+    {{ $memJS := resources.Get "js/membership.js" | resources.Minify }}
+    <script src="{{ $memJS.RelPermalink }}"></script>
 {{ end }}
