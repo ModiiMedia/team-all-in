@@ -12,7 +12,7 @@
     "predeploy": "npm run compile-css",
     "deploy": "hugo --minify",
     "prepreview": "run run predeploy",
-    "preview": "hugo server --renderToDisk --port 8080 --bind 0.0.0.0"
+    "preview": "hugo -D -F -E"
   },
   "author": "",
   "license": "ISC",
