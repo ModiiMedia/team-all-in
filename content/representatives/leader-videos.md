@@ -1,6 +1,6 @@
 ---
 title: Leader Videos
-featured_image: "/v1558997104/team-all-in/beach-sunset-waves.jpg"
+featured_image: "/v1559368246/team-all-in/green-forest-mountains.jpg"
 type: video-gallery
 videos:
 - title: Kari & Lisha Schneider
