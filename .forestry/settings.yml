@@ -20,6 +20,10 @@ sections:
 - type: heading
   label: Representative Area
 - type: document
+  path: content/representatives/leader-videos.md
+  label: Leader Videos
+  match: "**/*"
+- type: document
   path: content/representatives/courses/_index.md
   label: Course List Page
 - type: directory
