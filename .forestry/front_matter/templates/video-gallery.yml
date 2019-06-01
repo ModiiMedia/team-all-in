@@ -31,8 +31,20 @@ fields:
   - type: text
     name: title
     label: Title
-  - type: text
-    name: description
+  - name: subtitle
+    type: text
+    config:
+      required: false
+    label: Subtitle
+    description: Smaller text that appears below the title
+  - name: description
+    type: textarea
+    default: ''
+    config:
+      required: false
+      wysiwyg: true
+      schema:
+        format: markdown
     label: Description
   - type: text
     name: url
