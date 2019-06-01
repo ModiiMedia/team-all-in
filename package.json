@@ -11,8 +11,8 @@
     "start": "concurrently --kill-others \"npm run watch-css\" \"hugo server\"",
     "predeploy": "npm run compile-css",
     "deploy": "hugo --minify",
-    "prepreview": "run run predeploy",
-    "preview": "hugo -D -F -E"
+    "preforestry-preview": "npm run predeploy",
+    "forestry-preview": "hugo -D -F -E"
   },
   "author": "",
   "license": "ISC",
