@@ -26,15 +26,18 @@ representative_navigation:
   - label: Home
     page: representatives/_index.md
   - label: Leader Videos
-    page:
+    page: representatives/leader-videos.md
   - label: Courses
     page: representatives/courses/_index.md
+  - label: My Profile
+    page:
+    class: navButton profileLink
   mobile:
   - label: Home
     page: representatives/_index.md
     fontawesome_icon: home
   - label: Leader Videos
-    page:
+    page: representatives/leader-videos.md
     fontawesome_icon: video
   - label: Courses
     page: representatives/courses/_index.md

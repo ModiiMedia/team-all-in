@@ -14,19 +14,21 @@
     }
 }
 
+.goBackButton {
+    // margin-left: 1rem;
+    span {
+        padding: 0.2rem 0.5rem;
+        // border: 1px solid $dark-gray;
+        background: $light-gray;
+        color: black;
+        border-radius: 5px;
+        opacity: 0.8;
+    }
+}
+
 nav.headerTopNav {
     margin: 0 -1rem;
-    .goBackButton {
-        // margin-left: 1rem;
-        span {
-            padding: 0.2rem 0.5rem;
-            // border: 1px solid $dark-gray;
-            background: $light-gray;
-            color: black;
-            border-radius: 5px;
-            opacity: 0.8;
-        }
-    }
+    
 }
 
 nav.headerMainNav {
@@ -64,6 +66,12 @@ nav > .navButton {
     @media (max-width: $tablet){
         img {
             height: 60px;
+        }
+    }
+    @media (max-width: $mobile){
+        margin-left: -0.5rem;
+        img {
+            height: 40px;
         }
     }
 }

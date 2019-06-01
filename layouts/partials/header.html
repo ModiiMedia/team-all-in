@@ -4,7 +4,7 @@
 <header>
     <div class="topHeader">
         <div class="container">
-            {{ if eq .Nav "representative"}}
+            {{ if or (eq .Nav "representative") (eq .Page.Section "representatives") }}
             <div class="flexWrapper spaceBetween">
                 <nav class="headerTopNav">
                         <a href="/" class="goBackButton navItem">
@@ -32,21 +32,21 @@
     <div class="mainHeader">
         <div class="container">
             <div class="flexWrapper spaceBetween">
-                {{ if eq .Nav "representative" }}
+                {{ if or (eq .Nav "representative") (eq .Page.Section "representatives") }}
                     <a href="/representatives/" id="logo">
                         <img src="{{ $cloudinary }}w_90,q_80{{ $.Site.Data.site_settings.branding.logo }}">
                         <div class="title">Rep Zone</div>
                     </a>
                     <nav class="headerMainNav">
                         {{ range .Site.Data.menus.representative_navigation.desktop }}
-                            <a class="navItem" href="
+                            <a class="navItem
+                                {{- with .class }} {{ . }}{{- end -}}" href="
                                 {{- if .page -}}
                                     {{- with $Site.GetPage .page -}}
                                         {{ .RelPermalink }}
                                     {{- end -}}
                                 {{- end -}}">{{ .label }}</a>
                         {{ end }}
-                            <a class="navButton profileLink" href="">My Profile</a>
                     </nav>
                 {{ else }}
                 <a href="/" id="logo">
@@ -60,6 +60,7 @@
                     <a class="navButton" href="">Submit A Photo</a>
                 </nav>
                 {{ end }}
+                <div class="mobileMenuIcon openMobileSecondary"><i class="fas fa-bars"></i></div>
             </div>
         </div>
     </div>

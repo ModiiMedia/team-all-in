@@ -38,6 +38,12 @@ html.noScroll {
         .subtitle {
             margin-top: 1rem!important;
         }
+        @media (max-width: $mobile){
+            padding: 2.5rem;
+            .subtitle {
+                font-size: 1.1rem;
+            }
+        }
     }
 }
 

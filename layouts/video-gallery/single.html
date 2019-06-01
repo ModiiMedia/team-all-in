@@ -28,9 +28,8 @@
                             </figure>
                         </div>
                         <div class="card-content">
-                            <div class="subtitle">
-                                {{ .title }}
-                            </div>
+                            <h2 class="subtitle" style="font-weight: bold; margin-bottom: 0;">{{ .title }}</h2>
+                            {{ with .subtitle }}<p>{{ . }}</p>{{ end }}
                         </div>
                     </div>
                 </div>
@@ -45,9 +44,10 @@
                 <iframe src="https://player.vimeo.com/video/321149475?app_id=122963\" width="" height="" frameborder="0" title="DreamTrips Membership_03.03.19" allow="autoplay; fullscreen" allowfullscreen></iframe>
             </div>
             <div class="content">
-                <h1 id="lightboxTitle">Title Goes Here</h1>
-                <p class="metadata"><span id="lightboxAuthor">Author Goes Here</span><span id="lightboxDate">Date Goes Here</span></p>
-                <div id="lightboxContent">testing 123</div>
+                <h1 id="lightboxTitle">Title</h1>
+                <h3 id="lightboxSubtitle" style="margin-top: -1rem; font-weight: 400">Subtitle</h3>
+                <p class="metadata"><span id="lightboxAuthor">Author</span><span id="lightboxDate">Date</span></p>
+                <div id="lightboxContent"></div>
             </div>
             <div class="lightboxNavBar">
                 <div id="previousVid" data-video='' class="navItem arrow"><i class="fas fa-arrow-left"></i> Prev</div>
@@ -68,6 +68,7 @@
     let lTitle = document.getElementById("lightboxTitle");
     let lAuthor = document.getElementById("lightboxAuthor");
     let lDate = document.getElementById("lightboxDate");
+    let lSubtitle = document.getElementById("lightboxSubtitle");
     let lContent = document.getElementById("lightboxContent");
     let lEmbed = document.getElementById("videoEmbed")
     let navButtons = document.querySelectorAll(".lightboxNavBar .navItem.arrow")
@@ -108,9 +109,21 @@
         let currentVid = videos[videoNum];
         lTitle.innerHTML = currentVid.title;
         lAuthor.innerHTML = `<strong>Author:</strong> ${currentVid.author}`;
-        lDate.innerHTML = `<strong>Date:</strong> ${currentVid.upload_date}`;
         lContent.innerHTML = currentVid.description;
         lEmbed.innerHTML = currentVid.embed_code.replace("?", "?autoplay=1&");
+
+        // subtitle check
+        lSubtitle.style.display = ''
+        if(currentVid.subtitle){
+            lSubtitle.innerHTML = currentVid.subtitle
+        } else {
+            lSubtitle.style.display = 'none'
+        }
+
+        // parse date
+        let d = new Date(currentVid.upload_date)
+        lDate.innerHTML = `<strong>Upload Date:</strong> ${d.getMonth()}/${d.getDate()}/${d.getFullYear()}`;
+
 
         resetNavButtons();
         
@@ -148,4 +161,9 @@
         }
     }
 </script>
+{{ if eq .Section "representatives" }}
+    {{ $memJs := resources.Get "js/membership.js" | resources.Minify }}
+    <script src="{{ $memJs.RelPermalink }}"></script>
+{{ end }}
+
 {{- end -}}

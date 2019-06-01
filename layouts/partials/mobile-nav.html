@@ -1,10 +1,12 @@
 {{ $currentPage := .Page.RelPermalink }}
 {{ $site := .Site }}
+<!-- primary mobile nav -->
 <div class="mobileNavContainer">
     <nav class="mobileNav">
-        {{ if eq .Nav "representative" }}
+        {{ if or (eq .Nav "representative") (eq .Page.Section "representatives") }}
             {{- range .Site.Data.menus.representative_navigation.mobile -}}
                 <a class="navItem
+                    {{- with .class }} {{ . }}{{- end -}}
                     {{ if .page }}
                     {{- with $site.GetPage .page -}}
                         {{- if eq $currentPage .RelPermalink }} current{{ end -}}{{ end }}
@@ -16,6 +18,7 @@
         {{ else }}
             {{- range .Site.Data.menus.member_navigation.mobile -}}
             <a class="navItem
+                {{- with .class }} {{ . }}{{ end -}}
                 {{- with $site.GetPage .page -}}
                     {{- if eq $currentPage .RelPermalink }} current{{ end -}}
                 {{- end -}}" href="{{ with $site.GetPage .page }}{{ .RelPermalink }}{{ end }}">
@@ -25,4 +28,33 @@
             {{- end -}}
         {{ end }}
     </nav>
+</div>
+
+<!-- secondary mobile nav -->
+<div id="secondaryNav" class="sideNavContainer">
+    <nav class="sideNav">
+        {{ if or (eq .Nav "representative") (eq .Page.Section "representatives")}}
+            <div class="navGrouping">
+                <a href="/" class="goBackButton navItem">
+                    <span>
+                        <i class="fas fa-chevron-left"></i>&nbsp;&nbsp;Go to Member Site
+                    </span>
+                </a>
+                <hr>
+                <a class="navItem profileLink" href="">Contact Us</a>
+                <a class="navItem logoutButton">Sign Out</a>        
+            </div>
+        {{ else }}
+            <div class="navGrouping">
+                <a class="goBackButton navItem" href="/representatives/">
+                    <span>
+                        <i class="fas fa-sign-in-alt"></i>&nbsp;&nbsp;Representative Login
+                    </span>
+                </a>
+                <hr>
+                <a class="navItem" href="/contact/">Contact Us</a>
+            </div>
+        {{ end }}
+    </nav>
+    <div class="imageOverlay closeMobileSecondary"></div>
 </div>

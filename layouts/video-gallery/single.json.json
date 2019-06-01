@@ -6,6 +6,7 @@
         {{- range $i, $e := .Params.videos -}}
             {
                 "title": "{{ with .title }}{{ . }}{{ end }}",
+                "subtitle": "{{ with .subtitle }}{{ . }}{{ end }}",
                 "description": "{{ with .description }}{{ . }}{{ end }}",
                 {{- if in .url "vimeo" }}
                     {{- $jsonURL := print "https://vimeo.com/api/oembed.json?url=" .url "&width=640" -}}

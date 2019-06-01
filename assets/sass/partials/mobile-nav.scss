@@ -1,3 +1,16 @@
+.mobileMenuIcon {
+    display: none;
+    cursor: pointer;
+    @media (max-width:$tablet){
+        display: block;
+        font-size: 3rem;
+    }
+    @media (max-width: $mobile){
+        margin-right: -0.5rem;
+        font-size: 2rem;
+    }
+}
+
 .mobileNavContainer {
     display: none;
     @media (max-width: $tablet){
@@ -44,6 +57,81 @@
         }
         &.current {
             color: $primary;
+        }
+    }
+}
+
+// side navigation
+
+.sideNavContainer {
+    display: none;
+    @media(max-width: $tablet){
+        display: block;
+    }
+    .imageOverlay {
+        opacity: 0;
+        z-index: -1;
+        transition: opacity 200ms ease;
+        -moz-transition: opacity 200ms ease;
+        -o-transition: opacity 200ms ease;
+        -webkit-transition: opacity 200ms ease;
+    }
+    nav.sideNav {
+        // width: 200px;
+        // text-align: center;
+        position: fixed;
+        display: block;
+        display: flex;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        flex-direction: column;
+        -ms-flex-direction: column;
+        justify-content: space-between;
+        top: 0;
+        right: auto;
+        bottom: 0;
+        left: -100%;
+        background: white;
+        z-index: 55;
+        padding: 1rem 0 0 0;
+        transition: left 200ms ease;
+        -moz-transition: left 200ms ease;
+        -o-transition: left 200ms ease;
+        -webkit-transition: left 200ms ease;
+        font-size: 1.2rem;
+        .goBackButton {
+            margin: 1rem 0;
+            span {
+                padding: 1rem 1.5rem;
+                opacity: 1;
+                background: $primary;
+                color: white;
+            }
+        }
+        .navGrouping {
+            display: block;
+            display: flex;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            flex-direction: column;
+            -ms-flex-direction: column;
+            justify-content: space-between;
+        }
+        .navItem {
+            padding: 1rem 2rem 1rem 1.5rem;
+            color: $text;
+        }
+        .logoImage {
+            padding: 1.5rem 6rem 0 1.5rem;
+        }
+    }
+    &.show {
+        nav.sideNav {
+            left: 0;
+        }
+        .imageOverlay {
+            opacity: 0.5;
+            z-index: 54;
         }
     }
 }
