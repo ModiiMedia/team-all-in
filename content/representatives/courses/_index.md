@@ -1,6 +1,6 @@
 ---
 title: Training Courses
-featured_image: "/v1558466492/team-all-in/runner-at-the-starting-line.jpg"
+featured_image: "/v1559367790/team-all-in/nik-macmillan-280300-unsplash.jpg"
 type: course
 courses:
 - representatives/courses/getting-started.md
