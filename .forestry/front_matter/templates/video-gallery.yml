@@ -43,3 +43,4 @@ fields:
       required: true
 pages:
 - content/member-resources.md
+- content/representatives/leader-videos.md
