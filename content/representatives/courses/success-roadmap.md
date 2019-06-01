@@ -1,4 +1,5 @@
 +++
+draft = true
 featured_image = "/v1559368558/team-all-in/team-collaborrating.jpg"
 introduction = ""
 modules = []
