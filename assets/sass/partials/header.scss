@@ -63,7 +63,13 @@ nav > .navButton {
     display: -ms-flexbox;
     display: -webkit-flex;
     align-items: center;
+    .title {
+        margin-left: 0.5rem;
+    }
     @media (max-width: $tablet){
+        .title {
+            font-size: 1.5rem;
+        }
         img {
             height: 60px;
         }

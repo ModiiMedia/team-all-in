@@ -121,6 +121,10 @@ body {
                 align-items: center;
             }
         }
+        .subtitle {
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+        }
         @media (max-width: $tablet){
             display: block;
             display: flex;
@@ -152,6 +156,17 @@ body {
             }
             .card-content {
                 width: 65%;
+                font-size: 1rem;
+            }
+        }
+        @media (max-width: $mobile){
+            .card-image {
+                figure  {
+                    height: 100%;
+                }
+            }
+            .card-content {
+                font-size: 0.8rem;
             }
         }
     }
