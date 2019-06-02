@@ -10,7 +10,8 @@
                 {{- $json := getJSON $jsonURL -}}
                 <div class="container" style="max-width: 800px; margin: 3rem auto;">
                     <div class="iframeContainer">
-                        {{ $json.html | safeHTML }}
+                        {{ $embed := replace $json.html "?app_id" "?title=0&byline=0&app_id" }}
+                        {{ $embed | safeHTML }}
                     </div>            
                 </div>
                 I haven't been everywhere...but it's on my list!
