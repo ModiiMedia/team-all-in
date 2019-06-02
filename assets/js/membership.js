@@ -63,6 +63,8 @@ function checkForUser(userId){
     req.addEventListener("load", function(){
         let data = JSON.parse(this.responseText);
         let currentUser = data.users[userId]
+        currentUser.customer_id = userId
+        console.log(currentUser)
         if (currentUser){
             setCurrentUser(currentUser);
         } else {
@@ -90,17 +92,17 @@ function setCurrentUser(userObj){
 
     let infoEl = {
         name: document.querySelectorAll(".profileUserName"),
-        email: document.querySelectorAll(".profileUserEmail"),
+        // email: document.querySelectorAll(".profileUserEmail"),
         profileLink: document.querySelectorAll(".profileLink"),
-        photo: document.querySelectorAll(".profilePhoto")
+        // photo: document.querySelectorAll(".profilePhoto")
     }
 
     for(let i = 0; i < infoEl.name.length; i++){
         infoEl.name[i].innerHTML = currentUser.title
     }
-    for(let i = 0; i < infoEl.email.length; i++){
-        infoEl.email[i].innerHTML = currentUser.email
-    }
+    // for(let i = 0; i < infoEl.email.length; i++){
+    //     infoEl.email[i].innerHTML = currentUser.email
+    // }
     for(let i = 0; i < infoEl.profileLink.length; i++){
         infoEl.profileLink[i].href = currentUser.url
     }
