@@ -197,3 +197,58 @@ body {
         }
     }
 }
+
+.section.photoGrid {
+    @media (max-width: $tablet){
+        padding-bottom: 0;
+        padding-top: 0;
+    }
+}
+
+.column.photoGrid {
+    @media (max-width: $tablet){
+        padding: 0;
+        margin-left: -1rem;
+        margin-right: -1rem;
+    }
+}
+
+.photoGridLink {
+    position: relative;
+    display: block;
+    display: flex;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 20rem;
+    padding: 2rem;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-align: center;
+    &:hover {
+        color: white;
+    }
+    .photoGridContent {
+        position: relative;
+        z-index: 1;
+        max-width: 20rem;
+    }
+}
+
+.iframeContainer {
+    position: relative;
+    padding-top: 56%;
+    iframe {
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;    
+    }    
+}

@@ -1,7 +1,71 @@
 {{ define "main" }}
-<section class="heroBanner homepageHero">
+{{ $cloudinary := $.Site.Params.cloudinaryBase }}
+{{ with .Params.banner }}
+    <section class="heroBanner homepageHero" style="{{ range .slideshow_photos }}background-image: url({{ $cloudinary }}w_1920,h_1500,c_fill,q_80,f_auto{{ . }});{{ end }}">
+        <div class="imageOverlay"></div>
+        <div class="container">
+            <h1 class="welcomeText">{{ .small_text }}<br><span class="titleText">{{ .large_text }}</span></h1>
+            {{ with .video }}
+                {{- $jsonURL := print "https://vimeo.com/api/oembed.json?url=" . "&width=640" -}}
+                {{- $json := getJSON $jsonURL -}}
+                <div class="container" style="max-width: 800px; margin: 3rem auto;">
+                    <div class="iframeContainer">
+                        {{ $json.html | safeHTML }}
+                    </div>            
+                </div>
+                I haven't been everywhere...but it's on my list!
+            {{ end }}
+        </div>
+    </section>
+{{ end }}
+
+<section class="section">
     <div class="container">
-        <h1 class="welcomeText">Welcome to<br><span class="titleText">DreamTrips</span></h1>
+        <h1 class="title">
+            <a href="/member-resources/" style="color: black">Resources for Members&nbsp;&nbsp;<i class="fas fa-chevron-right"></i></a>
+        </h1>
+        <div class="columns">
+            {{ with $.Site.GetPage "member-resources"}}
+                {{ $href := .RelPermalink }}
+                {{ range $i, $e := first 3 .Params.videos }}
+                <div class="column is-one-third">
+                        <a href="{{ $href }}?modal=open&item={{ $i }}" class="card videoGalleryItem">
+                            <div class="card-image">
+                                <figure class="image is-16by9">
+                                    {{- if in .url "vimeo" -}}
+                                    {{- $jsonURL := print "https://vimeo.com/api/oembed.json?url=" .url "&width=640" -}}
+                                    {{- $json := getJSON $jsonURL -}}
+                                        <img class="videoThumbnail" src="{{ $json.thumbnail_url }}">
+                                    {{- end -}}
+                                </figure>
+                            </div>
+                            <div class="card-content">
+                                <h2 class="subtitle" style="font-weight: bold; margin-bottom: 0;">{{ .title }}</h2>
+                                {{ with .subtitle }}<p>{{ . }}</p>{{ end }}
+                            </div>
+                        </a>
+                    </div>
+                {{ end }}
+            {{ end }}
+        </div>
+</section>
+<section class="section photoGrid" style="padding-top: 0;">
+    <div class="container">
+        <div class="columns">
+                {{ $site := $.Site }}
+                {{ range .Params.photo_links }}
+                <div class="column is-half photoGrid">               
+                    <a href="{{ with $site.GetPage .page }}{{ .RelPermalink }}{{ end }}" class="photoGridLink" style="background-image: url({{ $cloudinary }}w_500,h_500,c_fill,q_80{{ .background_photo }})">
+                        <div class="imageOverlay"></div>
+                        <div class="photoGridContent">
+                            {{ .text }}
+                        </div>
+                    </a>
+                </div>
+                {{ end }}
+            </div>
+        </div>            
     </div>
 </section>
+
 {{ end }}
