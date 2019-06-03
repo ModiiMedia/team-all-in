@@ -252,3 +252,22 @@ body {
         bottom: 0;    
     }    
 }
+
+.modal-content {
+    padding: 3.5rem;
+    background: white;
+    .field {
+        margin-bottom: 2rem;
+    }
+    @media (max-width: $tablet){
+        overflow-y: scroll;
+    }
+}
+
+.modal.is-active {
+    z-index: 500;
+}
+
+.photoModalCloser {
+    cursor: pointer;
+}

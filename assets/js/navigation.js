@@ -17,10 +17,18 @@ for (let i = 0; i < secondaryNavCloser.length; i++){
 
 function openSecondaryNavMenu(){
     secondaryMenu.classList.add("show")
-    documentHTML.classList.add("noScroll")
+    htmlNoScroll();
 }
 
 function closeSecondaryNavMenu(){
     secondaryMenu.classList.remove("show")
+    htmlAllowScroll();
+}
+
+function htmlNoScroll(){
+    documentHTML.classList.add("noScroll")
+}
+
+function htmlAllowScroll(){
     documentHTML.classList.remove("noScroll")
 }

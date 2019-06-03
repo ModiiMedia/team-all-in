@@ -4,9 +4,26 @@
     background: $primary;
     padding: .5rem 1rem;
     color: white;
+    border: none;
     &.is-large {
         font-size: 1.5rem;
         padding: 1rem 2rem;
         font-weight: bold;
+        @media (max-width: $mobile){
+            font-size: 1.1rem;
+            padding: 0.8rem 1.8rem;
+        }
+    }
+    &.is-medium {
+        padding: 0.8rem 2rem;
+        font-size: 1.2rem;
+        font-weight: bold;
+    }
+}
+
+.navButton {
+    cursor: pointer;
+    &.navItem:hover {
+        color: white;
     }
 }
