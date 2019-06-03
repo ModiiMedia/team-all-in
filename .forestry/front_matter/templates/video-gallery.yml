@@ -53,6 +53,8 @@ fields:
       schema:
         format: markdown
     label: Description
+  config:
+    labelField: title
 pages:
 - content/member-resources.md
 - content/representatives/leader-videos.md
