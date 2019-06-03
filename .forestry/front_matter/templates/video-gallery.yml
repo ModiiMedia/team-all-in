@@ -1,6 +1,7 @@
 ---
 label: Video Gallery
-hide_body: true
+hide_body: false
+display_field: title
 fields:
 - type: text
   name: title
@@ -29,6 +30,13 @@ fields:
   label: videos
   fields:
   - type: text
+    name: url
+    label: Video Url
+    description: Copy and paste the URL of your video here. (Currently only works
+      with Vimeo videos)
+    config:
+      required: true
+  - type: text
     name: title
     label: Title
   - name: subtitle
@@ -46,13 +54,8 @@ fields:
       schema:
         format: markdown
     label: Description
-  - type: text
-    name: url
-    label: Video Url
-    description: Copy and paste the URL of your video here. (Currently only works
-      with Vimeo videos)
-    config:
-      required: true
+  config:
+    labelField: title
 pages:
 - content/member-resources.md
 - content/representatives/leader-videos.md
