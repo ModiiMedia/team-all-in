@@ -7,7 +7,7 @@ title = "The World Ventures System"
 type = "course"
 [[modules]]
 featured_image = "/v1559241557/team-all-in/hand-writing-a-list.jpg"
-heading = "Make Your List - Who Will You Show?"
+heading = "Skill 1: Make Your List - Who Will You Show?"
 title = "1) Make Your List"
 [[modules.sections]]
 content = "## Key Points:\n\n* Print \"Your List\" .pdf\n* Listen to Quick Coach - \"Making Your List\"\n* Fill out at least 20 names\n* DO NOT PREJUDGE!!\n* Have Fun!!"
@@ -31,10 +31,39 @@ section_heading = "Your List PDF"
 template = "downloadable-file"
 [[modules]]
 featured_image = ""
-sections = []
+heading = "Skill 2: Invite Your Prospects to See Your Product or Opportunity"
 title = "2) Invite Prospects"
+[[modules.sections]]
+content = "## Key Points:\n\n* Watch Quick Coach Videos on Inviting\n* Be Excited!\n* Be Confident!\n* Invite - DO NOT PRESENT\n* Invite the day of or the day before you want to meet with them\n* Be yourself; don't be weird\n* Don't TELL them anything until you can SHOW them everything"
+template = "text-section"
+[[modules.sections]]
+section_heading = "Skill 2 - Inviting"
+template = "course-video"
+video_url = "https://vimeo.com/307199291"
+[[modules.sections]]
+content = "## Personal tips:\n\n* People are often scared of the Invite process.\n* DONT BE! It's actually easy and fun once you get started. You're just sharing something of tremendous value with the people you care about!\n* Remember, you are sorting, NOT SELLING! Just invite everyone you know to SEE something you are SO EXCITED about. If it's not for them, it's OK! Just move on to the next person on your list!"
+template = "text-section"
+[[modules.sections]]
+section_heading = "Quickcoach: Inviting Fundamentals"
+template = "course-video"
+video_url = "https://www.youtube.com/watch?v=tYB9tQ_AVJM"
+[[modules.sections]]
+section_heading = "Quickcoach: 2 Step Text"
+template = "course-video"
+video_url = "https://www.youtube.com/watch?v=X1j5yvnkA6U"
+[[modules.sections]]
+section_heading = "Quickcoach: Invite to Launch Party"
+template = "course-video"
+video_url = "https://www.youtube.com/watch?v=_LbGpUMnv3I"
+[[modules.sections]]
+button_text = "Download File"
+description = "These are a collection of scripts that can help you when inviting prospects."
+file = "/v1559598894/team-all-in/inviting-scripts.pdf"
+section_heading = "Inviting Scripts"
+template = "downloadable-file"
 [[modules]]
 featured_image = ""
+heading = "Skill 3: Showing your Product or Opportunity to your prospect"
 sections = []
 title = "3) Share"
 [[modules]]
