@@ -30,7 +30,7 @@ file = "/v1559243429/team-all-in/your-list-worksheet.pdf"
 section_heading = "Your List PDF"
 template = "downloadable-file"
 [[modules]]
-featured_image = ""
+featured_image = "/v1559602426/team-all-in/friends-at-the-beach-high-fiving.jpg"
 heading = "Skill 2: Invite Your Prospects to See Your Product or Opportunity"
 title = "2) Invite Prospects"
 [[modules.sections]]
