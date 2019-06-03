@@ -44,3 +44,7 @@ videos:
   url: https://vimeo.com/338748039
 
 ---
+
+## How to get the MOST from of your DreamTrips membership
+
+We have created a series of videos to act as a resource for DreamTrips members. These videos will help you better understand how to use your membership and maximize its value.

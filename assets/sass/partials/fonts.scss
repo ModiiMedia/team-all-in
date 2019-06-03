@@ -12,3 +12,12 @@ body {
 .userProfileData {
     font-size: 1.2rem;
 }
+
+.content {
+    p {
+        font-size: 1.2rem;
+    }
+    &.limitMax {
+        max-width: 900px;
+    }
+}

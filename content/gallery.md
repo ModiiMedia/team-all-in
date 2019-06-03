@@ -1,6 +1,6 @@
 ---
 title: Photo Gallery
-featured_image: "/v1558997104/team-all-in/beach-sunset-waves.jpg"
+featured_image: "/v1559445846/team-all-in/group-in-the-pool.jpg"
 type: gallery
 photos:
 - title: Fun on the San Antonio River Walk!
@@ -20,3 +20,7 @@ photos:
   url: "/v1558998221/team-all-in/team-trip-to-the-marival-residences.jpg"
 
 ---
+
+## Have an awesome photo from your DreamTrip?
+
+Share it with us. You can submit a photo to get featured in our gallery by clicking the button below.

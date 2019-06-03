@@ -9,7 +9,12 @@
     <section class="section">
         <div class="container">
             <div class="modalButtonArea">
-                <a class="standardButton is-uppercase is-large">Submit A Photo</a>
+            {{ with .Content }}
+                <div class="content limitMax">
+                    {{ . }}
+                </div>
+            {{ end }}
+                <div class="standardButton is-uppercase is-medium submitPhotoButton">Submit A Photo</div>
             </div>
             <div class="columns is-mobile is-multiline">
                 {{ range $i, $e := .Params.photos }}
