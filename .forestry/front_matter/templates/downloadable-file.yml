@@ -1,6 +1,7 @@
 ---
 label: Downloadable File
 hide_body: true
+display_field: section_heading
 fields:
 - name: section_heading
   type: text
