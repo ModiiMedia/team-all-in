@@ -203,5 +203,12 @@ title = "7) Promote Events"
 [[modules.sections]]
 content = "## Key Points:\n\n* We are going to HELP them; they are NOT on their own!\n* 5 Step Start Up\n  * Understand their \"WHY\"\n  * Schedule their Launch party\n  * Make their list\n  * Teach them how to Invite\n  * Schedule them for next training event\n* Book your next meeting with them\n* Plug then in to our team calls/webinars\n* Invite them to our Facebook pages\n* Send them to this website!\n* Teach them to do the same!"
 template = "text-section"
+[[modules.sections]]
+section_heading = "Skill 6 - Getting a New Rep Started"
+template = "course-video"
+video_url = "https://vimeo.com/307196143"
+[[modules.sections]]
+content = "## Personal tip:\n\n* The teaching and training portion of our business is critical.\n* Here is our best advice - this SYSTEM Online Training is meant to be a back up to your efforts with your new representative.\n* This is not meant to replace you and the RELATIONSHIP you will build with your team - this business is about building a \"family\" - it will not grow if you are not part of it\n* Use this website and our System to help duplicate your successes!"
+template = "text-section"
 
 +++
