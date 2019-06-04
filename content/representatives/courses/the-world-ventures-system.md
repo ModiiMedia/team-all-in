@@ -105,13 +105,9 @@ video_url = "https://vimeo.com/307185997"
 [[modules.sections]]
 content = "![Examples of ways to share the opportunity](https://res.cloudinary.com/modii/w_800,q_60,f_auto/v1559674918/team-all-in/ways-to-share.png)"
 template = "text-section"
-[[modules]]
-featured_image = "/v1559674025/team-all-in/women-whispering.jpg"
-heading = "3.1) Proper Event Etiquette"
-title = "3.1) Share - Part 2"
 [[modules.sections]]
-content = "These Quickcoach videos will help you understand the proper etiquette when hosting events."
-template = "text-section"
+content = "Proper Event Etiquette"
+template = "heading"
 [[modules.sections]]
 section_heading = "Event Etiquette: Before"
 template = "course-video"

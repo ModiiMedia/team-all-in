@@ -69,6 +69,9 @@ function openModule(course, module){
             case "downloadable-file":
                 cContent.innerHTML += insertDownloadableFile(section);
                 break;
+            case "heading":
+                cContent.innerHTML += insertSectionHeading(section);
+                break;
             default:
                 // error message when section template does not exit
                 cContent.innerHTML += `
@@ -103,6 +106,14 @@ function insertVideoSection(ob){
             </div>
             </section>`
     return html
+}
+
+function insertSectionHeading(ob){
+    let html = `
+        <section>
+            <h1 class="sectionHeading">${ob.content}</h1>
+        </section>`
+    return html;
 }
 
 function insertDownloadableFile(ob){

@@ -11,7 +11,7 @@
             "embed_code": {{ $json.html | jsonify }},
             "platform": "vimeo",
         {{- end -}}
-        {{- if in .video_url "youtube" }}
+        {{- if in .video_url "youtu" }}
             {{ $rmUrl := replace .video_url "https://www.youtube.com/watch?v=" "" }}
             {{ $id := replace $rmUrl "https://youtu.be/" "" }}
             "video_id": {{ $id | jsonify }},

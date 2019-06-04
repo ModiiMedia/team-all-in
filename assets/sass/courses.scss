@@ -57,6 +57,7 @@ header {
 }
 
 .courseWrapper {
+    overflow: hidden;
     position: relative;
     padding-top: 75px;
     max-width: 1000px;
@@ -123,4 +124,13 @@ header {
         display: -webkit-flex;
         flex-direction: column-reverse;
     }
+}
+
+section > .sectionHeading{
+    // border-bottom: 5px solid $primary;
+    font-size: 3rem;
+    background: linear-gradient(90deg, #dddddd, transparent);
+    padding: 2rem 20rem;
+    margin-left: -20rem;
+    margin-right: -20rem;
 }
