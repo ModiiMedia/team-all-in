@@ -218,7 +218,7 @@ section_heading = "Skill 7 - Promoting"
 template = "course-video"
 video_url = "https://vimeo.com/307279739"
 [[modules.sections]]
-content = "## Tools:\n\nWorldVentures Training Events - The \"Secret\" to Success!\n\n### Four Major Training Events - Leaders attend them all!\n\n* January - Momentum\n* April - United\n* July - Millionaire Bootcamp\n* October - The View From The Edge\n\n### Several Regional Training Events around the country\n\nMar, May, June, August, Sept, Dec​\n\n**Super Saturdays provided by Local Leaders**"
+content = "## Tools:\n\nWorldVentures Training Events - The \"Secret\" to Success!\n\n**Four Major Training Events - Leaders attend them all!**\n\n* January - Momentum\n* April - United\n* July - Millionaire Bootcamp\n* October - The View From The Edge\n\n**Several Regional Training Events around the country**\n\nMar, May, June, August, Sept, Dec​\n\nSuper Saturdays provided by Local Leaders"
 template = "text-section"
 [[modules.sections]]
 content = "## Personal tip:\n\n* While there's no secret bullet to success in WorldVentures, **promoting** our training events and getting your teams to go WITH YOU is as close as it gets!\n* Start to plan now. Start to save now. Prepare for time off work and daycare for the kids if needed. Those representatives that attend our training events statistically make significantly more money than those that don't."
