@@ -62,10 +62,23 @@ file = "/v1559598894/team-all-in/inviting-scripts.pdf"
 section_heading = "Inviting Scripts"
 template = "downloadable-file"
 [[modules]]
-featured_image = ""
+featured_image = "/v1559674025/team-all-in/women-whispering.jpg"
 heading = "Skill 3: Showing your Product or Opportunity to your prospect"
-sections = []
 title = "3) Share"
+[[modules.sections]]
+content = "## Key Points:\n\n* Before EVERY presentation, do your 3 Step Set Up\n* Watch Quick Coach - 3 Step Set Up\n* Watch 3 Step Set Up examples\n* Many ways to present\n\n\n* Use a 3rd Party Expert\n* Edify your expert / presenter (See Quick Coach - Edification)\n* Follow Travel Party / Presentation Etiquiette - See Quick Coaches on Metting Etiquette"
+template = "text-section"
+[[modules.sections]]
+section_heading = "Skill 3 - Showing"
+template = "course-video"
+video_url = "https://vimeo.com/307188508"
+[[modules.sections]]
+content = "## Personal tip:\n\n* Let the presentation / tools do the work!\n* A powerful 3 Step Set Up will set the stage for your friends to WANT TO JOIN whatever you are so excited about.\n* Help make your guest feel comfortable\n* Establish and maintain your posture throughout the presentation; People want to follow people who know where they are going!"
+template = "text-section"
+[[modules.sections]]
+section_heading = "Quickcoach: 3-Step Setup"
+template = "course-video"
+video_url = "https://youtu.be/twbacwhiEvo"
 [[modules]]
 featured_image = ""
 sections = []
