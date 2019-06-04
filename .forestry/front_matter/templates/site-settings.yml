@@ -37,5 +37,24 @@ fields:
       required: false
     label: Phone Number
   label: Contact Info
+- name: representatives
+  type: field_group
+  config: {}
+  fields:
+  - name: user_profile_message
+    type: textarea
+    default: ''
+    config:
+      required: false
+      wysiwyg: true
+      schema:
+        format: markdown
+    label: User Profile Message
+    description: Message that appears on the users profile
+  label: Representative Area
+- name: member_area
+  type: field_group
+  config: {}
+  label: Member Area
 pages:
 - data/site_settings.yaml
