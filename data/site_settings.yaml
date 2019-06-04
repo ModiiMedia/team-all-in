@@ -7,8 +7,6 @@ contact_info:
   email: lovegolfing3@gmail.com
   phone_number: "(850)525-7547"
 representatives:
-  user_profile_message: |-
-    If any of this information is incorrect or out-of-date contact **Linda Muth** at [**(850)525-7547**](tel:+18505257547) or [**lovegolfing3@gmail.com**](mailto:lovegolfing3@gmail.com)
-
-    ## This is a test
+  user_profile_message: If any of this information is incorrect or out-of-date contact
+    **Linda Muth** at [**(850)525-7547**](tel:+18505257547) or [**lovegolfing3@gmail.com**](mailto:lovegolfing3@gmail.com)
 member_area: {}
