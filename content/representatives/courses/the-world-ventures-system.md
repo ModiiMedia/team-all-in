@@ -64,7 +64,7 @@ template = "downloadable-file"
 [[modules]]
 featured_image = "/v1559674025/team-all-in/women-whispering.jpg"
 heading = "Skill 3: Showing your Product or Opportunity to your prospect"
-title = "3) Share"
+title = "3) Share - Part 1"
 [[modules.sections]]
 content = "## Key Points:\n\n* Before EVERY presentation, do your 3 Step Set Up\n* Watch Quick Coach - 3 Step Set Up\n* Watch 3 Step Set Up examples\n* Many ways to present\n* Use a 3rd Party Expert\n* Edify your expert / presenter (See Quick Coach - Edification)\n* Follow Travel Party / Presentation Etiquiette - See Quick Coaches on Metting Etiquette"
 template = "text-section"
@@ -108,7 +108,7 @@ template = "text-section"
 [[modules]]
 featured_image = "/v1559674025/team-all-in/women-whispering.jpg"
 heading = "3.1) Proper Event Etiquette"
-title = "3.1) Sharing Cont."
+title = "3.1) Share - Part 2"
 [[modules.sections]]
 content = "These Quickcoach videos will help you understand the proper etiquette when hosting events."
 template = "text-section"
@@ -124,6 +124,25 @@ video_url = "https://www.youtube.com/watch?v=70Tz13FExkw"
 section_heading = "Event Etiquette: After"
 template = "course-video"
 video_url = "https://www.youtube.com/watch?v=LhAaKBjs9n4"
+[[modules]]
+featured_image = "/v1559674025/team-all-in/women-whispering.jpg"
+heading = "3.2) Presentation Resources When Sharing"
+title = "3.2) Share - Part 3"
+[[modules.sections]]
+content = "Included below are some helpful resources you can use when presenting."
+template = "text-section"
+[[modules.sections]]
+section_heading = "Earnavaction.com - $149.99 Promo"
+template = "course-video"
+video_url = "https://vimeo.com/316100993"
+[[modules.sections]]
+section_heading = "EarnTravel.club (Membership Only)"
+template = "course-video"
+video_url = "https://vimeo.com/316109763"
+[[modules.sections]]
+section_heading = "Spanish Version - VacationSooner.com"
+template = "course-video"
+video_url = "https://vimeo.com/307697118"
 [[modules]]
 featured_image = ""
 sections = []
