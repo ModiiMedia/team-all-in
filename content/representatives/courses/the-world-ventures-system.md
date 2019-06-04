@@ -122,8 +122,8 @@ template = "course-video"
 video_url = "https://www.youtube.com/watch?v=LhAaKBjs9n4"
 [[modules]]
 featured_image = "/v1559674025/team-all-in/women-whispering.jpg"
-heading = "3.2) Presentation Resources When Sharing"
-title = "3.2) Share - Part 3"
+heading = "Using Presentation Resource for Sharing With Others"
+title = "Sharing Resources"
 [[modules.sections]]
 content = "Included below are some helpful resources you can use when presenting."
 template = "text-section"
