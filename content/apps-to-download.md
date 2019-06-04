@@ -1,4 +1,4 @@
 ---
-title: Apps To Download
-
+title: "Apps To Download"
+type: "app-page"
 ---

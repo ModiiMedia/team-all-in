@@ -1,0 +1,62 @@
+{{ define "main" }}
+    {{ partial "hero-banner.html" . }}
+    <section class="section">
+        <div class="container">
+            {{ with .Content }}
+            <div class="content" style="margin-bottom: 4rem;">
+                {{ . }}
+            </div>
+            {{ end }}
+            <div class="columns">
+                <div class="column is-two-thirds">
+                    <form class="form" method="POST" data-netlify="true" netlify-honeypot="date" name="contact-form">
+                        <div class="field">
+                            <label for="contactName">Name:</label>
+                            <div class="control has-icons-left">
+                                <input class="input is-large" type="text" name="name" id="contactName" placeholder="Enter your name" autocomplete="name" required>
+                                <div class="icon is-left">
+                                    <i class="fas fa-user"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <label for="contactEmail">Email Address:</label>
+                            <div class="control has-icons-left">
+                                <input class="input is-large" type="email" name="email" id="contactEmail" autocomplete="email" placeholder="Enter your email" required>
+                                <div class="icon is-left">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <label class="field-label" for="contactPhone">Phone Number (optional)</label>
+                            <div class="control has-icons-left">
+                                <input class="input is-large" type="tel" name="phone" id="contactPhone" autocomplete="tel" placeholder="Enter your phone number">
+                                <div class="icon is-left">
+                                    <i class="fas fa-phone"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <label class="field-label" for="contactBody">Message Body</label>
+                            <div class="control">
+                                <textarea class="textarea is-large" name="message" id="contactBody" cols="30" rows="10" required placeholder="How can we help you?"></textarea>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <div class="bla-bla-bla">
+                                <label for="contactNumber">Enter Date:</label>
+                                <div class="control">
+                                    <input class="input is-large" type="date" placeholder="Enter date" name="date" id="contactDate">
+                                </div>
+                            </div>
+                        </div>            
+                        <div class="field">
+                            <input class="standardButton is-large" type="submit" value="Submit">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+{{ end }}
