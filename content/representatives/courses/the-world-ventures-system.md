@@ -62,7 +62,7 @@ file = "/v1559598894/team-all-in/inviting-scripts.pdf"
 section_heading = "Inviting Scripts"
 template = "downloadable-file"
 [[modules]]
-featured_image = "/v1559674025/team-all-in/women-whispering.jpg"
+featured_image = "/v1559679645/team-all-in/man-and-woman-on-date-sharing-drinks.jpg"
 heading = "Skill 3: Showing your Product or Opportunity to your prospect"
 title = "3) Share"
 [[modules.sections]]
@@ -118,7 +118,7 @@ section_heading = "Event Etiquette: After"
 template = "course-video"
 video_url = "https://www.youtube.com/watch?v=LhAaKBjs9n4"
 [[modules]]
-featured_image = "/v1559674025/team-all-in/women-whispering.jpg"
+featured_image = "/v1559679660/team-all-in/man-and-woman-on-date-sharing-drinks-1.jpg"
 heading = "Skill 3 (Bonus) - Useful Presentation Resource for Sharing With Others"
 title = "3.1) Resources For Sharing"
 [[modules.sections]]
