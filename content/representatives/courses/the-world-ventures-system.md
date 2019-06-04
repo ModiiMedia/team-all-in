@@ -1,7 +1,7 @@
 +++
 detailed_description = ""
 featured_image = "/v1559246828/team-all-in/world-ventures-logo.png"
-introduction = "Now that you've gotten connected with us it's time for you to begin mastering the WorldVentures System. This course will work your on seven essential skills that you will need to succeed.\n\nHere at Team All In we always work to improve together and remain positive as we push forward into the future!\n\n> Twenty years from now, I want this company to be celebrated around the world for touching every aspect of people's lives - All we have to do is stick together. As Henry Ford said \"Coming together is a start. Working together is progress. Staying together is success.\"\n>\n> \\-Wayne Nugent (WorldVentures Founder and Chief Visionary Officer)\n\n![](https://res.cloudinary.com/modii/w_800,q_60,f_auto/v1559667424/team-all-in/wayne-nugent-photo.jpg)"
+introduction = "Now that you've gotten connected with us it's time for you to begin mastering the WorldVentures System. This course will work your on seven essential skills that you will need to succeed.\n\nHere at Team All In we always work to improve together and remain positive as we push forward into the future!\n\n> Twenty years from now, I want this company to be celebrated around the world for touching every aspect of people's lives - All we have to do is stick together. As Henry Ford said \"Coming together is a start. Working together is progress. Staying together is success.\"\n>\n> \\-Wayne Nugent (WorldVentures Founder and Chief Visionary Officer)"
 short_description = "This course will help you develop seven essential skills that you will need to succeed here at WorldVentures. "
 title = "The World Ventures System"
 type = "course"
