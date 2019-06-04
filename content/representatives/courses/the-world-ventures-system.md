@@ -106,6 +106,25 @@ video_url = "https://vimeo.com/307185997"
 content = "![Examples of ways to share the opportunity](https://res.cloudinary.com/modii/w_800,q_60,f_auto/v1559674918/team-all-in/ways-to-share.png)"
 template = "text-section"
 [[modules]]
+featured_image = "/v1559674025/team-all-in/women-whispering.jpg"
+heading = "3.1) Proper Event Etiquette"
+title = "3.1) Sharing Cont."
+[[modules.sections]]
+content = "These Quickcoach videos will help you understand the proper etiquette when hosting events."
+template = "text-section"
+[[modules.sections]]
+section_heading = "Event Etiquette: Before"
+template = "course-video"
+video_url = "https://www.youtube.com/watch?v=Ezk3vmHqX3c"
+[[modules.sections]]
+section_heading = "Event Etiquette: During"
+template = "course-video"
+video_url = "https://www.youtube.com/watch?v=70Tz13FExkw"
+[[modules.sections]]
+section_heading = "Event Etiquette: After"
+template = "course-video"
+video_url = "https://www.youtube.com/watch?v=LhAaKBjs9n4"
+[[modules]]
 featured_image = ""
 sections = []
 title = "4) Enroll"
