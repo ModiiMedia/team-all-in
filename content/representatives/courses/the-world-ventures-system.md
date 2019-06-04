@@ -80,7 +80,7 @@ section_heading = "Quickcoach: 3-Step Setup"
 template = "course-video"
 video_url = "https://youtu.be/twbacwhiEvo"
 [[modules.sections]]
-content = "3-Step Setup Examples"
+content = "3 Step Setup Examples "
 template = "heading"
 [[modules.sections]]
 section_heading = "Kari & Lisha Schneider (IMDs)"
