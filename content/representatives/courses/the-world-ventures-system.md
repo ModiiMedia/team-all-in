@@ -103,7 +103,7 @@ section_heading = "Richard Cruz (Senior Rep)"
 template = "course-video"
 video_url = "https://vimeo.com/307185997"
 [[modules.sections]]
-content = "![](https://res.cloudinary.com/modii/w_800,q_60,f_auto/v1559674918/team-all-in/ways-to-share.png)"
+content = "![Examples of ways to share the opportunity](https://res.cloudinary.com/modii/w_800,q_60,f_auto/v1559674918/team-all-in/ways-to-share.png)"
 template = "text-section"
 [[modules]]
 featured_image = ""
