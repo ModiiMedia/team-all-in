@@ -139,9 +139,11 @@ function insertDownloadableFile(ob){
                     </a>
                 </div>
                 <div class="column">
-                    <h2>${ob.section_heading}</h2>
-                    <p>${ob.description}</p>
-                    <a class="standardButton is-medium" target="_blank" href="${cloudinary}${ob.file}">${ob.button_text}</a>
+                    <h2>${ob.section_heading}</h2>`
+                    if (ob.description != null){
+                html += `<p>${ob.description}</p>`
+                    }
+    html+=          `<a class="standardButton is-medium" target="_blank" href="${cloudinary}${ob.file}">${ob.button_text}</a>
                 </div>
             </div>
         </section>`
