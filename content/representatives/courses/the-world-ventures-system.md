@@ -102,6 +102,9 @@ video_url = "https://vimeo.com/307186734"
 section_heading = "Richard Cruz (Senior Rep)"
 template = "course-video"
 video_url = "https://vimeo.com/307185997"
+[[modules.sections]]
+content = "## Here are some ways you can share the opportunity\n\n![](https://res.cloudinary.com/modii/w_800,q_60,f_auto/v1559674918/team-all-in/ways-to-share.png)"
+template = "text-section"
 [[modules]]
 featured_image = ""
 sections = []
