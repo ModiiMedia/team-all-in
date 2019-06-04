@@ -1,0 +1,47 @@
+{{ define "main" }}
+    {{ $cloudinary := $.Site.Params.cloudinaryBase }}
+    {{ partial "hero-banner.html" . }}
+    <div class="section">
+        <div class="container">
+            {{ with .Content }}
+                <div class="content">
+                    {{ . }}
+                </div>
+            {{ end }}
+            <div class="appImages">
+                {{ $links := .Params.links }}
+                {{ with .Params.links }}
+                    {{ with .itunes_store }}
+                        {{ $img := resources.Get "img/apple-store-badge.svg" }}
+                        <a href="{{ . }}" target="_blank" rel="no-follow">
+                            <img src="{{ $img.RelPermalink }}" style="height: 80px">
+                        </a>
+                    {{ end }}
+                    {{ with .google_play_store }}
+                        {{ $img := resources.Get "img/google-play-badge.png" }}
+                        {{ $resized := $img.Resize "x80"}}
+                        <a href="{{ . }}" target="_blank" rel="no-follow">
+                            <img src="{{ $resized.RelPermalink }}" height="90">
+                        </a>
+                    {{ end }}
+                    {{ with .microsoft_store }}
+                        {{ $img := resources.Get "img/microsoft-store-badge.png" }}
+                        {{ $resized := $img.Resize "240x"}}
+                        <a href="{{ . }}" target="_blank" rel="no-follow">
+                            <img src="{{ $resized.RelPermalink }}" width="240">
+                        </a>
+                    {{ end }}
+                {{ end }}
+            </div>
+            {{ with .Params.photos }}
+                <div class="columns" style="margin-top: 2rem">
+                    {{ range . }}
+                    <div class="column is-narrow">
+                        <img src="{{ $cloudinary }}w_300,c_fit,q_80,f_auto{{ . }}">
+                    </div>
+                    {{ end }}
+                </div>
+            {{ end }}
+        </div>
+    </div>
+{{ end }}
