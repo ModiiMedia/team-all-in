@@ -11,7 +11,7 @@
 {{- define "main" -}}
 {{- $cloudinary := $.Site.Params.cloudinaryBase -}}
 
-    <div class="courseBackground" style="background-image: url({{ $cloudinary }}w_5,q_10{{ .Params.featured_image }}"></div>
+    <div class="courseBackground" style="background-image: url({{ $cloudinary }}w_5,q_10{{ .Params.featured_image }})"></div>
     <div class="courseWrapper" id="courseWrapper">
         <section id="courseBanner" class="heroBanner" style="background-image: url({{ $cloudinary }}w_1920,h_600,c_fill,q_90{{ .Params.featured_image }})">
             <div class="imageOverlay"></div>
