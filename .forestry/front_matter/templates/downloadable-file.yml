@@ -6,8 +6,8 @@ fields:
 - name: section_heading
   type: text
   config:
-    required: false
-  label: Section Heading
+    required: true
+  label: Filename / Section Heading
 - name: description
   type: textarea
   default: ''
@@ -22,7 +22,7 @@ fields:
 - name: file
   type: file
   config:
-    maxSize: 250
+    maxSize: '25'
   label: File
   description: This is the file that users will be able to download
 - name: button_text
