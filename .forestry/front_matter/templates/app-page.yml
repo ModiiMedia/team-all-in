@@ -45,3 +45,5 @@ fields:
 - type: image_gallery
   name: photos
   label: Photos
+pages:
+- content/apps-to-download.md
