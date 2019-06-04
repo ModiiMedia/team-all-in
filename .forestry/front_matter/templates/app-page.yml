@@ -4,20 +4,43 @@ hide_body: false
 fields:
 - type: text
   name: title
-  label: title
-- type: text
-  name: type
-  label: type
+  label: Title
+  config:
+    required: true
+- name: featured_image
+  type: file
+  config:
+    maxSize: '15'
+  label: Featured Image
+- name: type
+  type: select
+  default: app-page
+  config:
+    required: true
+    options:
+    - app-page
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Type
+  hidden: true
 - type: field_group
   name: links
-  label: links
+  label: Links
   fields:
   - type: text
     name: itunes_store
-    label: itunes_store
+    label: Itunes Store Link
   - type: text
     name: google_play_store
-    label: google_play_store
+    label: Google Play Store Link
+  - name: microsoft_store
+    type: text
+    config:
+      required: false
+    label: Microsoft Store Link
 - type: image_gallery
   name: photos
-  label: photos
+  label: Photos
