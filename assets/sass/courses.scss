@@ -1,0 +1,70 @@
+@import 'partials/variables.scss';
+
+header {
+    position: fixed;
+    z-index: 50;
+    width: 100%;
+    .courseTopHeader {
+        width: 100%;
+        max-width: 1000px;
+        margin: 0 auto;
+        background: $light-gray;
+        height: 75px;
+        box-shadow: 0px 8px 15px -10px rgba(0, 0, 0, 0.5);
+        nav {
+            height: 100%;
+            .navItem {
+                height: 100%;
+                display: inline-flex;
+                display: -ms-inline-flexbox;
+                display: -webkit-inline-flex;
+                align-items: center;
+                padding: 0 30px;
+                @media (max-width: $tablet){
+                    padding: 0 20px;
+                }
+            }
+        }
+    }
+}
+
+#mainContentWrapper {
+    // background: black;
+}
+
+#courseContent {
+    section {
+        margin: 0 auto 4rem auto;
+        max-width: 700px;
+    }
+}
+
+.courseBackground {
+    background-size: cover;
+    background-position: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0.5;
+}
+
+.courseWrapper {
+    position: relative;
+    padding-top: 75px;
+    max-width: 1000px;
+    margin: 0 auto;
+    min-height: 100vh;
+    // max-height: 100vh;
+    box-shadow: 0 0 100px rgba(0, 0, 0, 0.5);
+    // overflow-y: scroll;
+    background: white;
+    .section {
+        background: white;
+    }
+}
+
+#moduleList.hide{
+    display:none;
+}

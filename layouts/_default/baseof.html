@@ -43,7 +43,7 @@
 <!-- submit a photo modal -->
 {{ partial "submit-photo-modal.html" . }}
 
-
+<script>const cloudinary = '{{ $.Site.Params.cloudinaryBase }}'</script>
 {{- $navJs := resources.Get "js/navigation.js" -}}
 {{- $modalJs := resources.Get "js/modals.js" -}}
 {{- $js := slice $navJs $modalJs | resources.Concat "js/main.js" | resources.Minify -}}

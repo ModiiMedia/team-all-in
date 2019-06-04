@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "compile-css": "node-sass ./assets/sass/main.scss -o ./assets/css/ && node-sass ./assets/sass/gallery.scss -o ./assets/css/",
+    "compile-css": "node-sass ./assets/sass/main.scss -o ./assets/css/ && node-sass ./assets/sass/gallery.scss -o ./assets/css/ && node-sass ./assets/sass/courses.scss -o ./assets/css/",
     "watch-css": "node-sass -w ./assets/sass -o ./assets/css",
     "prestart": "npm run predeploy",
     "start": "concurrently --kill-others \"npm run watch-css\" \"hugo server\"",

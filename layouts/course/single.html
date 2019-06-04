@@ -1,14 +1,63 @@
+{{- define "addCSS" -}}
+    {{ $css := resources.Get "css/courses.css" | resources.Minify }}
+    <link rel="stylesheet" href="{{ $css.RelPermalink }}">
+{{- end -}}
+
 {{- define "header" -}}
-<!-- class header and navigation goes here -->
+    <!-- class header and navigation goes here -->
     {{ partial "course-navigation.html" . }}
 {{- end -}}
 
 {{- define "main" -}}
-<!--  -->
-{{ .Title }}
+{{- $cloudinary := $.Site.Params.cloudinaryBase -}}
+
+    <div class="courseBackground" style="background-image: url({{ $cloudinary }}w_5,q_10{{ .Params.featured_image }}"></div>
+    <div class="courseWrapper" id="courseWrapper">
+        <section id="courseBanner" class="heroBanner" style="background-image: url({{ $cloudinary }}w_1920,h_600,c_fill,q_90{{ .Params.featured_image }})">
+            <div class="imageOverlay"></div>
+            <div class="container">
+                <h1 id="courseTitle" class="welcomeText" style="text-align: left">
+                    <span class="titleText">{{ .Title }}</span>
+                </h1>
+            </div>
+        </section>
+        <main class="section">
+            <div class="container">
+                <div id="courseContent" class="content">
+                    {{- if .Params.introduction -}}
+                        {{- .Params.introduction | markdownify -}}
+                    {{- else -}}
+                        {{- .Params.short_description -}}
+                    {{- end -}}
+                </div>
+                <div id="moduleList" class="columns is-multiline">
+                    {{- range $i, $e := .Params.modules -}}
+                        <div class="column is-one-third-desktop is-half-tablet">
+                            <div data-module="{{ $i }}" class="card courseCard courseModule">
+                                <div class="card-image">
+                                    <figure class="image is-16by9{{ if not .featured_image }} icon{{ end }}">
+                                        {{- if .featured_image -}}
+                                            <img src="{{ $cloudinary }}w_460,h_260,c_fill,q_80{{ .featured_image }}">
+                                        {{- else -}}
+                                            <i class="fas fa-book-open"></i>
+                                        {{- end -}}
+                                    </figure>
+                                </div>
+                                <div class="card-content">
+                                    <h2 class="subtitle">{{ .title }}</h2>
+                                </div>
+                            </div>
+                        </div>
+                    {{- end -}}
+                </div>
+            </div>            
+        </main>
+    </div>
 {{- end -}}
 
 {{ define "addJS" }}
-    {{ $memJS := resources.Get "js/membership.js" | resources.Minify }}
-    <script src="{{ $memJS.RelPermalink }}"></script>
+    {{ $memJS := resources.Get "js/membership.js" }}
+    {{ $courseJS := resources.Get "js/course.js" }}
+    {{ $js := slice $memJS $courseJS | resources.Concat "js/course-single.js" | resources.Minify }}
+    <script src="{{ $js.RelPermalink }}"></script>
 {{ end }}

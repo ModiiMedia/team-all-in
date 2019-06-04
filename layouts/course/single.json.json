@@ -1,0 +1,28 @@
+{{- $moduleCount := len .Params.modules -}}
+{{- $site := $.Site }}
+
+{
+    "title": {{- .Title | jsonify -}},
+    "featured_image": {{ .Params.featured_image | jsonify }},
+    "modules": [
+        {{- range $i, $e := .Params.modules -}}
+        {{- $sectionCount := len .sections -}}
+        {
+            "title": {{- .title | jsonify -}},
+            "heading": {{- .heading | jsonify -}},
+            "featured_image": {{- .featured_image | jsonify -}},
+            "sections": [
+                {{- range $ii, $e := .sections -}}
+                    {{- $template := .template -}}
+                    {{- $partial := print "course-modules/" $template ".html" }}
+                    {{ if templates.Exists (print "partials/" $partial) }} 
+                        {{ partial $partial . }}
+                    {{ else }}
+                        {}
+                    {{ end }}{{- if ne $ii (sub $sectionCount 1) -}},{{- end -}}
+                {{- end -}}
+            ]
+        }{{- if ne $i (sub $moduleCount 1) -}},{{- end -}}
+        {{- end -}}
+    ]
+}

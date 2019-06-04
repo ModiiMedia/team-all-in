@@ -1,10 +1,10 @@
 {{ $cloudinary := .Cloudinary }}
-<div class="column is-one-quarter-widescreen is-one-third-desktop">
+<div class="column is-one-quarter-widescreen is-one-third-desktop is-half-tablet">
     <a class="card courseCard" href="{{ .Page.RelPermalink }}">
         <div class="card-image">
             <figure class="image is-16by9{{ if not .Page.Params.featured_image }} icon{{ end }}">
                 {{- if .Page.Params.featured_image -}}
-                    <img src="{{ $cloudinary }}w_500,h_281,c_fill,q_80{{ .Page.Params.featured_image }}">
+                    <img src="{{ $cloudinary }}w_460,h_260,c_fill,q_80{{ .Page.Params.featured_image }}">
                 {{- else -}}
                     <i class="fas fa-book-open"></i>
                 {{- end -}}
