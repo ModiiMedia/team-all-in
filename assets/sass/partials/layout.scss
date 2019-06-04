@@ -275,3 +275,19 @@ body {
 .bla-bla-bla {
     display: none;
 }
+
+.appImages {
+    .column {
+        img {
+            max-width: 100%;
+            width: 100%;
+        }
+        width: 25%;
+        @media (max-width: $tablet){
+            width: 33.33%
+        }
+        @media(max-width: $mobile){
+            width: 50%;
+        }
+    }
+}

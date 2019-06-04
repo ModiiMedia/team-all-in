@@ -8,7 +8,7 @@
                     {{ . }}
                 </div>
             {{ end }}
-            <div class="appImages">
+            <div class="appButtons">
                 {{ $links := .Params.links }}
                 {{ with .Params.links }}
                     {{ with .itunes_store }}
@@ -34,7 +34,7 @@
                 {{ end }}
             </div>
             {{ with .Params.photos }}
-                <div class="columns" style="margin-top: 2rem">
+                <div class="columns appImages is-mobile is-multiline" style="margin-top: 2rem">
                     {{ range . }}
                     <div class="column is-narrow">
                         <img src="{{ $cloudinary }}w_300,c_fit,q_80,f_auto{{ . }}">
