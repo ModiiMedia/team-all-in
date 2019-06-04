@@ -79,6 +79,29 @@ template = "text-section"
 section_heading = "Quickcoach: 3-Step Setup"
 template = "course-video"
 video_url = "https://youtu.be/twbacwhiEvo"
+[[modules.sections]]
+content = "# 3-Step Setup Examples"
+template = "text-section"
+[[modules.sections]]
+section_heading = "Kari & Lisha Schneider (IMDs)"
+template = "course-video"
+video_url = "https://vimeo.com/307136078"
+[[modules.sections]]
+section_heading = "Janie Braun (IMD)"
+template = "course-video"
+video_url = "https://vimeo.com/307136805"
+[[modules.sections]]
+section_heading = "Monique Alaniz (Director)"
+template = "course-video"
+video_url = "https://vimeo.com/307186734"
+[[modules.sections]]
+section_heading = "Steve Escamilla (Senior Rep)"
+template = "course-video"
+video_url = "https://vimeo.com/307186734"
+[[modules.sections]]
+section_heading = "Richard Cruz (Senior Rep)"
+template = "course-video"
+video_url = "https://vimeo.com/307185997"
 [[modules]]
 featured_image = ""
 sections = []
