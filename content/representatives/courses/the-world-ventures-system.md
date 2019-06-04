@@ -207,9 +207,21 @@ video_url = "https://vimeo.com/307196143"
 content = "## Personal tip:\n\n* The teaching and training portion of our business is critical.\n* Here is our best advice - this SYSTEM Online Training is meant to be a back up to your efforts with your new representative.\n* This is not meant to replace you and the RELATIONSHIP you will build with your team - this business is about building a \"family\" - it will not grow if you are not part of it\n* Use this website and our System to help duplicate your successes!"
 template = "text-section"
 [[modules]]
-featured_image = "/v1559679040/team-all-in/woman-working-on-computer.png"
-heading = "Skill 6 - Educate: Helping your new Representatives get started right"
-sections = []
-title = "6) Educate"
+featured_image = "/v1559679410/team-all-in/concert-event-large-crowd.jpg"
+heading = "Skill 7 - Promoting Events"
+title = "7) Promote Events"
+[[modules.sections]]
+content = "## Key Points\n\n* Attending events is CRITICAL to the overall success in your business\n* Don't just be an announcer - be a promoter! Let people know how important events are to their success\n* What to Promote:\n  * Team Parties​\n  * Weekly team calls\n  * Weekly live events\n  * Training Events\n* There are 4 Major Events every year, plan on attending each of them."
+template = "text-section"
+[[modules.sections]]
+section_heading = "Skill 7 - Promoting"
+template = "course-video"
+video_url = "https://vimeo.com/307279739"
+[[modules.sections]]
+content = "## Tools:\n\nWorldVentures Training Events - The \"Secret\" to Success!\n\n### Four Major Training Events - Leaders attend them all!\n\n* January - Momentum\n* April - United\n* July - Millionaire Bootcamp\n* October - The View From The Edge\n\n### Several Regional Training Events around the country\n\nMar, May, June, August, Sept, Dec​\n\n**Super Saturdays provided by Local Leaders**"
+template = "text-section"
+[[modules.sections]]
+content = "## Personal tip:\n\n* While there's no secret bullet to success in WorldVentures, **promoting** our training events and getting your teams to go WITH YOU is as close as it gets!\n* Start to plan now. Start to save now. Prepare for time off work and daycare for the kids if needed. Those representatives that attend our training events statistically make significantly more money than those that don't."
+template = "text-section"
 
 +++
