@@ -137,7 +137,7 @@ section_heading = "Spanish Version - VacationSooner.com"
 template = "course-video"
 video_url = "https://vimeo.com/307697118"
 [[modules]]
-featured_image = ""
+featured_image = "/v1559678986/team-all-in/women-whispering-to-each-ther.jpg"
 heading = "Skill 4 - Enrolling a new Member / Representative"
 title = "4) Enroll"
 [[modules.sections]]
@@ -193,12 +193,15 @@ file = "/v1559678477/team-all-in/Follow%20Up%20List%20Example.pdf"
 section_heading = "Example Follow Up List"
 template = "downloadable-file"
 [[modules]]
-featured_image = ""
+featured_image = "/v1559679040/team-all-in/woman-working-on-computer.png"
+heading = "Skill 6 - Educate: Helping your new Representatives get started right"
 sections = []
 title = "6) Educate"
 [[modules]]
 featured_image = ""
-sections = []
 title = "7) Promote Events"
+[[modules.sections]]
+content = "## Key Points:\n\n* We are going to HELP them; they are NOT on their own!\n* 5 Step Start Up\n  * Understand their \"WHY\"\n  * Schedule their Launch party\n  * Make their list\n  * Teach them how to Invite\n  * Schedule them for next training event\n* Book your next meeting with them\n* Plug then in to our team calls/webinars\n* Invite them to our Facebook pages\n* Send them to this website!\n* Teach them to do the same!"
+template = "text-section"
 
 +++
