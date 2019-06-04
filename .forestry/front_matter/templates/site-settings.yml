@@ -17,5 +17,25 @@ fields:
     config:
       maxSize: 250
     label: Favicon
+- name: contact_info
+  type: field_group
+  config: {}
+  fields:
+  - name: contact_name
+    type: text
+    config:
+      required: false
+    label: Contact Name
+  - name: email
+    type: text
+    config:
+      required: false
+    label: Email
+  - name: phone_number
+    type: text
+    config:
+      required: false
+    label: Phone Number
+  label: Contact Info
 pages:
 - data/site_settings.yaml
