@@ -1,0 +1,23 @@
+---
+label: App Page
+hide_body: false
+fields:
+- type: text
+  name: title
+  label: title
+- type: text
+  name: type
+  label: type
+- type: field_group
+  name: links
+  label: links
+  fields:
+  - type: text
+    name: itunes_store
+    label: itunes_store
+  - type: text
+    name: google_play_store
+    label: google_play_store
+- type: image_gallery
+  name: photos
+  label: photos
