@@ -64,7 +64,7 @@ template = "downloadable-file"
 [[modules]]
 featured_image = "/v1559674025/team-all-in/women-whispering.jpg"
 heading = "Skill 3: Showing your Product or Opportunity to your prospect"
-title = "3) Share - Part 1"
+title = "3) Share"
 [[modules.sections]]
 content = "## Key Points:\n\n* Before EVERY presentation, do your 3 Step Set Up\n* Watch Quick Coach - 3 Step Set Up\n* Watch 3 Step Set Up examples\n* Many ways to present\n* Use a 3rd Party Expert\n* Edify your expert / presenter (See Quick Coach - Edification)\n* Follow Travel Party / Presentation Etiquiette - See Quick Coaches on Metting Etiquette"
 template = "text-section"
