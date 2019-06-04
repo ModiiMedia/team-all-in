@@ -173,7 +173,8 @@ file = "/v1559677650/team-all-in/income-disclosure-statement.pdf"
 section_heading = "Income Disclosure Statement"
 template = "downloadable-file"
 [[modules]]
-featured_image = ""
+featured_image = "/v1559678827/team-all-in/woman-smiling-at-man.jpg"
+heading = "Skill 5 - Follow up with your Prospects"
 title = "5) Follow Up"
 [[modules.sections]]
 content = "## Key Points:\n\n* Not everyone will say yes right away\n* No doesn't mean no, just means not now\n* The fortune is in the follow up!\n* Keep a list of all the people you show - when did you show them and what did they say?\n* Set a time with them for when you should follow up\n* Shop the app!\n* Turn one app into two or more"
