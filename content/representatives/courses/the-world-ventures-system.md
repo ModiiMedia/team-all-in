@@ -174,8 +174,23 @@ section_heading = "Income Disclosure Statement"
 template = "downloadable-file"
 [[modules]]
 featured_image = ""
-sections = []
 title = "5) Follow Up"
+[[modules.sections]]
+content = "## Key Points:\n\n* Not everyone will say yes right away\n* No doesn't mean no, just means not now\n* The fortune is in the follow up!\n* Keep a list of all the people you show - when did you show them and what did they say?\n* Set a time with them for when you should follow up\n* Shop the app!\n* Turn one app into two or more"
+template = "text-section"
+[[modules.sections]]
+section_heading = "Skill 5 - Follow Up"
+template = "course-video"
+video_url = "https://vimeo.com/307190296"
+[[modules.sections]]
+content = "## Personal tip:\n\n* Follow up with everyone the next day - thank them for taking a look and let them know you'll stay in touch\n* Your consistent follow up will MAKE your business!"
+template = "text-section"
+[[modules.sections]]
+button_text = "Download Example List"
+description = "This document is an example of a follow up list that you can use for reference when creating your own. We recommend creating a spreadsheet in Excel or Google docs to help you stay organized."
+file = "/v1559678477/team-all-in/Follow%20Up%20List%20Example.pdf"
+section_heading = "Example Follow Up List"
+template = "downloadable-file"
 [[modules]]
 featured_image = ""
 sections = []
