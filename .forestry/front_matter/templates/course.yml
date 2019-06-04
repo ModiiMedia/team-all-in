@@ -91,6 +91,7 @@ fields:
     label: Sections
     template_types:
     - text-section
+    - heading
     - course-video
     - downloadable-file
     config:
