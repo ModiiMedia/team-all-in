@@ -26,7 +26,7 @@ function getModuleData(num){
 
 // pass course object and module object into function
 function openModule(course, module){
-    
+    scrollToTop();
     // change banner image
     if (module.featured_image){
         cBanner.style = `background-image: url(${cloudinary}w_1920,h_600,c_fill,q_90${module.featured_image})`
@@ -48,39 +48,91 @@ function openModule(course, module){
     cBackLink.href = location.pathname
     cBackLinkText.innerHTML = `${course.title}`
 
-    // change content
+
+    ///// INSERTING MODULE CONTENT ////////
+    // erase old content
     cContent.innerHTML = ''
+    // hide module list
     cModuleList.classList.add("hide")
+    // insert module sections
     let sections = module.sections
     for(let i = 0; i < sections.length; i++){
-        let sec = sections[i]
-        switch(sec.template){
+        let section = sections[i]
+        switch(section.template){
+            // a new case must be added for each section template
             case "text-section":
-                insertTextSection(sec);
+                cContent.innerHTML += insertTextSection(section);
                 break;
             case "course-video":
-                insertVideoSection(sec);
+                cContent.innerHTML += insertVideoSection(section);
                 break;
             case "downloadable-file":
+                cContent.innerHTML += insertDownloadableFile(section);
+                break;
             default:
-                cContent.innerHTML += `Section Type Not Found`
+                // error message when section template does not exit
+                cContent.innerHTML += `
+                <section class="error">
+                    ERROR:<br>Section template for <strong><em> "${section.template}" </em></strong> does not exist. Please contact your webmaster.<br><br>
+                    <div style="font-size: 0.8rem">New section JSON templates must be added to "layouts/partials/course-modules/" 
+                    and then inserted with the openModule() function in "assets/js/course.js" (see note about inserting module content)</div>
+                </section>`
+                break;
         }
     }
 
 }
 
-// inserting module content
+function scrollToTop(){
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
 
+// section template functions. They accept objects containing template information. Object JSON templates are created in "layouts/partials/course-modules/"
 function insertTextSection(ob){
-    cContent.innerHTML += `<section>${ob.content}</section>`
+    let html = `<section>${ob.content}</section>`
+    return html
 }
 
 function insertVideoSection(ob){
-    cContent.innerHTML += `
+    let html = `
         <section>
             <h2>${ob.section_heading}</h2>
             <div class="iframeContainer">
                 ${ob.video.embed_code}
             </div>
             </section>`
+    return html
+}
+
+function insertDownloadableFile(ob){
+    let fileName = ob.file_name.substring(13)
+    let html = `
+        <section>
+            <div class="columns is-variable is-5 fileColumns">
+                <div class="column is-two-fifths">
+                    <a href="${cloudinary}${ob.file}" target="_blank">
+                        <div class="file-preview">`
+    if(ob.file.includes(".pdf")){
+        html += `           <i class="fas fa-file-pdf"></i>`
+    }
+    else if (ob.file.includes(".jpg") || ob.file.includes(".png")){
+        html += `           <i class="fas fa-image"></i>`
+    } 
+    else {
+        html += `           <i class="fas fa-file"></i>`
+    }
+
+    html += `               <div class="file-preview-name">${fileName}</div>
+                        </div>
+                    </a>
+                </div>
+                <div class="column">
+                    <h2>${ob.section_heading}</h2>
+                    <p>${ob.description}</p>
+                    <a class="standardButton is-medium" target="_blank" href="${cloudinary}${ob.file}">${ob.button_text}</a>
+                </div>
+            </div>
+        </section>`
+    return html
 }

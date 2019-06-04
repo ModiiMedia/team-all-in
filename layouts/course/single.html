@@ -16,40 +16,46 @@
         <section id="courseBanner" class="heroBanner" style="background-image: url({{ $cloudinary }}w_1920,h_600,c_fill,q_90{{ .Params.featured_image }})">
             <div class="imageOverlay"></div>
             <div class="container">
-                <h1 id="courseTitle" class="welcomeText" style="text-align: left">
-                    <span class="titleText">{{ .Title }}</span>
-                </h1>
+                <section>
+                    <h1 id="courseTitle" class="welcomeText" style="text-align: left">
+                        <span class="titleText">{{ .Title }}</span>
+                    </h1>            
+                </section>
             </div>
         </section>
         <main class="section">
             <div class="container">
                 <div id="courseContent" class="content">
-                    {{- if .Params.introduction -}}
-                        {{- .Params.introduction | markdownify -}}
-                    {{- else -}}
-                        {{- .Params.short_description -}}
-                    {{- end -}}
+                    <section>
+                        {{- if .Params.introduction -}}
+                            {{- .Params.introduction | markdownify -}}
+                        {{- else -}}
+                            {{- .Params.short_description -}}
+                        {{- end -}}    
+                    </section>
                 </div>
-                <div id="moduleList" class="columns is-multiline">
-                    {{- range $i, $e := .Params.modules -}}
-                        <div class="column is-one-third-desktop is-half-tablet">
-                            <div data-module="{{ $i }}" class="card courseCard courseModule">
-                                <div class="card-image">
-                                    <figure class="image is-16by9{{ if not .featured_image }} icon{{ end }}">
-                                        {{- if .featured_image -}}
-                                            <img src="{{ $cloudinary }}w_460,h_260,c_fill,q_80{{ .featured_image }}">
-                                        {{- else -}}
-                                            <i class="fas fa-book-open"></i>
-                                        {{- end -}}
-                                    </figure>
-                                </div>
-                                <div class="card-content">
-                                    <h2 class="subtitle">{{ .title }}</h2>
+                <section>
+                    <div id="moduleList" class="columns is-multiline">
+                        {{- range $i, $e := .Params.modules -}}
+                            <div class="column is-one-third-desktop is-half-tablet">
+                                <div data-module="{{ $i }}" class="card courseCard courseModule">
+                                    <div class="card-image">
+                                        <figure class="image is-16by9{{ if not .featured_image }} icon{{ end }}">
+                                            {{- if .featured_image -}}
+                                                <img src="{{ $cloudinary }}w_460,h_260,c_fill,q_80{{ .featured_image }}">
+                                            {{- else -}}
+                                                <i class="fas fa-book-open"></i>
+                                            {{- end -}}
+                                        </figure>
+                                    </div>
+                                    <div class="card-content">
+                                        <h2 class="subtitle">{{ .title }}</h2>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    {{- end -}}
-                </div>
+                        {{- end -}}
+                    </div>
+                </section>
             </div>            
         </main>
     </div>

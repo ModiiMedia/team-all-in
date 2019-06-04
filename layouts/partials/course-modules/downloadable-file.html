@@ -3,5 +3,6 @@
     "description": {{ .description | jsonify }},
     "button_text": {{ .button_text | jsonify }},
     "file": {{ .file | jsonify }},
+    "file_name": {{ replace .file "team-all-in/" "" | jsonify  }},
     "template": {{ .template | jsonify }}
 }

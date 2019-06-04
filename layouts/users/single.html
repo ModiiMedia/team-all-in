@@ -18,7 +18,8 @@
     </section>
     <section class="section">
         <div class="container">
-            <p style="font-size: 1.1rem; margin-bottom:4rem; line-height: 180%;">If any of this information is incorrect or out of date contact Linda Muth at (850)525-7547 or lovegolfing3@gmail.com</p>
+            {{ $settings := $.Site.Data.site_settings }}
+            <div class="content" style="font-size: 1.1rem; margin-bottom:4rem; line-height: 180%;">{{ $settings.representatives.user_profile_message | markdownify }}</div>
             <div class="columns is-mobile">
                 <div class="column is-one-fifth-tablet is-one-third-mobile userProfileImage">
                     <figure class="image is-1by1 {{ if not .Params.profile_photo }} icon{{- end -}}">
