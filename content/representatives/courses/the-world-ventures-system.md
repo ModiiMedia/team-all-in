@@ -193,13 +193,9 @@ file = "/v1559678477/team-all-in/Follow%20Up%20List%20Example.pdf"
 section_heading = "Example Follow Up List"
 template = "downloadable-file"
 [[modules]]
-featured_image = "/v1559679040/team-all-in/woman-working-on-computer.png"
+featured_image = "/v1559679164/team-all-in/woman-working-on-computer-1.png"
 heading = "Skill 6 - Educate: Helping your new Representatives get started right"
-sections = []
 title = "6) Educate"
-[[modules]]
-featured_image = ""
-title = "7) Promote Events"
 [[modules.sections]]
 content = "## Key Points:\n\n* We are going to HELP them; they are NOT on their own!\n* 5 Step Start Up\n  * Understand their \"WHY\"\n  * Schedule their Launch party\n  * Make their list\n  * Teach them how to Invite\n  * Schedule them for next training event\n* Book your next meeting with them\n* Plug then in to our team calls/webinars\n* Invite them to our Facebook pages\n* Send them to this website!\n* Teach them to do the same!"
 template = "text-section"
@@ -210,5 +206,10 @@ video_url = "https://vimeo.com/307196143"
 [[modules.sections]]
 content = "## Personal tip:\n\n* The teaching and training portion of our business is critical.\n* Here is our best advice - this SYSTEM Online Training is meant to be a back up to your efforts with your new representative.\n* This is not meant to replace you and the RELATIONSHIP you will build with your team - this business is about building a \"family\" - it will not grow if you are not part of it\n* Use this website and our System to help duplicate your successes!"
 template = "text-section"
+[[modules]]
+featured_image = "/v1559679040/team-all-in/woman-working-on-computer.png"
+heading = "Skill 6 - Educate: Helping your new Representatives get started right"
+sections = []
+title = "6) Educate"
 
 +++
