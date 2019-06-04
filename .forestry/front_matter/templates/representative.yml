@@ -11,7 +11,7 @@ fields:
 - name: customer_id
   type: text
   config:
-    required: false
+    required: true
   label: Customer Id
 - type: text
   name: email
