@@ -8,6 +8,8 @@ links:
 photos:
 - "/v1559665412/team-all-in/app-photo-1.png"
 - "/v1559665584/team-all-in/app-photo-2-2.webp"
+- "/v1559666075/team-all-in/app-photo-3.webp"
+- "/v1559666076/team-all-in/app-photo-4.webp"
 featured_image: "/v1559445909/team-all-in/mobile-phone-photo.jpg"
 
 ---
