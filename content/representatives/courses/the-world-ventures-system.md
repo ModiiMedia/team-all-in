@@ -138,8 +138,40 @@ template = "course-video"
 video_url = "https://vimeo.com/307697118"
 [[modules]]
 featured_image = ""
-sections = []
+heading = "Skill 4 - Enrolling a new Member / Representative"
 title = "4) Enroll"
+[[modules.sections]]
+content = "## Key Points:​​\n\n* Are you ready to get started with me?\n* Wait for their answer! Do NOT re-present!\n* Listen - wait for them to say something!\n* Answer their questions\n* Don't overwhelm them\n* Use a 3rd Party expert\n* Set up follow up appointment if needed\n* Not everyone will say yes, AND THAT'S OK - on to the next person on your list\n* We're looking for people who are looking for us!"
+template = "text-section"
+[[modules.sections]]
+section_heading = "Skill 4 - Enrolling"
+template = "course-video"
+video_url = "https://vimeo.com/307189872"
+[[modules.sections]]
+content = "## Personal tip:\n\n* Not everyone is ready for this opportunity - help them get comfortable with this \"idea\" and show them you would love for them to join you, but you don't need them - you're doing this \"with or without them\"\n* Here is what we have found...the majority of people that see this information are a bit overwhelmed - but excited about what they just saw! They might not jump on board right away, but inside they are jumping for joy in hopes that this is really as good as it seems!\n* It is crucial you don't try and explain ALL OF THE BENEFITS after the presentation; we have shown them enought to make the decision. Providing them with too much information causes them to feel they can't make the decision."
+template = "text-section"
+[[modules.sections]]
+section_heading = "Quickcoach: Closing Fundamentals"
+template = "course-video"
+video_url = "https://www.youtube.com/watch?v=3eYjhFin9o8"
+[[modules.sections]]
+content = "Important Forms"
+template = "heading"
+[[modules.sections]]
+button_text = "Download File"
+file = "/v1559677608/team-all-in/membership-application-form-usa.pdf"
+section_heading = "Membership Application Form"
+template = "downloadable-file"
+[[modules.sections]]
+button_text = "Download File"
+file = "/v1559677636/team-all-in/representative-agreement-usa.pdf"
+section_heading = "Representative Agreement"
+template = "downloadable-file"
+[[modules.sections]]
+button_text = "Download File"
+file = "/v1559677650/team-all-in/income-disclosure-statement.pdf"
+section_heading = "Income Disclosure Statement"
+template = "downloadable-file"
 [[modules]]
 featured_image = ""
 sections = []
