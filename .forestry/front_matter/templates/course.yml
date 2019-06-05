@@ -95,7 +95,7 @@ fields:
     - course-video
     - downloadable-file
     config:
-      min: 
+      min: '1'
       max: 
   config:
     min: 
