@@ -18,7 +18,5 @@ description = "Will definitely change your view on suicide and its usefulness."
 file = "/v1559445846/team-all-in/group-in-the-pool.jpg"
 section_heading = "Dont do it kids.jpg"
 template = "downloadable-file"
-[[modules]]
-[[modules]]
 
 +++
