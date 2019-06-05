@@ -56,5 +56,8 @@ content = "## Personal tip:\n\nPeople ask leaders all the time, what are the sec
 template = "text-section"
 [[modules]]
 title = "3) How Do I Get Paid"
+[[modules.sections]]
+content = "Test"
+template = "text-section"
 
 +++
