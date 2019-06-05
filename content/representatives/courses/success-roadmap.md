@@ -1,22 +1,25 @@
 +++
-featured_image = "/v1558997362/team-all-in/1-fun-on-the-riverwalk.jpg"
-introduction = "Sad. (don't be)"
-short_description = "how to be succesful"
-title = "Never be sucessful "
-type = "course"
 draft = true
+featured_image = "/v1559368558/team-all-in/team-collaborrating.jpg"
+introduction = "## Congratulations!! You've completed the 1st step to achieving success!\n\nNow you're ready for our more advanced course, where we will create a roadmap for your success. This course will work to 1) build your belief 2) help you fully understand WorldVenture's compensation plan 3) help you develop on a personal level to become a successful entrepreneur"
+short_description = ""
+title = "Success Roadmap"
+type = "course"
 [restriction_settings]
-access_list = ["users/guest-user.md", "users/70050408.md", "users/71387985.md", "users/66100470.md", "users/71387634.md", "users/63737280.md", "users/71387493.md", "users/60585750.md"]
+access_list = ["users/300050866.md", "users/67501389.md", "users/299383555.md"]
 restrict_access = true
 [[modules]]
-featured_image = "/v1559253564/team-all-in/airplane-clouds-sunset.jpg"
-heading = "When will YOU finally decide to wake up from the nightmare that is your existence?"
-title = "Waking up alive again?"
+featured_image = "/v1559707569/team-all-in/blueprint-thumbnail.jpg"
+heading = "Video Portal 1 - Video Walkthrough of Blueprint"
+title = "1) Blueprint Walkthrough"
 [[modules.sections]]
-button_text = "Dont wait. Do it today."
-description = "Will definitely change your view on suicide and its usefulness."
-file = "/v1559445846/team-all-in/group-in-the-pool.jpg"
-section_heading = "Dont do it kids.jpg"
-template = "downloadable-file"
+content = "## Key Points:\n\n* Take this training serious, it is your continuous education.\n* Develop your Goals.\n* Discover your Why.\n* Learn critical details about the first few weeks of your business."
+template = "text-section"
+[[modules.sections]]
+section_heading = "Video Tutorial:"
+template = "course-video"
+video_url = "https://www.youtube.com/watch?v=EPQA_wjIKpc"
+[[modules]]
+[[modules]]
 
 +++
