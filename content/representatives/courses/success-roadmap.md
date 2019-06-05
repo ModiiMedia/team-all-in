@@ -1,5 +1,4 @@
 +++
-draft = true
 featured_image = "/v1558997362/team-all-in/1-fun-on-the-riverwalk.jpg"
 introduction = "Sad. (don't be)"
 short_description = "how to be succesful"
