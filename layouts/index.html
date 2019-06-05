@@ -30,7 +30,7 @@
                 {{ $href := .RelPermalink }}
                 {{ range $i, $e := first 3 .Params.videos }}
                 <div class="column is-one-third">
-                        <a href="{{ $href }}?modal=open&item={{ $i }}" class="card videoGalleryItem">
+                        <a href="{{ $href }}#item={{ $i }}" class="card videoGalleryItem">
                             <div class="card-image">
                                 <figure class="image is-16by9">
                                     {{- if in .url "vimeo" -}}

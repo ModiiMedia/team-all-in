@@ -5,6 +5,19 @@ let cContent = document.querySelector("#courseContent");
 let cModuleList = document.querySelector("#moduleList");
 let cBackLink = document.querySelector("#courseBackLink");
 let cBackLinkText = document.querySelector("#goBackText")
+let moduleNav = document.querySelector("#moduleNavigation");
+let nextButton = document.querySelector("#nextModule");
+let previousButton = document.querySelector("#previousModule");
+let moduleNavItems = document.querySelectorAll(".navItem.arrow");
+
+// for(let i = 0; i < moduleNavItems.length; i++){
+//     let arrow = moduleNavItems[i]
+//     arrow.addEventListener("click", function(){
+//         let d = arrow.dataset.module
+//         let relPerm = location.pathname
+//         window.history.pushState(`Module ${d}`, `${relPerm}#item=${d}`)
+//     })
+// }
 
 for(let i = 0; i < courseModules.length; i++){
     let course = courseModules[i]
@@ -19,14 +32,16 @@ function getModuleData(num){
     req.open("GET", `${location.pathname}index.json`);
     req.addEventListener("load", function(){
         let data = JSON.parse(this.responseText);
-        openModule(data, data.modules[num])
+        openModule(data, data.modules[num], num)
     })
     req.send();
 }
 
 // pass course object and module object into function
-function openModule(course, module){
+function openModule(course, module, moduleNum){
+    setModuleNavigation(moduleNum)
     scrollToTop();
+    moduleNav.classList.add("show");
     // change banner image
     if (module.featured_image){
         cBanner.style = `background-image: url(${cloudinary}w_1920,h_600,c_fill,q_90${module.featured_image})`
@@ -148,4 +163,40 @@ function insertDownloadableFile(ob){
             </div>
         </section>`
     return html
+}
+
+function setModuleNavigation(num){
+    for(let i = 0; i < moduleNavItems.length; i++){
+        moduleNavItems[i].classList.remove("hide")
+    }
+    if(Number(num) === 0){
+        previousButton.classList.add("hide")
+    }
+    else if (Number(num) === courseModules.length - 1){
+        nextButton.classList.add("hide");
+    }
+
+    if(Number(num) > 0){
+        previousButton.href = `#item=${Number(num) - 1}`
+    } else {
+        previousButton.href = ``;
+    }
+    if(Number(num) < courseModules.length){
+        nextButton.href = `#item=${Number(num) + 1}`;
+    } else {
+        nextButton.href = ``;
+    }
+}
+
+function checkUrlParams(){
+    let hash = window.location.hash
+    if (hash){
+        let num = Number(hash.replace("#item=", ""))
+        getModuleData(num)
+    }
+}
+
+checkUrlParams();
+window.onhashchange = function(){
+    checkUrlParams();
 }

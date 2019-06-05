@@ -148,7 +148,7 @@
             next.dataset.video = Number(videoNum) + 1
         }
 
-        window.history.pushState('Video ' + videoNum, currentVid.title, '{{ .RelPermalink }}' + '?model=open&item=' + videoNum)
+        window.history.pushState('Video ' + videoNum, currentVid.title, '{{ .RelPermalink }}' + '#item=' + videoNum)
     }
 
     function closeVideo(){
@@ -164,6 +164,22 @@
             navButtons[i].classList.remove('hide')
             navButtons[i].dataset.video = ''
         }
+    }
+
+    function checkUrlParams(){
+        let itemNum
+        let params = window.location.hash;
+        if (params){
+            itemNum = Number(params.replace("#item=", ""))
+            openVideo(itemNum);
+        } else {
+            closeVideo();
+        }
+    }
+
+    checkUrlParams();
+    window.onhashchange = function(){
+        checkUrlParams();
     }
 </script>
 {{ if eq .Section "representatives" }}
