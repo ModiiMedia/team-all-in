@@ -19,6 +19,24 @@ template = "text-section"
 section_heading = "Video Tutorial:"
 template = "course-video"
 video_url = "https://www.youtube.com/watch?v=EPQA_wjIKpc"
+[[modules.sections]]
+content = "## Personal tip:\n\nLeaders will always stress the importance of writing down your goals, discovering your why, developing new daily habits and creating a plan to execute if you are serious about building a serious income with your business.\n\nDon't take this information lightly, it is years of experience, trial and error and advice wrapped into a short video tutorial."
+template = "text-section"
+[[modules.sections]]
+content = "Tools"
+template = "heading"
+[[modules.sections]]
+button_text = "Download File"
+description = "This worksheet will help you develop clear goals and establish the why of your business."
+file = "/v1559709235/team-all-in/entrepreneur-blueprint-worksheet.pdf"
+section_heading = "Your Entrepreneur Blueprint"
+template = "downloadable-file"
+[[modules.sections]]
+button_text = "Download File"
+description = "This worksheet will help you develop you weekly business plan. It's important to establish a clear Daily Method of Operation (DMO)"
+file = "/v1559709342/team-all-in/dmo-sheet.pdf"
+section_heading = "DMO Worksheet"
+template = "downloadable-file"
 [[modules]]
 [[modules]]
 
