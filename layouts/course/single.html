@@ -38,7 +38,7 @@
                     <div id="moduleList" class="columns is-multiline">
                         {{- range $i, $e := .Params.modules -}}
                             <div class="column is-one-third-desktop is-half-tablet">
-                                <div data-module="{{ $i }}" class="card courseCard courseModule">
+                                <a href="#item={{ $i }}" data-module="{{ $i }}" class="card courseCard courseModule">
                                     <div class="card-image">
                                         <figure class="image is-16by9{{ if not .featured_image }} icon{{ end }}">
                                             {{- if .featured_image -}}
@@ -51,7 +51,7 @@
                                     <div class="card-content">
                                         <h2 class="subtitle">{{ .title }}</h2>
                                     </div>
-                                </div>
+                                </a>
                             </div>
                         {{- end -}}
                     </div>

@@ -10,22 +10,12 @@ let nextButton = document.querySelector("#nextModule");
 let previousButton = document.querySelector("#previousModule");
 let moduleNavItems = document.querySelectorAll(".navItem.arrow");
 
-// for(let i = 0; i < moduleNavItems.length; i++){
-//     let arrow = moduleNavItems[i]
-//     arrow.addEventListener("click", function(){
-//         let d = arrow.dataset.module
-//         let relPerm = location.pathname
-//         window.history.pushState(`Module ${d}`, `${relPerm}#item=${d}`)
-//     })
-// }
-
-for(let i = 0; i < courseModules.length; i++){
-    let course = courseModules[i]
-    let courseNum = Number(course.dataset.module)
-    courseModules[i].addEventListener("click", function(){
-        getModuleData(courseNum);
-    })
+window.onhashchange = function(){
+    checkUrlParams();
+    restoreDefault();
 }
+
+checkUrlParams();
 
 function getModuleData(num){
     let req = new XMLHttpRequest();
@@ -196,7 +186,9 @@ function checkUrlParams(){
     }
 }
 
-checkUrlParams();
-window.onhashchange = function(){
-    checkUrlParams();
+function restoreDefault(){
+    let hash = window.location.hash
+    if (!hash){
+        window.location = window.location.pathname
+    }
 }
