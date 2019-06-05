@@ -4,6 +4,7 @@ introduction = "Sad. (don't be)"
 short_description = "how to be succesful"
 title = "Never be sucessful "
 type = "course"
+draft = true
 [restriction_settings]
 access_list = ["users/guest-user.md", "users/70050408.md", "users/71387985.md", "users/66100470.md", "users/71387634.md", "users/63737280.md", "users/71387493.md", "users/60585750.md"]
 restrict_access = true
