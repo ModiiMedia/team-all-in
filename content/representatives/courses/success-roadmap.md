@@ -5,7 +5,7 @@ short_description = ""
 title = "Success Roadmap - Your Advanced Training"
 type = "course"
 [restriction_settings]
-access_list = ["users/300050866.md", "users/67501389.md", "users/299383555.md"]
+access_list = []
 restrict_access = true
 [[modules]]
 featured_image = "/v1559707569/team-all-in/blueprint-thumbnail.jpg"
