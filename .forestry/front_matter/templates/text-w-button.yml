@@ -12,6 +12,11 @@ fields:
     schema:
       format: markdown
   label: Content
+- name: background_image
+  type: file
+  config:
+    maxSize: '10'
+  label: Background Image
 - name: show_button
   type: boolean
   label: Show Button
