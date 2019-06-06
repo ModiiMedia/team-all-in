@@ -25,7 +25,7 @@ fields:
 - name: featured_image
   type: file
   config:
-    maxSize: 250
+    maxSize: '5'
   label: Featured Image
 - name: photos
   type: field_group_list
@@ -47,7 +47,7 @@ fields:
   - name: url
     type: file
     config:
-      maxSize: 250
+      maxSize: '5'
     label: Photo
   config:
     min: 
