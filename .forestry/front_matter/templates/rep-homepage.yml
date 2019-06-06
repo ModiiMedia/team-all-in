@@ -30,7 +30,8 @@ fields:
 - name: sections
   type: blocks
   label: Sections
-  template_types: []
+  template_types:
+  - text-w-button
   config:
     min: 
     max: 
