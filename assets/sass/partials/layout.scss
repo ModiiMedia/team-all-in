@@ -292,3 +292,28 @@ body {
         }
     }
 }
+
+.sections {
+    .section {
+        background-size: cover;
+        background-position: center;
+        position: relative;
+        background-repeat: no-repeat;
+        font-size: 1.5rem;
+        @media (max-width: $tablet){
+            font-size: 1.2rem;
+        }
+    }
+    .section.light {
+        .imageOverlay {
+            background: white;
+        }
+    }
+    .section.dark {
+        background-color: $dark-gray;
+        color: white;
+        * {
+            color: white;
+        }
+    }
+}

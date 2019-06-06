@@ -62,6 +62,10 @@
     {{ partial "course-module-navigation.html" . }}
 {{- end -}}
 
+{{ define "footer" }}
+<!-- no footer on course pages -->
+{{ end }}
+
 {{ define "addJS" }}
     {{ $memJS := resources.Get "js/membership.js" }}
     {{ $courseJS := resources.Get "js/course.js" }}

@@ -1,0 +1,45 @@
+footer {
+    background: #111111;
+    color: white;
+    padding: 4rem 0;
+    .companyName {
+        font-size: 3rem;
+        font-weight: bolder;
+        height: 100%;
+        display: flex;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        align-items: flex-start;
+        flex-direction: column;
+        -ms-flex-direction: column;
+        justify-content: center;
+    }
+    .copyright {
+        font-weight: 400;
+        margin-top: -.2rem;
+        font-size: 0.9rem;
+        // justify-content: flex-end;
+    }
+    .navItem {
+        color: white;
+    }
+    nav {
+        margin: 0 -1.2rem;
+        text-align: right;
+        @media (max-width: $tablet){
+            text-align: left;
+        }
+    }
+    .usefulLinks {
+        font-weight: bold;
+        font-size: 2rem;
+        text-align: right;
+        span {
+            border-bottom: 2px solid $primary;
+        }
+        @media (max-width: $tablet){
+            text-align: left;
+            margin-top: 2rem;
+        }
+    }
+}

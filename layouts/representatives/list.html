@@ -2,6 +2,55 @@
     {{ partial "header.html"  (dict "Page" . "Site" $.Site "Nav" "representative") }}
 {{- end -}}
 
+{{ define "main" }}
+{{ $cloudinary := $.Site.Params.cloudinaryBase }}
+    <style>.heroBanner.homepageHero {line-height: 120%}</style>
+    {{ with .Params.banner }}
+        <section class="heroBanner homepageHero"
+            {{- with .background_image -}}
+                style="background-image:url({{ $cloudinary }}w_1920,h_800,q_80,f_auto,c_fill{{ . }});"
+            {{- end -}}
+        >
+            <div class="imageOverlay"></div>
+            <div class="container">
+                <h1 class="welcomeText">{{ .top_text_small }}<br><span class="titleText">{{ .top_text_large }}</span></h1>
+                {{ if .video }}
+                    <div class="container" style="max-width: 800px; margin: 3rem auto;">
+                        {{ with .video.url }}
+                            {{- $jsonURL := print "https://vimeo.com/api/oembed.json?url=" . "&width=640" -}}
+                            {{- $json := getJSON $jsonURL -}}
+                            <div class="iframeContainer">
+                                {{ $embed := replace $json.html "?app_id" "?title=0&byline=0&app_id" }}
+                                {{ $embed | safeHTML }}
+                            </div>            
+                        {{ end }}
+                    </div>
+                    {{ .video.slogan }}
+                {{ end }}
+            </div>
+        </section>
+    {{ end }}
+    <div class="sections">
+        {{ range $i, $e := .Params.sections }}
+            <section class="section
+                {{- if modBool $i 2 }} light{{ else }} dark{{ end }}"
+                {{- with .background_image }} style="background-image: url({{ $cloudinary }}w_1920,q_60,f_auto{{ . }})"{{ end -}}
+            >
+                <div class="imageOverlay"></div>
+                <div class="container">
+                    <div class="content">
+                        {{ .content | markdownify }}
+                    </div>
+                    {{ if .show_button }}
+                        <a href="{{ .button_link }}" class="standardButton is-large" style="margin-top: .5em;">{{ .button_text }}</a>
+                    {{ end }}
+                </div>
+            </section>
+        {{ end }}
+    </div>
+
+{{ end }}
+
 {{- define "addJS" -}}
     {{ $memJs := resources.Get "js/membership.js" | resources.Minify }}
     <script src="{{ $memJs.RelPermalink }}"></script>

@@ -1,7 +1,8 @@
 ---
 title: Rep Zone
 banner:
-  heading: Welcome to WorldVentures and Team "All In"
+  top_text_small: Welcome to WorldVentures &
+  top_text_large: Team "All In"
   video:
     url: https://vimeo.com/309296816
     slogan: This business is all about duplication. Learn the System and duplicate
