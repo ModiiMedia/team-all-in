@@ -1,10 +1,13 @@
 +++
 detailed_description = ""
-featured_image = "/v1558466492/team-all-in/runner-at-the-starting-line.jpg"
+featured_image = ""
 introduction = ""
-short_description = "In this course you will start your journey as a Team All In Rep. Before you can start learning all the skills you need to be a representative you need to get connected with our team. Follow the steps below to get connected. "
-title = "Getting Started"
+short_description = "Begin your success journey as a Team All In Rep. Before you start on this journey, we need to get you connected to our team! Complete the steps below to get connected."
+title = "Getting Connected"
 type = "course"
+[restriction_settings]
+access_list = []
+restrict_access = false
 [[modules]]
 featured_image = "/v1558467161/team-all-in/texting-photo.jpg"
 heading = ""
