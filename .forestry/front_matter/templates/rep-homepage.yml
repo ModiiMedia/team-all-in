@@ -21,6 +21,7 @@ fields:
     config:
       required: false
     label: Video
+    description: 'Paste the video url here. It should look something like this: https://vimeo.com/<some-number-here>'
   - name: background_image
     type: file
     config:
