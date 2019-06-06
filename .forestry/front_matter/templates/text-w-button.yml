@@ -27,18 +27,8 @@ fields:
   label: Button Text
   default: Learn More
 - name: button_link
-  type: select
-  default: []
+  type: text
   config:
     required: false
-    options:
-    - representatives/_index.md
-    - representatives/leader-videos.md
-    - representatives/courses/_index.md
-    source:
-      type: simple
-      section: ''
-      file: 
-      path: ''
   label: Button Link
-  description: What page do you want the button to link to?
+  description: Paste the URL of the page you want to link to.
