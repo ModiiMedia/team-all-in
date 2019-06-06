@@ -1,4 +1,36 @@
 ---
 label: Rep Homepage
 hide_body: true
-fields: []
+fields:
+- name: title
+  type: text
+  config:
+    required: false
+  label: Title
+- name: banner
+  type: field_group
+  config: {}
+  fields:
+  - name: heading
+    type: text
+    config:
+      required: false
+    label: Heading
+  - name: video
+    type: text
+    config:
+      required: false
+    label: Video
+  - name: background_image
+    type: file
+    config:
+      maxSize: '10'
+    label: Background Image
+  label: Banner
+- name: sections
+  type: blocks
+  label: Sections
+  template_types: []
+  config:
+    min: 
+    max: 
