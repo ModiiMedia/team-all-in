@@ -12,7 +12,9 @@
     "predeploy": "npm run compile-css",
     "deploy": "hugo --minify",
     "preforestry-preview": "npm run predeploy",
-    "forestry-preview": "hugo -D -F -E -b $DEPLOY_URL -d public"
+    "forestry-preview": "hugo -D -F -E -b $DEPLOY_URL -d public",
+    "preforestry-preview:instant": "npm run predeploy",
+    "forestry-preview:instant": "hugo server --renderToDisk --port 8080 --bind 0.0.0.0"
   },
   "author": "",
   "license": "ISC",
