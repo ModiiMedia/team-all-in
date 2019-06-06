@@ -5,6 +5,7 @@
 {{ define "main" }}
     {{ $cloudinary := $.Site.Params.cloudinaryBase }}
     {{ $admin := .Params.admin }}
+    {{ $site := $.Site }}
     {{ $id := .Params.customer_id }}
     {{ $file := replace .File "\\" "/" }}
     <section class="heroBanner" style="">
@@ -47,16 +48,20 @@
             <p class="subtitle">These are all the courses you have access to</p>
             <hr>
             <div class="columns">
-                {{ range $i, $e := where $.Site.RegularPages ".Params.type" "course" }}
-                    {{ if $admin }}
-                        {{ partial "course-card.html" (dict "Page" . "Cloudinary" $cloudinary)}}
-                    {{ else if ne .Params.restriction_settings.restrict_access true }}
-                        {{ partial "course-card.html" (dict "Page" . "Cloudinary" $cloudinary)}}
-                    {{ else }}
-                        {{ $Page := . }}
-                        {{ range .Params.restriction_settings.access_list }}
-                            {{ if eq $file . }}
-                                {{ partial "course-card.html" (dict "Page" $Page "Cloudinary" $cloudinary)}}
+                {{ with $.Site.GetPage "representatives/courses/_index.md"}}
+                    {{ range $i, $e := .Params.courses }}
+                        {{ with $site.GetPage . }}
+                            {{ if $admin }}
+                                    {{ partial "course-card.html" (dict "Page" . "Cloudinary" $cloudinary)}}
+                            {{ else if ne .Params.restriction_settings.restrict_access true }}
+                                {{ partial "course-card.html" (dict "Page" . "Cloudinary" $cloudinary)}}
+                            {{ else }}
+                                {{ $Page := . }}
+                                {{ range .Params.restriction_settings.access_list }}
+                                    {{ if eq $file . }}
+                                        {{ partial "course-card.html" (dict "Page" $Page "Cloudinary" $cloudinary)}}
+                                    {{ end }}
+                                {{ end }}
                             {{ end }}
                         {{ end }}
                     {{ end }}

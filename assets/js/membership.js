@@ -66,8 +66,8 @@ function checkForUser(userId){
         if(data.users[userId]){
             currentUser = data.users[userId]
             currentUser.customer_id = userId
-            console.log(currentUser)
             setCurrentUser(currentUser);
+            checkPermissions(currentUser)
         } else {
             showAuthModal(userId)
         }
@@ -109,3 +109,46 @@ function setCurrentUser(userObj){
     }
 }
 
+
+///////// COURSE PERMISSIONS ////////////
+
+function checkPermissions(){
+    console.log(currentUser)
+    if(isCoursePage){
+        coursePermissions(currentUser, currentCourse)
+    }
+}
+
+function coursePermissions(user, course){
+    if(user.admin){
+        console.log('permission granted')
+        return;
+    } else {
+        if(course.restrict_access){
+            let permission = checkCourseAccessList(user, course.access_list);
+            if(permission){
+                console.log(`permission granted`)
+                return
+            } else {
+                showCourseRestriction()
+            }
+        } else {
+            console.log(`permission granted`)
+            return;
+        }
+    }
+}
+
+function showCourseRestriction(){
+    pageBody.classList.add("hide")
+    document.querySelector("#coursePermissionModal").classList.add("is-active");
+    document.querySelector("html").classList.add("noScroll")
+}
+
+function checkCourseAccessList(user, list){
+    for(let i = 0; i < list.length; i++){
+        if (user.customer_id == list[i]){
+            return true
+        } 
+    }
+}

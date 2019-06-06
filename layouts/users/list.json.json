@@ -6,6 +6,7 @@
         {{- range $i, $e := .Pages -}}
             "{{ .Params.customer_id }}": {
                 "title": {{ .Title | jsonify }},
+                "admin": {{ if .Params.admin }}true{{ else }}false{{ end }},
                 "url": {{ .RelPermalink | jsonify }}
             }
             {{- if ne $userCount (add $i 1) -}},{{- end -}}

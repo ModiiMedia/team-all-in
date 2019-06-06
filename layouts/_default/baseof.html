@@ -47,6 +47,10 @@
 <!-- submit a photo modal -->
 {{ partial "submit-photo-modal.html" . }}
 
+{{ if eq .Section "representatives" }}
+    <!-- course permission modal -->
+    {{ partial "course-permission-modal.html" . }}
+{{ end }}
 <script>const cloudinary = '{{ $.Site.Params.cloudinaryBase }}'</script>
 {{- $navJs := resources.Get "js/navigation.js" -}}
 {{- $modalJs := resources.Get "js/modals.js" -}}

@@ -28,7 +28,10 @@
                 <div id="courseContent" class="content">
                     <section>
                         {{- if .Params.introduction -}}
-                            {{- .Params.introduction | markdownify -}}
+                            {{- $intro := .Params.introduction | markdownify -}}
+                            {{- $introPre := replace $intro "<iframe" "<div class='iframeContainer'><iframe"}}
+                            {{- $introPost := replace $introPre "</iframe>" "</iframe></div>"}}
+                            {{- $introPost | safeHTML -}}
                         {{- else -}}
                             {{- .Params.short_description -}}
                         {{- end -}}    
@@ -67,6 +70,24 @@
 {{ end }}
 
 {{ define "addJS" }}
+{{ $site := $.Site }}
+    <script>
+        let isCoursePage = true
+        let currentCourse = {
+            "restrict_access": {{ if .Params.restriction_settings.restrict_access }}true{{ else }}false{{ end }},
+            "access_list": [
+                {{- with .Params.restriction_settings.access_list -}}
+                    {{- $l := len . -}}
+                    {{- range $i, $e := . }}
+                        {{- with $site.GetPage . -}}
+                            {{- .Params.customer_id | jsonify -}}
+                        {{- end -}}
+                        {{- if ne $i (sub $l 1) -}},{{- end -}}
+                    {{- end -}}
+                {{- end -}}
+            ]
+        }
+    </script>
     {{ $memJS := resources.Get "js/membership.js" }}
     {{ $courseJS := resources.Get "js/course.js" }}
     {{ $js := slice $memJS $courseJS | resources.Concat "js/course-single.js" | resources.Minify }}

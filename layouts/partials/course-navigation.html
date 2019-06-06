@@ -1,7 +1,7 @@
 <header>
     <div class="courseTopHeader">
         <nav>
-            <a id="courseBackLink" href="/representatives/courses/" class="navItem"><i class="fas fa-chevron-left"></i>&nbsp;&nbsp;<span id="goBackText">Go Back To Courses</span></a>
+            <a id="courseBackLink" href="/representatives/courses/" class="navItem"><i class="fas fa-chevron-left"></i>&nbsp;&nbsp;<span id="goBackText">Back{{ with $.Site.GetPage "representatives/courses/_index.md" }} to {{ .Title }}{{ end }}</span></a>
         </nav>
     </div>
 </header>
