@@ -13,7 +13,7 @@
     "deploy": "hugo --minify",
     "preforestry-preview": "npm run predeploy",
     "forestry-preview": "hugo -D -F -E -b $DEPLOY_URL -d public",
-    "forestry-preview:instant": "hugo server --renderToDisk --port 8080 --bind 0.0.0.0"
+    "forestry-preview:instant": "hugo server -D -F -E --renderToDisk --port 8080 --bind 0.0.0.0"
   },
   "author": "",
   "license": "ISC",
