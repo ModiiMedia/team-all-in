@@ -28,31 +28,9 @@ fields:
     maxSize: '5'
   label: Featured Image
 - name: photos
-  type: field_group_list
-  fields:
-  - name: title
-    type: text
-    config:
-      required: false
-    label: Image Title
-  - name: description
-    type: textarea
-    default: ''
-    config:
-      required: false
-      wysiwyg: false
-      schema:
-        format: markdown
-    label: Image Description
-  - name: url
-    type: file
-    config:
-      maxSize: '5'
-    label: Photo
-  config:
-    min: 
-    max: 
-    labelField: ''
+  type: image_gallery
+  config: {}
   label: Photos
+  description: Add photos to create a photo gallery
 pages:
 - content/gallery.md
