@@ -55,7 +55,7 @@ front_matter_path: ''
 use_front_matter_path: true
 file_template: ":filename:"
 build:
-  preview_command: npm run forestry-preview
+  preview_command: hugo -D -F -E -b $DEPLOY_URL -d public
   publish_command: hugo -d public
   preview_env:
   - HUGO_VERSION=0.55.5
