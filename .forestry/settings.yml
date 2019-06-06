@@ -9,15 +9,6 @@ sections:
 - type: document
   path: content/_index.md
   label: Home (Members)
-- type: directory
-  path: content
-  label: Pages
-  create: none
-  match: "*"
-  templates:
-  - app-page
-  - video-gallery
-  - gallery
 - type: document
   path: content/gallery.md
   label: Photo Gallery
