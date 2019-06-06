@@ -8,7 +8,10 @@ videos:
   description: ''
   url: https://vimeo.com/307270908
 - title: Janie & Raymond Braun
-  subtitle: International Marketing Directors (Million Dollar Ring Earners)
+  subtitle: |-
+    International Marketing Directors
+
+    (Million Dollar Ring Earners)
   descriptoin: 
   url: https://vimeo.com/307260235
   description: ''
