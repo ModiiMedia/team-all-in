@@ -6,5 +6,6 @@ courses:
 - representatives/courses/getting-started.md
 - representatives/courses/the-world-ventures-system.md
 - representatives/courses/success-roadmap.md
+- representatives/courses/test-course.md
 
 ---
