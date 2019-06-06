@@ -37,14 +37,20 @@ nav.headerMainNav {
     display: -ms-flexbox;
     display: -ms-flexbox;
     align-items: center;
+    font-size: 1.15rem;
+    @media(max-width: $desktop){
+        font-size: 1rem;
+    }
     @media (max-width: $tablet){
         display: none
     }
 }
 nav > .navItem {
     display: inline-block;
-    padding: 1.2rem;
+    padding: 1.2rem 1.5rem;
     color: $text;
+    letter-spacing: 0.5px;
+    // font-weight: bold;
     &:hover {
         color: blue;
     }
@@ -57,7 +63,6 @@ nav > .navButton {
     font-weight: bold;
     margin: 0 1rem;
 }
-
 #logo {
     display: flex;
     display: -ms-flexbox;

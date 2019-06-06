@@ -34,7 +34,7 @@
                         </div>
                         <div class="card-content">
                             <h2 class="subtitle" style="font-weight: bold; margin-bottom: 0;">{{ .title }}</h2>
-                            {{ with .subtitle }}<p>{{ . }}</p>{{ end }}
+                            {{ with .subtitle }}{{ . | markdownify }}{{ end }}
                         </div>
                     </div>
                 </div>

@@ -20,8 +20,8 @@
                 {{ range $i, $e := .Params.photos }}
                     <div class="column is-half-mobile is-one-quarter-tablet">
                         <div class="galleryItem" data-photo="{{ $i }}">
-                            <div class="imageOverlay">{{ .title }}</div>
-                            <img src="{{ $cloudinary }}w_400,h_400,q_60,f_auto,c_fill{{ .url }}">
+                            <div class="imageOverlay"></div>
+                            <img src="{{ $cloudinary }}w_400,h_400,q_60,f_auto,c_fill{{ . }}">
                         </div>
                     </div>
                 {{ end }}

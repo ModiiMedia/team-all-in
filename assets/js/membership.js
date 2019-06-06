@@ -114,8 +114,10 @@ function setCurrentUser(userObj){
 
 function checkPermissions(){
     console.log(currentUser)
-    if(isCoursePage){
+    if(typeof isCoursePage !== 'undefined'){
         coursePermissions(currentUser, currentCourse)
+    } else {
+
     }
 }
 

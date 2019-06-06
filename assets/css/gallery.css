@@ -245,3 +245,6 @@ html.lightboxOpen {
 .lightboxPhotoContent {
   padding: 2rem;
   background: white; }
+
+#lightboxSubtitle p {
+  margin-bottom: .5rem; }
