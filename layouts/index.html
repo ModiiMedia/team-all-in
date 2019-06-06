@@ -1,20 +1,22 @@
 {{ define "main" }}
 {{ $cloudinary := $.Site.Params.cloudinaryBase }}
 {{ with .Params.banner }}
-    <section class="heroBanner homepageHero" style="{{ range .slideshow_photos }}background-image: url({{ $cloudinary }}w_1920,h_1500,c_fill,q_80,f_auto{{ . }});{{ end }}">
+    <section class="heroBanner homepageHero" style="{{ with .background_photo }}background-image: url({{ $cloudinary }}w_1920,h_1500,c_fill,q_80,f_auto{{ . }});{{ end }}">
         <div class="imageOverlay"></div>
         <div class="container">
-            <h1 class="welcomeText">{{ .small_text }}<br><span class="titleText">{{ .large_text }}</span></h1>
-            {{ with .video }}
-                {{- $jsonURL := print "https://vimeo.com/api/oembed.json?url=" . "&width=640" -}}
-                {{- $json := getJSON $jsonURL -}}
+            <h1 class="welcomeText">{{ .top_text_small }}<br><span class="titleText">{{ .top_text_large }}</span></h1>
+            {{ if .video }}
                 <div class="container" style="max-width: 800px; margin: 3rem auto;">
-                    <div class="iframeContainer">
-                        {{ $embed := replace $json.html "?app_id" "?title=0&byline=0&app_id" }}
-                        {{ $embed | safeHTML }}
-                    </div>            
+                    {{ with .video.url }}
+                        {{- $jsonURL := print "https://vimeo.com/api/oembed.json?url=" . "&width=640" -}}
+                        {{- $json := getJSON $jsonURL -}}
+                        <div class="iframeContainer">
+                            {{ $embed := replace $json.html "?app_id" "?title=0&byline=0&app_id" }}
+                            {{ $embed | safeHTML }}
+                        </div>            
+                    {{ end }}
                 </div>
-                I haven't been everywhere...but it's on my list!
+                {{ .video.slogan }}
             {{ end }}
         </div>
     </section>
