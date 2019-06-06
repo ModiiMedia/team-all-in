@@ -4,11 +4,6 @@ auto_deploy: false
 admin_path: admin
 webhook_url: 
 sections:
-- type: directory
-  path: content/representatives
-  label: Pages
-  create: all
-  match: "**/*"
 - type: heading
   label: Members Area
 - type: document
@@ -37,6 +32,11 @@ sections:
 - type: document
   path: content/representatives/_index.md
   label: Home (Reps)
+- type: directory
+  path: content/representatives
+  label: Pages
+  create: all
+  match: "**/*"
 - type: document
   path: content/representatives/leader-videos.md
   label: Leader Videos
