@@ -32,11 +32,6 @@ sections:
 - type: document
   path: content/representatives/_index.md
   label: Home (Reps)
-- type: directory
-  path: content/representatives
-  label: Pages
-  create: none
-  match: "**/*.md"
 - type: document
   path: content/representatives/leader-videos.md
   label: Leader Videos
