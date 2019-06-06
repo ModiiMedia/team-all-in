@@ -14,7 +14,7 @@ sections:
     2. Follow the WorldVentures "System"
     3. Follow the Success Roadmap
   show_button: true
-  button_link: ''
+  button_link: "/representatives/courses/"
   background_image: ''
 - template: text-w-button
   button_text: Watch now
