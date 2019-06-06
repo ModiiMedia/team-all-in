@@ -20,7 +20,6 @@ photos:
   url: "/v1558998221/team-all-in/team-trip-to-the-marival-residences.jpg"
 
 ---
-
 ## Have an awesome photo from your DreamTrip?
 
 Share it with us. You can submit a photo to get featured in our gallery by clicking the button below.
