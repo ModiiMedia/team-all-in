@@ -1,0 +1,247 @@
+html.lightboxOpen {
+  overflow: hidden; }
+
+.modalButtonArea {
+  margin-bottom: 4rem; }
+
+.galleryItem {
+  cursor: pointer;
+  font-size: 1.5rem;
+  font-weight: bold;
+  position: relative;
+  display: block;
+  color: white;
+  height: auto; }
+  .galleryItem img {
+    margin: 0;
+    display: block; }
+  .galleryItem .imageOverlay {
+    opacity: 0;
+    display: flex;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 1rem;
+    transition: opacity 200ms ease;
+    -moz-transition: opacity 200ms ease;
+    -webkit-transition: opacity 200ms ease;
+    -o-transition: opacity 200ms ease; }
+  .galleryItem:hover .imageOverlay {
+    opacity: 1; }
+
+.lightboxContainer.open {
+  z-index: 100;
+  opacity: 1; }
+
+.lightboxContainer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: -10;
+  opacity: 0;
+  max-height: 100%;
+  transition: opacity 200ms ease, z-index 200ms ease;
+  -o-transition: opacity 200ms ease, z-index 200ms ease;
+  -moz-transition: opacity 200ms ease, z-index 200ms ease;
+  -webkit-transition: opacity 200ms ease, z-index 200ms ease; }
+  .lightboxContainer .lightboxClose {
+    cursor: pointer; }
+  .lightboxContainer .imageOverlay {
+    opacity: 0.8; }
+  .lightboxContainer .container {
+    width: auto;
+    max-width: 1080px;
+    padding: 0; }
+  .lightboxContainer .lightboxItem {
+    max-height: 100%;
+    position: relative; }
+    .lightboxContainer .lightboxItem .xButton {
+      position: absolute;
+      padding: 0.2rem .5rem;
+      z-index: 100;
+      top: 0;
+      right: 0;
+      left: auto;
+      bottom: auto;
+      background: white;
+      color: #111111;
+      font-size: 2rem;
+      opacity: 0.75; }
+    .lightboxContainer .lightboxItem .content {
+      margin-bottom: 0 !important; }
+    .lightboxContainer .lightboxItem figure {
+      position: relative;
+      display: block;
+      display: flex;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 400px;
+      min-width: 800px; }
+      @media (max-width: 850px) {
+        .lightboxContainer .lightboxItem figure {
+          min-height: 200px;
+          min-width: 100%; } }
+    .lightboxContainer .lightboxItem img {
+      display: block;
+      position: relative;
+      z-index: 1; }
+    .lightboxContainer .lightboxItem .lightboxLoadingAnimation {
+      color: #f0f0f0;
+      background: #333333;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      display: flex;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 5rem;
+      z-index: 0;
+      background-position: center;
+      background-size: cover; }
+      .lightboxContainer .lightboxItem .lightboxLoadingAnimation .imageOverlay {
+        opacity: 0.2; }
+      .lightboxContainer .lightboxItem .lightboxLoadingAnimation i {
+        position: relative;
+        opacity: 0.5;
+        z-index: 1; }
+  .lightboxContainer .lightboxNavigation {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10;
+    color: black; }
+    .lightboxContainer .lightboxNavigation .arrow {
+      cursor: pointer;
+      padding: 1rem;
+      font-size: 3rem;
+      border: 1px solid #f0f0f0;
+      background: white;
+      opacity: 0.8;
+      color: black; }
+      .lightboxContainer .lightboxNavigation .arrow.hide {
+        opacity: 0;
+        z-index: -100;
+        cursor: default; }
+      .lightboxContainer .lightboxNavigation .arrow.left {
+        margin-left: -3rem; }
+        @media (max-width: 1100px) {
+          .lightboxContainer .lightboxNavigation .arrow.left {
+            margin-left: 0; } }
+      .lightboxContainer .lightboxNavigation .arrow.right {
+        margin-right: -3rem; }
+        @media (max-width: 1100px) {
+          .lightboxContainer .lightboxNavigation .arrow.right {
+            margin-right: 0; } }
+      @media (max-width: 850px) {
+        .lightboxContainer .lightboxNavigation .arrow {
+          font-size: 2rem; } }
+
+.videoGalleryItem {
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.25);
+  cursor: pointer; }
+
+.lightboxNavBar {
+  background: white;
+  display: flex;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+  min-height: 100px;
+  flex-grow: 0;
+  border-top: 2px solid #f0f0f0; }
+  .lightboxNavBar .navItem {
+    cursor: pointer;
+    display: flex;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    align-items: center;
+    height: 100%;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    color: black;
+    font-size: 1.5rem; }
+    .lightboxNavBar .navItem i {
+      font-size: 2rem; }
+      .lightboxNavBar .navItem i.fa-arrow-left {
+        margin-right: 1.5rem; }
+      .lightboxNavBar .navItem i.fa-arrow-right {
+        margin-left: 1.5rem; }
+    .lightboxNavBar .navItem.hide {
+      opacity: 0;
+      cursor: default; }
+  @media (max-width: 850px) {
+    .lightboxNavBar {
+      height: 75px;
+      min-height: 75px; }
+      .lightboxNavBar .navItem {
+        font-size: 1.3rem; } }
+  @media (max-width: 400px) {
+    .lightboxNavBar .navItem {
+      padding: 0 1rem;
+      font-size: 1rem; }
+      .lightboxNavBar .navItem i {
+        font-size: 1.5rem; } }
+
+.lightboxContent {
+  background: white;
+  height: 100%;
+  width: 100%;
+  max-width: 800px;
+  position: relative;
+  display: flex;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  flex-direction: column;
+  -ms-flex-direction: column; }
+  .lightboxContent .iframeContainer {
+    position: relative;
+    padding-top: 56%; }
+    .lightboxContent .iframeContainer iframe {
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0; }
+  .lightboxContent .content {
+    padding: 2rem;
+    overflow-y: scroll;
+    max-height: 100%;
+    flex-grow: 1;
+    margin-bottom: 0; }
+    .lightboxContent .content .metadata span {
+      padding-right: 1rem; }
+    .lightboxContent .content p:last-child {
+      margin-bottom: 0 !important; }
+
+.lightboxPhotoContent {
+  padding: 2rem;
+  background: white; }
