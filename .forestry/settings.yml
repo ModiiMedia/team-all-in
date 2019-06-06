@@ -8,7 +8,7 @@ sections:
   label: Members Area
 - type: document
   path: content/_index.md
-  label: Homepage
+  label: Homepage (Members)
 - type: directory
   path: content
   label: Pages
@@ -27,7 +27,7 @@ sections:
   label: Representative Area
 - type: document
   path: content/representatives/_index.md
-  label: Rep Homepage
+  label: Homepage (Reps)
 - type: document
   path: content/representatives/leader-videos.md
   label: Leader Videos
