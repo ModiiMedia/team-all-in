@@ -16,9 +16,9 @@ sections:
   show_button: true
   button_link: ''
 - template: text-w-button
-  button_text: Learn More
-  button_link: []
-  content: ''
-  show_button: false
+  button_text: Watch now
+  button_link: ''
+  content: "## Hear from some of our leaders"
+  show_button: true
 
 ---
