@@ -40,20 +40,14 @@ fields:
     name: title
     label: Title
   - name: subtitle
-    type: text
-    config:
-      required: false
-    label: Subtitle
-    description: Smaller text that appears below the title
-  - name: description
     type: textarea
     default: ''
     config:
       required: false
-      wysiwyg: true
+      wysiwyg: false
       schema:
         format: markdown
-    label: Description
+    label: Subtitle
   config:
     labelField: title
 pages:
