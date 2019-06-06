@@ -16,17 +16,26 @@ fields:
     config:
       required: false
     label: Heading
-  - name: video
-    type: text
-    config:
-      required: false
-    label: Video
-    description: 'Paste the video url here. It should look something like this: https://vimeo.com/<some-number-here>'
   - name: background_image
     type: file
     config:
       maxSize: '10'
     label: Background Image
+  - name: video
+    type: field_group
+    config: {}
+    fields:
+    - name: url
+      type: text
+      config:
+        required: false
+      label: Url
+    - name: slogan
+      type: text
+      config:
+        required: false
+      label: Slogan
+    label: Video
   label: Banner
 - name: sections
   type: blocks
