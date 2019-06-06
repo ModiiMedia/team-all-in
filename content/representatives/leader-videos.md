@@ -4,7 +4,10 @@ featured_image: "/v1559368246/team-all-in/green-forest-mountains.jpg"
 type: video-gallery
 videos:
 - title: Kari & Lisha Schneider
-  subtitle: 2x International Marketing Directors (Million Dollar Ring Earners)
+  subtitle: |-
+    2x International Marketing Directors
+
+    (Million Dollar Ring Earners)
   description: ''
   url: https://vimeo.com/307270908
 - title: Janie & Raymond Braun
