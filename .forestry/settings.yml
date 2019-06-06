@@ -66,5 +66,6 @@ build:
   - HUGO_VERSION=0.55.2
   preview_output_directory: public
   output_directory: public
-  instant_preview_command: hugo server --renderToDisk --port 8080 --bind 0.0.0.0
+  instant_preview_command: hugo server -D -F -E --renderToDisk --port 8080 --bind
+    0.0.0.0
 version: 0.55.2
