@@ -15,10 +15,12 @@ sections:
     3. Follow the Success Roadmap
   show_button: true
   button_link: ''
+  background_image: ''
 - template: text-w-button
   button_text: Watch now
-  button_link: ''
+  button_link: "/representatives/leader-videos/"
   content: "## Hear from some of our leaders"
   show_button: true
+  background_image: ''
 
 ---
