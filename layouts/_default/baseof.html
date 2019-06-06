@@ -20,10 +20,9 @@
 </head>
 <body>
 
-{{- with .Params.forestry_preview_id -}}
-    {{ $h := print "<!-- " . " -->" }}
-    {{ $h | safeHTML }}
-{{- end -}}
+{{ with .Params.forestry_preview_id }}
+    <div style="display:none">{{ . }}</div>
+{{ end }}
 <div id="mainContentWrapper" class="">
     {{- block "header" . }}
         <!-- display default footer -->
