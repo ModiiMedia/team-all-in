@@ -62,10 +62,11 @@ function checkForUser(userId){
     req.open ("GET", "/users/index.json");
     req.addEventListener("load", function(){
         let data = JSON.parse(this.responseText);
-        let currentUser = data.users[userId]
-        currentUser.customer_id = userId
-        console.log(currentUser)
-        if (currentUser){
+        let currentUser
+        if(data.users[userId]){
+            currentUser = data.users[userId]
+            currentUser.customer_id = userId
+            console.log(currentUser)
             setCurrentUser(currentUser);
         } else {
             showAuthModal(userId)
