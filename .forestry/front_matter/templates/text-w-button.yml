@@ -31,11 +31,14 @@ fields:
   default: []
   config:
     required: false
-    options: []
+    options:
+    - representatives/_index.md
+    - representatives/leader-videos.md
+    - representatives/courses/_index.md
     source:
-      type: pages
+      type: simple
       section: ''
       file: 
-      path: 
+      path: ''
   label: Button Link
   description: What page do you want the button to link to?
