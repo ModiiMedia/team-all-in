@@ -44,7 +44,7 @@ fields:
 - name: featured_image
   type: file
   config:
-    maxSize: 250
+    maxSize: '5'
   label: Banner Image
 - name: restriction_settings
   type: field_group
@@ -84,7 +84,7 @@ fields:
   - name: featured_image
     type: file
     config:
-      maxSize: 250
+      maxSize: '5'
     label: Banner Image
   - name: sections
     type: blocks
