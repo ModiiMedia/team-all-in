@@ -11,8 +11,9 @@ courses:
 ---
 ## Welcome to our Success System
 
-Please follow the courses in order
+Please follow the courses in order. If you have trouble accessing a course contact Linda.
 
-1. Getting Started
-2. The World Ventures System
-3. Success Roadmap
+1. Fast Start Training
+2. Getting Connected
+3. The World Ventures System
+4. Success Roadmap
