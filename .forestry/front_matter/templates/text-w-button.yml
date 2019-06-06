@@ -33,8 +33,8 @@ fields:
     required: false
     options: []
     source:
-      type: simple
-      section: 
+      type: pages
+      section: ''
       file: 
       path: 
   label: Button Link
