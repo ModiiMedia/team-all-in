@@ -21,7 +21,7 @@
 <body>
 
 {{- with .Params.forestry_preview_id -}}
-    {{ $h := print "<!-- " . "-->" }}
+    {{ $h := print "<!-- " . " -->" }}
     {{ $h | safeHTML }}
 {{- end -}}
 <div id="mainContentWrapper" class="">
