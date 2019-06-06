@@ -11,11 +11,16 @@ fields:
   type: field_group
   config: {}
   fields:
-  - name: heading
+  - name: top_text_small
     type: text
     config:
       required: false
-    label: Heading
+    label: Top Text Small
+  - name: top_text_large
+    type: text
+    config:
+      required: false
+    label: Top Text Large
   - name: video
     type: field_group
     config: {}
