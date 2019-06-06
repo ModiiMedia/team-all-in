@@ -3,10 +3,6 @@ title: Leader Videos
 featured_image: "/v1559368246/team-all-in/green-forest-mountains.jpg"
 type: video-gallery
 videos:
-- url: https://vimeo.com/3557190
-  title: Jeanine Payne
-  subtitle: Director
-  description: ''
 - title: Kari & Lisha Schneider
   subtitle: 2x International Marketing Directors (Million Dollar Ring Earners)
   description: ''
