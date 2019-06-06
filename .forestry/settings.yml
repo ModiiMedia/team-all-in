@@ -27,8 +27,7 @@ sections:
   label: Representative Area
 - type: document
   path: content/representatives/_index.md
-  label: Rep Zone - Homepage
-  match: "**/*"
+  label: Rep Homepage
 - type: document
   path: content/representatives/leader-videos.md
   label: Leader Videos
