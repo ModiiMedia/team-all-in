@@ -10,7 +10,7 @@
     "photos": [
         {{- range $i, $e := .Params.photos -}}
             {
-                "url": "{{- $cloudinary -}}w_800,h_550,q_70,c_fit,f_auto{{ . }}"
+                "url": "{{- $cloudinary -}}w_900,h_600,q_70,c_fit,f_auto{{ . }}"
             }
             {{- if ne $numPhotos (add $i 1) -}},{{- end -}}
         {{- end -}}

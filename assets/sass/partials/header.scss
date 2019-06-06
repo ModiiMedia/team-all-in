@@ -1,3 +1,18 @@
+body {
+    @media(max-width: $tablet){
+        padding-top: 80px;
+    }
+    @media(max-width: $mobile){
+        padding-top: 60px;
+    }
+}
+
+body.fixedNav {
+    @media (min-width: $tablet){
+        padding-top: 111px;
+    }
+}
+
 .topHeader {
     font-size: .9rem;
     border-bottom: 1px solid $light-gray;
@@ -9,8 +24,31 @@
 .mainHeader {
     border-bottom: 1px solid $light-gray;
     padding: 1rem 0;
+    background: white;
+    transition: padding 200ms ease;
+    -moz-transition: padding 200ms ease;
+    -o-transition: padding 200ms ease;
+    -webkit-transition: padding 200ms ease;
     @media (max-width: $tablet){
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: auto;
         padding: 0.6rem 0;
+        z-index: 50;
+    }
+    &.fixed {
+        @media (min-width: $tablet){
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: auto;
+            z-index: 50;
+            box-shadow: 0 0 30px rgba(0, 0, 0, 0.25);    
+            padding: 0.5rem 0;
+        }
     }
 }
 
@@ -86,3 +124,4 @@ nav > .navButton {
         }
     }
 }
+

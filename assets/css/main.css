@@ -7350,6 +7350,18 @@ body {
   .sections .section.dark * {
     color: white; }
 
+@media (max-width: 850px) {
+  body {
+    padding-top: 80px; } }
+
+@media (max-width: 510px) {
+  body {
+    padding-top: 60px; } }
+
+@media (min-width: 850px) {
+  body.fixedNav {
+    padding-top: 111px; } }
+
 .topHeader {
   font-size: .9rem;
   border-bottom: 1px solid #f0f0f0; }
@@ -7359,10 +7371,31 @@ body {
 
 .mainHeader {
   border-bottom: 1px solid #f0f0f0;
-  padding: 1rem 0; }
+  padding: 1rem 0;
+  background: white;
+  transition: padding 200ms ease;
+  -moz-transition: padding 200ms ease;
+  -o-transition: padding 200ms ease;
+  -webkit-transition: padding 200ms ease; }
   @media (max-width: 850px) {
     .mainHeader {
-      padding: 0.6rem 0; } }
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: auto;
+      padding: 0.6rem 0;
+      z-index: 50; } }
+  @media (min-width: 850px) {
+    .mainHeader.fixed {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: auto;
+      z-index: 50;
+      box-shadow: 0 0 30px rgba(0, 0, 0, 0.25);
+      padding: 0.5rem 0; } }
 
 .goBackButton span {
   padding: 0.2rem 0.5rem;

@@ -89,8 +89,8 @@ html.lightboxOpen {
       display: -webkit-flex;
       align-items: center;
       justify-content: center;
-      min-height: 400px;
-      min-width: 800px; }
+      min-height: 500px;
+      min-width: 900px; }
       @media (max-width: 850px) {
         .lightboxContainer .lightboxItem figure {
           min-height: 200px;

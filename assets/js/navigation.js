@@ -32,3 +32,21 @@ function htmlNoScroll(){
 function htmlAllowScroll(){
     documentHTML.classList.remove("noScroll")
 }
+
+window.addEventListener("scroll", function(){
+    checkVerticalScroll();
+})
+
+function checkVerticalScroll(){
+    let distance = document.querySelector(".topHeader").offsetHeight;
+    let header = document.querySelector("#mainHeader")
+    if (window.scrollY >= distance ){
+        header.classList.add("fixed")
+        document.body.classList.add('fixedNav')
+    } else {
+        header.classList.remove('fixed')
+        document.body.classList.remove('fixedNav')
+    }
+}
+
+checkVerticalScroll();

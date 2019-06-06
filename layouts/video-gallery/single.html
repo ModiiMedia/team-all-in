@@ -56,7 +56,7 @@
             </div>
             <div class="lightboxNavBar">
                 <div id="previousVid" data-video='' class="navItem arrow"><i class="fas fa-arrow-left"></i> Prev</div>
-                <div id="allVids" class="navItem lightboxClose">View All</div>
+                <div id="allVids" class="navItem lightboxClose">Close X</div>
                 <div id="nextVid" data-video='' class="navItem arrow">Next <i class="fas fa-arrow-right"></i></div>
             </div>
         </div>
@@ -114,7 +114,7 @@
         let currentVid = videos[videoNum];
         lTitle.innerHTML = currentVid.title;
         lAuthor.innerHTML = `<strong>Author:</strong> ${currentVid.author}`;
-        lContent.innerHTML = currentVid.description;
+        // lContent.innerHTML = currentVid.description;
         lEmbed.innerHTML = currentVid.embed_code.replace("?", "?autoplay=1&");
 
         // subtitle check

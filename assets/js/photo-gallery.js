@@ -59,11 +59,11 @@ function openGallery(photoNum){
     htmlObject.classList.add("lightboxOpen");
     let currentPhoto = galleryData.photos[Number(photoNum)];
     lImage.src = currentPhoto.url;
-    lTitle.innerHTML = currentPhoto.title;
-    lContent.innerHTML = currentPhoto.description
+    // lTitle.innerHTML = currentPhoto.title;
+    // lContent.innerHTML = currentPhoto.description
 
     // load small low quality version of photo for background
-    let bgImage = currentPhoto.url.replace("w_800", "w_5")
+    let bgImage = currentPhoto.url.replace("w_900", "w_5")
     bgImage = bgImage.replace("q_70", "q_5")
     loadingImage.style.backgroundImage = `url(${bgImage})`
 

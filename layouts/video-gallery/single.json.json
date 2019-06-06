@@ -6,8 +6,7 @@
         {{- range $i, $e := .Params.videos -}}
             {
                 "title": "{{ with .title }}{{ . }}{{ end }}",
-                "subtitle": {{ with .subtitle }}{{ markdownify . | jsonify }}{{ end }},
-                "description": "{{ with .description }}{{ . }}{{ end }}",
+                "subtitle": {{ markdownify .subtitle | jsonify }},
                 {{- if in .url "vimeo" }}
                     {{- $jsonURL := print "https://vimeo.com/api/oembed.json?url=" .url "&width=640" -}}
                     {{- $json := getJSON $jsonURL -}}
@@ -20,7 +19,8 @@
                 {{- end -}}
                 "url": "{{ with .url }}{{ . }}{{ end }}"
 
-            }{{ if ne $videoNum (add $i 1)}},{{ end }}
+            }
+            {{- if ne $videoNum (add $i 1) -}},{{- end -}}
         {{- end -}}
     ]
 }
