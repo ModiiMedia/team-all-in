@@ -35,8 +35,8 @@ sections:
 - type: directory
   path: content/representatives
   label: Pages
-  create: all
-  match: "**/*"
+  create: none
+  match: "**/*.md"
 - type: document
   path: content/representatives/leader-videos.md
   label: Leader Videos
