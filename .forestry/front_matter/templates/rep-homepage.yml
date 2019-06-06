@@ -16,11 +16,6 @@ fields:
     config:
       required: false
     label: Heading
-  - name: background_image
-    type: file
-    config:
-      maxSize: '10'
-    label: Background Image
   - name: video
     type: field_group
     config: {}
@@ -36,6 +31,11 @@ fields:
         required: false
       label: Slogan
     label: Video
+  - name: background_image
+    type: file
+    config:
+      maxSize: '10'
+    label: Background Image
   label: Banner
 - name: sections
   type: blocks
