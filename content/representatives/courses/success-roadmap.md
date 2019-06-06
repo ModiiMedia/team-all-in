@@ -5,7 +5,7 @@ short_description = "Once you get your 4 you can start our advanced training pro
 title = "Success Roadmap - Your Advanced Training"
 type = "course"
 [restriction_settings]
-access_list = []
+access_list = ["users/64182627.md", "users/61648056.md"]
 restrict_access = true
 [[modules]]
 featured_image = "/v1559707569/team-all-in/blueprint-thumbnail.jpg"
