@@ -1,7 +1,7 @@
 ---
 new_page_extension: md
 auto_deploy: false
-admin_path: admin
+admin_path: static/admin
 webhook_url: 
 sections:
 - type: heading
@@ -65,5 +65,5 @@ build:
   - HUGO_VERSION=0.55.2
   preview_output_directory: public
   output_directory: public
-  instant_preview_command: npm run preview
+  instant_preview_command: npm run forestry-preview:instant
 version: 0.55.2
