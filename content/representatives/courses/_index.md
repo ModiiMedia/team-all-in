@@ -5,5 +5,6 @@ type: course
 courses:
 - representatives/courses/getting-started.md
 - representatives/courses/the-world-ventures-system.md
+- representatives/courses/success-roadmap.md
 
 ---
