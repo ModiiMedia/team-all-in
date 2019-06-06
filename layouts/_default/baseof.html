@@ -19,6 +19,11 @@
     <link rel="shortcut icon" href="{{ $.Site.Params.cloudinaryBase }}w_48,h_48,c_fit,f_png{{ $.Site.Data.site_settings.branding.favicon }}" type="image/x-icon">
 </head>
 <body>
+
+{{- with .Params.forestry_preview_id -}}
+    {{ $h := print "<!-- " . "-->" }}
+    {{ $h | safeHTML }}
+{{- end -}}
 <div id="mainContentWrapper" class="">
     {{- block "header" . }}
         <!-- display default footer -->
