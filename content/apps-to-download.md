@@ -1,5 +1,5 @@
 ---
-title: Apps To Download
+title: DreamTrips App
 type: app-page
 links:
   itunes_store: https://itunes.apple.com/us/app/dreamtrips/id919159947?mt=8
@@ -14,3 +14,5 @@ featured_image: "/v1559445909/team-all-in/mobile-phone-photo.jpg"
 
 ---
 ## Get The DreamTrips App!
+
+anything you want
