@@ -102,5 +102,3 @@ fields:
     max: 
     labelField: title
   label: Modules
-pages:
-- content/representatives/courses/test-course.md
