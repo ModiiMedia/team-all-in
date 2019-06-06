@@ -15,9 +15,10 @@ sections:
   content: |-
     ## Checklist for New Representatives
 
-    1. Get Connected to our Team
-    2. Follow the WorldVentures "System"
-    3. Follow the Success Roadmap
+    1. Do the Fast Start Training
+    2. Get Connected to Our Team
+    3. Follow the WorldVentures "System" Training
+    4. Follow the Success Roadmap
   show_button: true
   button_link: "/representatives/courses/"
   background_image: ''
