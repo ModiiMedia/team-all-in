@@ -1,4 +1,35 @@
 ---
 label: Text w/ Button
 hide_body: true
-fields: []
+fields:
+- name: content
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: true
+    schema:
+      format: markdown
+  label: Content
+- name: show_button
+  type: boolean
+  label: Show Button
+- name: button_text
+  type: text
+  config:
+    required: false
+  label: Button Text
+  default: Learn More
+- name: button_link
+  type: select
+  default: []
+  config:
+    required: false
+    options: []
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Button Link
+  description: What page do you want the button to link to?
