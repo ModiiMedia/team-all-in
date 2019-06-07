@@ -91,6 +91,13 @@ body {
 
 .card {
     display: block;
+    transition: transform 200ms ease;
+    -moz-transition: transform 200ms ease;
+    -webkit-transition: transform 200ms ease;
+    -o-transition: transform 200ms ease;
+    &.card:hover {
+        transform: scale(1.025)
+    }
     &.courseCard {
         border-radius: 5px;
         overflow: hidden;

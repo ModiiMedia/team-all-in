@@ -41,10 +41,11 @@
         bottom: auto;
         right: -2rem;
         a {
-            background: $link;
+            background: white;
+            border: 1px solid $light-gray;
             height: 75px;
             width: 75px;
-            color: white;
+            color: $primary;
             text-align: center;
             display: block;
             display: flex;
@@ -53,8 +54,8 @@
             justify-content: center;
             align-items: center;
             border-radius: 100px;
-            font-size: 2rem;
-            box-shadow: -3px 2px 2px rgba(0, 0, 0, 0.4);
+            font-size: 2.5rem;
+            box-shadow: -3px 2px 7px rgba(0, 0, 0, 0.4);
             span {
                 display: none;
             };
@@ -78,6 +79,9 @@
                 display: inline-flex;
                 display: -ms-inline-flexbox;
                 display: -webkit-inline-flex;
+                color: white;
+                border: none;
+                box-shadow: none;
                 span {
                     display: block;
                     margin-right: 1rem;
