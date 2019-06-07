@@ -1,0 +1,21 @@
+{{- $cloudinary := $.Site.Params.cloudinaryBase -}}
+{{- $logo := $.Site.Data.site_settings.branding.logo -}}
+{{- $iconSizes := slice "48" "72" "144" "168" "192" -}}
+{{- $len := len $iconSizes -}}
+{
+    "name": {{ $.Site.Data.site_settings.website_info.site_name | jsonify }},
+    "start_url": "{{ with .OutputFormats.Get "HTML" }}{{ .Permalink }}{{ end }}",
+    "display": "standalone",
+    "background_color": "#ffffff",
+    "description": {{ $.Site.Data.site_settings.website_info.site_description | jsonify }},
+    "orientation": "portrait-primary",
+    "icons": [
+        {{ range $i, $e := $iconSizes }}
+        {
+            "src": {{ print $cloudinary "w_" . ",h_" . ",c_fill,q_80,f_png" $logo | jsonify }},
+            "sizes": {{ print . "x" . | jsonify }},
+            "type": "image/png"
+        }{{ if ne $i (sub $len 1)}},{{ end}}
+        {{ end }}
+    ]
+}

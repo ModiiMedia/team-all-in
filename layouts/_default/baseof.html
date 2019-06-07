@@ -17,6 +17,19 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,700,700i,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
     <link rel="shortcut icon" href="{{ $.Site.Params.cloudinaryBase }}w_48,h_48,c_fit,f_png{{ $.Site.Data.site_settings.branding.favicon }}" type="image/x-icon">
+    
+    {{ if or (eq .Section "representatives") (eq .Section "users") }}
+        <link rel="manifest" href="
+            {{- with $.Site.GetPage "representatives/_index.md" -}}
+                {{- with .OutputFormats.Get "repManifest" -}}{{- .Permalink -}}{{- end -}}
+            {{- end -}}">
+    {{ else }}
+        <link rel="manifest" href="
+        {{- with $.Site.GetPage "_index.md" -}}
+            {{- with .OutputFormats.Get "memberManifest" -}}{{- .Permalink -}}{{- end -}}
+        {{- end -}}">
+    {{ end }}
+
 </head>
 <body>
 

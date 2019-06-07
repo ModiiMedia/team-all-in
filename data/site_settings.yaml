@@ -2,11 +2,12 @@
 branding:
   logo: "/v1558645871/team-all-in/team_all_in_logo.png"
   favicon: "/v1558645871/team-all-in/team_all_in_logo.png"
-contact_info:
+website_info:
+  site_name: "Team All In"
+  site_description: "A website that helps WorldVentures members get the most out of their membership."
   contact_name: Linda Muth
   email: lovegolfing3@gmail.com
   phone_number: "(850)525-7547"
 representatives:
   user_profile_message: If any of this information is incorrect or out-of-date contact
     **Linda Muth** at [**(850)525-7547**](tel:+18505257547) or [**lovegolfing3@gmail.com**](mailto:lovegolfing3@gmail.com)**.**
-member_area: {}
