@@ -38,14 +38,18 @@ window.addEventListener("scroll", function(){
 })
 
 function checkVerticalScroll(){
-    let distance = document.querySelector(".topHeader").offsetHeight;
+    let h = document.querySelector(".topHeader")
+    let distance
     let header = document.querySelector("#mainHeader")
-    if (window.scrollY >= distance ){
-        header.classList.add("fixed")
-        document.body.classList.add('fixedNav')
-    } else {
-        header.classList.remove('fixed')
-        document.body.classList.remove('fixedNav')
+    if(h) {
+        distance = h.offsetHeight;
+        if (window.scrollY >= distance ){
+            header.classList.add("fixed")
+            document.body.classList.add('fixedNav')
+        } else {
+            header.classList.remove('fixed')
+            document.body.classList.remove('fixedNav')
+        }
     }
 }
 
