@@ -11,7 +11,7 @@ photo_links:
   gallery:
     text: View Our DreamTrips Photo Gallery
     page: gallery.md
-    background_photo: "/v1559445846/team-all-in/group-in-the-pool.jpg"
+    background_photo: "/v1559929332/team-all-in/448eb4_490321eb452045d5a769e562a5e6ecc6_mv2_d_5312_2988_s_4_2.jpg"
   dreamtrips_app:
     text: Get The DreamTrips App
     page: apps-to-download.md
