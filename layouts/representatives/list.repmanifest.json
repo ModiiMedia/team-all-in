@@ -3,7 +3,7 @@
 {{- $iconSizes := slice "48" "72" "144" "168" "192" -}}
 {{- $len := len $iconSizes -}}
 {
-    "name": {{ $.Site.Data.site_settings.website_info.site_name | jsonify }},
+    "name": {{ .Title | jsonify }},
     "start_url": "{{ with .OutputFormats.Get "HTML" }}.{{ .RelPermalink }}{{ end }}",
     "display": "standalone",
     "background_color": "#ffffff",
