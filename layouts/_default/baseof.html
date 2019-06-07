@@ -21,12 +21,12 @@
     {{ if or (eq .Section "representatives") (eq .Section "users") }}
         <link rel="manifest" href="
             {{- with $.Site.GetPage "representatives/_index.md" -}}
-                {{- with .OutputFormats.Get "repManifest" -}}{{- .Permalink -}}{{- end -}}
+                {{- with .OutputFormats.Get "repManifest" -}}{{- .RelPermalink -}}{{- end -}}
             {{- end -}}">
     {{ else }}
         <link rel="manifest" href="
         {{- with $.Site.GetPage "_index.md" -}}
-            {{- with .OutputFormats.Get "memberManifest" -}}{{- .Permalink -}}{{- end -}}
+            {{- with .OutputFormats.Get "memberManifest" -}}{{- .RelPermalink -}}{{- end -}}
         {{- end -}}">
     {{ end }}
 

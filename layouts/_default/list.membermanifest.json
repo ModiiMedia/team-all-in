@@ -4,7 +4,7 @@
 {{- $len := len $iconSizes -}}
 {
     "name": {{ $.Site.Data.site_settings.website_info.site_name | jsonify }},
-    "start_url": "{{ with .OutputFormats.Get "HTML" }}{{ .Permalink }}{{ end }}",
+    "start_url": "{{ with .OutputFormats.Get "HTML" }}.{{ .RelPermalink }}{{ end }}",
     "display": "standalone",
     "background_color": "#ffffff",
     "description": {{ $.Site.Data.site_settings.website_info.site_description | jsonify }},
