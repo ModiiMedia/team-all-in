@@ -6974,6 +6974,12 @@ body {
 .content.limitMax {
   max-width: 900px; }
 
+.content ul {
+  font-size: 1.2rem; }
+
+.content ol {
+  font-size: 1.2rem; }
+
 .mobileMenuIcon {
   display: none;
   cursor: pointer; }

@@ -3,6 +3,9 @@
 {{- end -}}
 
 {{ define "main" }}
+{{ with .Content }}
+    <div style="display: none">{{ . }}</div>
+{{ end }}
 {{ $cloudinary := $.Site.Params.cloudinaryBase }}
     <style>.heroBanner.homepageHero {line-height: 120%}</style>
     {{ with .Params.banner }}
