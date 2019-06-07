@@ -4,9 +4,10 @@
 {{- $len := len $iconSizes -}}
 {
     "name": {{ .Title | jsonify }},
-    "start_url": "{{ with .OutputFormats.Get "HTML" }}.{{ .RelPermalink }}{{ end }}",
+    "start_url": "{{ with .OutputFormats.Get "HTML" }}.{{ .Permalink }}{{ end }}",
     "display": "standalone",
     "background_color": "#212121",
+    "theme_color": "000000",
     "description": {{ $.Site.Data.site_settings.website_info.site_description | jsonify }},
     "orientation": "portrait-primary",
     "icons": [
