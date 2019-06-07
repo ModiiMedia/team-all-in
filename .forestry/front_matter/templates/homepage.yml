@@ -1,4 +1,77 @@
 ---
 label: Homepage
 hide_body: true
-fields: []
+fields:
+- name: title
+  type: text
+  config:
+    required: true
+  label: Title
+  default: Homepage
+- name: banner
+  type: field_group
+  config: {}
+  fields:
+  - name: top_text_small
+    type: text
+    config:
+      required: false
+    label: Top Text Small
+  - name: top_text_large
+    type: text
+    config:
+      required: false
+    label: Top Text Large
+  - name: video
+    type: field_group
+    config: {}
+    fields:
+    - name: url
+      type: text
+      config:
+        required: false
+      label: Url
+    - name: slogan
+      type: text
+      config:
+        required: false
+      label: Slogan
+    label: Video
+  - name: photo_links
+    type: field_group
+    config: {}
+    fields:
+    - name: gallery
+      type: field_group
+      config: {}
+      fields:
+      - name: text
+        type: text
+        config:
+          required: false
+        label: Text
+        default: View Our DreamTrips Photo Gallery
+      - name: background_photo
+        type: file
+        config:
+          maxSize: '5'
+        label: Background Photo
+      label: Link to Photo Gallery
+    - name: dreamtrips_app
+      type: field_group
+      config: {}
+      fields:
+      - name: text
+        type: text
+        config:
+          required: false
+        label: Text
+        default: Get the DreamTrips App
+      - name: background_photo
+        type: file
+        config:
+          maxSize: '5'
+        label: Background Photo
+      label: DreamTrips App
+    label: Photo Links
+  label: Banner
