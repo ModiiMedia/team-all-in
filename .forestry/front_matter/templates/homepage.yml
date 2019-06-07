@@ -73,3 +73,5 @@ fields:
       label: Background Photo
     label: Link To DreamTrips App
   label: Photo Links
+pages:
+- content/_index.md
