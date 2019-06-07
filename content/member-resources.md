@@ -1,5 +1,5 @@
 ---
-title: Member Resources
+title: Member Benefits
 featured_image: "/v1558997104/team-all-in/beach-sunset-waves.jpg"
 type: video-gallery
 videos:
