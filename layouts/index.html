@@ -22,6 +22,10 @@
     </section>
 {{ end }}
 
+{{ with .Content }}
+    <div style="display: none">{{ . }}</div>
+{{ end }}
+
 <section class="section">
     <div class="container">
         {{ with $.Site.GetPage "member-resources"}}

@@ -18,6 +18,9 @@
         </div>
     </section>
     <section class="section">
+        {{ with .Content }}
+            <div style="display: none">{{ . }}</div>
+        {{ end }}
         <div class="container">
             {{ $settings := $.Site.Data.site_settings }}
             <div class="content" style="font-size: 1.1rem; margin-bottom:4rem; line-height: 180%;">{{ $settings.representatives.user_profile_message | markdownify }}</div>
