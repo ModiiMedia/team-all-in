@@ -8,5 +8,6 @@ type = "course"
 [restriction_settings]
 access_list = []
 restrict_access = false
+restriction_message = "## Sorry you don't have permission to view this page.\n\nPlease complete the previous training sessions in order to unlock this page.\n\nIf you have already completed the previous sections please contact **Linda Muth** and let her know so that you can be granted access."
 
 +++
