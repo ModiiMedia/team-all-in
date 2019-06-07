@@ -1,6 +1,6 @@
 {{- $cloudinary := $.Site.Params.cloudinaryBase -}}
 {{- $logo := $.Site.Data.site_settings.branding.logo -}}
-{{- $iconSizes := slice "48" "72" "144" "168" "192" -}}
+{{- $iconSizes := slice "48" "72" "144" "168" "192" "256" -}}
 {{- $len := len $iconSizes -}}
 {
     "name": {{ $.Site.Data.site_settings.website_info.site_name | jsonify }},
