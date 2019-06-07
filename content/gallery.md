@@ -1,9 +1,10 @@
 ---
 title: Photo Gallery
-featured_image: "/v1559445846/team-all-in/group-in-the-pool.jpg"
+featured_image: "/v1559934065/team-all-in/group%20dinner%20on%20ship.png"
 type: gallery
 photos:
 - "/v1559930288/team-all-in/448eb4_523a27753f8349f5be767981dfef8fb7_mv2_d_3264_2448_s_4_2.jpg"
+- "/v1559927656/team-all-in/448eb4_7345547654e64ab399ef3bac04eb6efc_mv2_d_4200_3000_s_4_2.jpg"
 - "/v1559930207/team-all-in/448eb4_c9f1f077e22542b98c854372b655c5a4_mv2_d_2149_2326_s_2-1.jpg"
 - "/v1559930166/team-all-in/448eb4_7029dd5d44f042ab9dd79c52e7f02af2_mv2_d_3264_2448_s_4_2.jpg"
 - "/v1559930088/team-all-in/448eb4_b63de7b3bd10423a861c9fedcfefbcc8_mv2_d_5312_2988_s_4_2.jpg"
@@ -21,7 +22,6 @@ photos:
 - "/v1559928942/team-all-in/448eb4_24b582015e844ea2a01a3b589c0ed5e3_mv2_d_2988_5312_s_4_2-1.jpg"
 - "/v1559928467/team-all-in/448eb4_40e452cda40549c985d7e93eb9f6f07e_mv2_d_5312_2988_s_4_2-1.jpg"
 - "/v1559928318/team-all-in/448eb4_44f8ce914807432a9204fb75cc0d6d98_mv2_d_5312_2988_s_4_2.jpg"
-- "/v1559927656/team-all-in/448eb4_7345547654e64ab399ef3bac04eb6efc_mv2_d_4200_3000_s_4_2.jpg"
 - "/v1559885460/team-all-in/1-fun-on-the-riverwalk-1.jpg"
 - "/v1559885488/team-all-in/team-trip-to-the-marival-residences-1.jpg"
 - "/v1559885467/team-all-in/team-trip-to-the-marival-1.jpg"
@@ -44,6 +44,7 @@ photos:
 - "/v1559885476/team-all-in/448eb4_bc18f5528b834bcaba79803d50a8dfc3_mv2_d_2657_1936_s_2.jpg"
 - "/v1559885487/team-all-in/448eb4_bb9973076a744006b61d4af2c023e210_mv2_d_5312_2988_s_4_2.jpg"
 - "/v1559885484/team-all-in/448eb4_b08fd67ff94140e1ba92d9b5d800a33b_mv2_d_3264_2448_s_4_2.jpg"
+- "/v1559885474/team-all-in/448eb4_93003f191edf4803945fe64be0196b34_mv2_d_6000_4000_s_4_2.jpg"
 - "/v1559885486/team-all-in/448eb4_b6f3ac2ebd064934ae8303a50c1e4a06_mv2_d_3264_2448_s_4_2.jpg"
 - "/v1559885486/team-all-in/448eb4_b5f6d0b9c81d41ca93b405fb7708617e_mv2_d_3264_1952_s_2.jpg"
 - "/v1559885488/team-all-in/448eb4_b2c6a90ab8c44e8bac635b24d49a0b73_mv2_d_6000_3173_s_4_2.jpg"
@@ -57,7 +58,6 @@ photos:
 - "/v1559885472/team-all-in/448eb4_909595aed85a4797a7a22add39382270_mv2.jpg"
 - "/v1559885477/team-all-in/448eb4_830752f8b4614bdd9619d7f5c54d90eb_mv2_d_3874_2673_s_4_2.jpg"
 - "/v1559885479/team-all-in/448eb4_639440b14d8f4809ab54d925a815e5b2_mv2_d_3696_2448_s_4_2.jpg"
-- "/v1559885474/team-all-in/448eb4_93003f191edf4803945fe64be0196b34_mv2_d_6000_4000_s_4_2.jpg"
 - "/v1559885482/team-all-in/448eb4_87268eaa2434471da635b4dd6e0bb6af_mv2_d_3264_2448_s_4_2.jpg"
 - "/v1559885484/team-all-in/448eb4_53576bbd74a54b0fa0fcfb08b5d62265_mv2_d_3024_4032_s_4_2.jpg"
 - "/v1559885482/team-all-in/448eb4_4786ed44c6ad44b9946e68720a21655a_mv2_d_3024_4032_s_4_2.jpg"
