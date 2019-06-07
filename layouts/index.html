@@ -63,15 +63,27 @@
     <div class="container">
         <div class="columns">
                 {{ $site := $.Site }}
-                {{ range .Params.photo_links }}
-                <div class="column is-half photoGrid">               
-                    <a href="{{ with $site.GetPage .page }}{{ .RelPermalink }}{{ end }}" class="photoGridLink" style="background-image: url({{ $cloudinary }}w_500,h_500,c_fill,q_80{{ .background_photo }})">
-                        <div class="imageOverlay"></div>
-                        <div class="photoGridContent">
-                            {{ .text }}
+                {{ with .Params.photo_links }}
+                    {{ with .gallery }}
+                        <div class="column is-half photoGrid">               
+                            <a href="{{ with $site.GetPage .page }}{{ .RelPermalink }}{{ end }}" class="photoGridLink" style="background-image: url({{ $cloudinary }}w_500,h_500,c_fill,q_80{{ .background_photo }})">
+                                <div class="imageOverlay"></div>
+                                <div class="photoGridContent">
+                                    {{ .text }}
+                                </div>
+                            </a>
                         </div>
-                    </a>
-                </div>
+                    {{ end }}
+                    {{ with .dreamtrips_app }}
+                        <div class="column is-half photoGrid">               
+                            <a href="{{ with $site.GetPage .page }}{{ .RelPermalink }}{{ end }}" class="photoGridLink" style="background-image: url({{ $cloudinary }}w_500,h_500,c_fill,q_80{{ .background_photo }})">
+                                <div class="imageOverlay"></div>
+                                <div class="photoGridContent">
+                                    {{ .text }}
+                                </div>
+                            </a>
+                        </div>
+                    {{ end }}
                 {{ end }}
             </div>
         </div>            
