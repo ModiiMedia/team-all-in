@@ -37,41 +37,41 @@ fields:
         required: false
       label: Slogan
     label: Video
-  - name: photo_links
+  label: Banner
+- name: photo_links
+  type: field_group
+  config: {}
+  fields:
+  - name: gallery
     type: field_group
     config: {}
     fields:
-    - name: gallery
-      type: field_group
-      config: {}
-      fields:
-      - name: text
-        type: text
-        config:
-          required: false
-        label: Text
-        default: View Our DreamTrips Photo Gallery
-      - name: background_photo
-        type: file
-        config:
-          maxSize: '5'
-        label: Background Photo
-      label: Link to Photo Gallery
-    - name: dreamtrips_app
-      type: field_group
-      config: {}
-      fields:
-      - name: text
-        type: text
-        config:
-          required: false
-        label: Text
-        default: Get the DreamTrips App
-      - name: background_photo
-        type: file
-        config:
-          maxSize: '5'
-        label: Background Photo
-      label: DreamTrips App
-    label: Photo Links
-  label: Banner
+    - name: text
+      type: text
+      config:
+        required: true
+      label: Text
+    - name: background_photo
+      type: file
+      config:
+        maxSize: '5'
+      label: Background Photo
+    label: Link To Gallery
+  - name: dreamtrips_app
+    type: field_group
+    config: {}
+    fields:
+    - name: text
+      type: text
+      config:
+        required: true
+      label: Text
+    - name: background_photo
+      type: file
+      config:
+        maxSize: '5'
+      label: Background Photo
+    label: Link To DreamTrips App
+  label: Photo Links
+pages:
+- content/_index.md
