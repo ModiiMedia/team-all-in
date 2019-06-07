@@ -7356,14 +7356,6 @@ body {
   .sections .section.dark * {
     color: white; }
 
-@media (max-width: 850px) {
-  body {
-    padding-top: 80px; } }
-
-@media (max-width: 510px) {
-  body {
-    padding-top: 60px; } }
-
 @media (min-width: 850px) {
   body.fixedNav {
     padding-top: 111px; } }
@@ -7383,15 +7375,6 @@ body {
   -moz-transition: padding 200ms ease;
   -o-transition: padding 200ms ease;
   -webkit-transition: padding 200ms ease; }
-  @media (max-width: 850px) {
-    .mainHeader {
-      position: fixed;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: auto;
-      padding: 0.6rem 0;
-      z-index: 50; } }
   @media (min-width: 850px) {
     .mainHeader.fixed {
       position: fixed;
