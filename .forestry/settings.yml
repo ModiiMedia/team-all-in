@@ -14,7 +14,7 @@ sections:
   label: Photo Gallery
 - type: document
   path: content/member-resources.md
-  label: Member Resources
+  label: Videos For Members
 - type: document
   path: content/apps-to-download.md
   label: App Page
