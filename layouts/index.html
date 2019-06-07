@@ -24,11 +24,11 @@
 
 <section class="section">
     <div class="container">
-        <h1 class="title">
+        {{ with $.Site.GetPage "member-resources"}}
+        <h1 class="title resources">
             <a href="/member-resources/" style="color: black">Resources for Members&nbsp;&nbsp;<i class="fas fa-chevron-right"></i></a>
         </h1>
-        <div class="columns">
-            {{ with $.Site.GetPage "member-resources"}}
+        <div class="columns hasFloatingButton">
                 {{ $href := .RelPermalink }}
                 {{ range $i, $e := first 3 .Params.videos }}
                 <div class="column is-one-third">
@@ -49,8 +49,11 @@
                         </a>
                     </div>
                 {{ end }}
-            {{ end }}
+                <div class="floatingButton">
+                    <a href="/member-resources/"><span>View All </span><i class="fas fa-arrow-right"></i></a>
+                </div>
         </div>
+        {{ end }}
 </section>
 <section class="section photoGrid" style="padding-top: 0;">
     <div class="container">
