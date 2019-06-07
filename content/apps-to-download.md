@@ -14,5 +14,3 @@ featured_image: "/v1559445909/team-all-in/mobile-phone-photo.jpg"
 
 ---
 ## Get The DreamTrips App!
-
-anything you want
