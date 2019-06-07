@@ -55,6 +55,22 @@ fields:
     label: Restrict Access
     description: When restrict access is toggled only the users listed below will
       be able to access this course.
+  - name: restriction_message
+    type: textarea
+    default: |-
+      ## Sorry you don't have permission to view this page.
+
+      Please complete the previous training sessions in order to unlock this page.
+
+      If you have already completed the previous sections please contact **Linda Muth** and let her know so that you can be granted access.
+    config:
+      required: true
+      wysiwyg: true
+      schema:
+        format: markdown
+    label: Restriction Message
+    description: This message will appear for people who do not have access to the
+      course
   - name: access_list
     type: list
     config:

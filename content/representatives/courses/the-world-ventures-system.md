@@ -5,6 +5,8 @@ introduction = "Now that you've gotten connected with us it's time for you to be
 short_description = "This course will help you develop seven essential skills that you will need to succeed here at WorldVentures. "
 title = "The World Ventures System"
 type = "course"
+[restriction_settings]
+restriction_message = "## Sorry you don't have permission to view this page.\n\nPlease complete the previous training sessions in order to unlock this page.\n\nIf you have already completed the previous sections please contact **Linda Muth** and let her know so that you can be granted access."
 [[modules]]
 featured_image = "/v1559241557/team-all-in/hand-writing-a-list.jpg"
 heading = "Skill 1: Make Your List - Who Will You Show?"

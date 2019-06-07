@@ -7,6 +7,7 @@ type = "course"
 [restriction_settings]
 access_list = ["users/64182627.md", "users/61648056.md"]
 restrict_access = true
+restriction_message = "## Sorry you don't have permission to view this page.\n\nPlease complete the previous training sessions in order to unlock this page.\n\nIf you have already completed the previous sections please contact **Linda Muth** and let her know so that you can be granted access."
 [[modules]]
 featured_image = "/v1559707569/team-all-in/blueprint-thumbnail.jpg"
 heading = "Video Portal 1 - Video Walkthrough of Blueprint"
