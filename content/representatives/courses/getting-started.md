@@ -1,6 +1,6 @@
 +++
 detailed_description = ""
-featured_image = ""
+featured_image = "/v1559869593/team-all-in/shaking-hands.jpg"
 introduction = ""
 short_description = "Begin your success journey as a Team All In Rep. Before you start on this journey, we need to get you connected to our team! Complete the steps below to get connected."
 title = "Getting Connected"
