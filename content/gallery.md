@@ -3,6 +3,8 @@ title: Photo Gallery
 featured_image: "/v1559445846/team-all-in/group-in-the-pool.jpg"
 type: gallery
 photos:
+- "/v1559929945/team-all-in/448eb4_2412c0a8feed4824b729c8b5c181cb1b_mv2_d_5312_2988_s_4_2.jpg"
+- "/v1559929924/team-all-in/448eb4_454915e7ea6245608a9248d052bf68dc_mv2_d_2448_3264_s_4_2.jpg"
 - "/v1559929806/team-all-in/448eb4_c1cede3946684ff2a16a19f90844ef0f_mv2_d_3264_2448_s_4_2.jpg"
 - "/v1559929721/team-all-in/448eb4_f7b0c5ee6fad49249033f88f6298c146_mv2_d_3264_2448_s_4_2.jpg"
 - "/v1559929643/team-all-in/448eb4_51d025f72f5f488582288b1fb0d94886_mv2.jpg"
