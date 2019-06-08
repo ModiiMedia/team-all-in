@@ -2,6 +2,11 @@
 label: Course
 hide_body: true
 fields:
+- name: under_construction
+  type: boolean
+  label: Under Construction
+  description: Toggling this option will mark the course as "under construction" which
+    will prevent people from being able to view it.
 - name: title
   type: text
   config:

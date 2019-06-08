@@ -9,11 +9,12 @@ courses:
 - representatives/courses/success-roadmap.md
 
 ---
-## Welcome to our Success System
+## Welcome to the WorldVentures' Success System
 
-Please follow the courses in order. If you have trouble accessing a course contact Linda.
+Follow the courses in order.
 
-1. Fast Start Training
-2. Getting Connected
-3. The World Ventures System
-4. Success Roadmap
+Fast Start Training
+
+1. Getting Connected
+2. The World Ventures System
+3. Success Roadmap

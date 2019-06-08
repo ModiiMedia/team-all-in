@@ -1,9 +1,9 @@
 +++
 detailed_description = ""
-featured_image = "/v1559246828/team-all-in/world-ventures-logo.png"
-introduction = "Now that you've gotten connected with us it's time for you to begin mastering the WorldVentures System. This course will work your on seven essential skills that you will need to succeed.  \n\nHere at Team All In we always work to improve together and remain positive as we push forward into the future!\n\n> Twenty years from now, I want this company to be celebrated around the world for touching every aspect of people's lives - All we have to do is stick together. As Henry Ford said \"Coming together is a start. Working together is progress. Staying together is success.\"\n>\n> \\-Wayne Nugent (WorldVentures Founder and Chief Visionary Officer)"
-short_description = "This course will help you develop seven essential skills that you will need to succeed here at WorldVentures. "
-title = "The World Ventures System"
+featured_image = "/v1560028741/team-all-in/next.jpg"
+introduction = "Now that you’re connected to our Team, it’s time to learn how to master the elements of the WorldVentures' System.\n\nThis system is made up of seven fundamental skills. Master these skills and you will find success!\n\n> Twenty years from now, I want this company to be celebrated around the world for touching every aspect of people's lives - All we have to do is stick together. As Henry Ford said \"Coming together is a start. Working together is progress. Staying together is success.\"\n>\n> \\-Wayne Nugent (WorldVentures Founder and Chief Visionary Officer)"
+short_description = "The WorldVentures' System is comprised of seven essential skills you will need to develop to succeed. "
+title = "The WorldVentures System"
 type = "course"
 [restriction_settings]
 restriction_message = "## Sorry you don't have permission to view this page.\n\nPlease complete the previous training sessions in order to unlock this page.\n\nIf you have already completed the previous sections please contact **Linda Muth** and let her know so that you can be granted access."
@@ -85,7 +85,7 @@ video_url = "https://youtu.be/twbacwhiEvo"
 content = "3-Step Setup Examples "
 template = "heading"
 [[modules.sections]]
-section_heading = "Kari & Lisha Schneider (IMDs)"
+section_heading = "Kari & Lisha Schneider (2X IMDs)"
 template = "course-video"
 video_url = "https://vimeo.com/307136078"
 [[modules.sections]]
@@ -95,7 +95,7 @@ video_url = "https://vimeo.com/307136805"
 [[modules.sections]]
 section_heading = "Monique Alaniz (Director)"
 template = "course-video"
-video_url = "https://vimeo.com/307186734"
+video_url = "https://vimeo.com/307138849"
 [[modules.sections]]
 section_heading = "Steve Escamilla (Senior Rep)"
 template = "course-video"
