@@ -11,10 +11,10 @@ courses:
 ---
 ## Welcome to the WorldVentures' Success System
 
-Follow the courses in order.
+Step #1: Complete the “Fast Start” Training
 
-Fast Start Training
+Step #2: Get Connected to Our Team
 
-1. Getting Connected
-2. The World Ventures System
-3. Success Roadmap
+Step #3: Complete the WorldVentures’ “Success System” Training Series
+
+Step #4: Follow the Success Roadmap
