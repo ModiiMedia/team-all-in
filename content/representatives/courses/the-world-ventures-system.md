@@ -95,7 +95,7 @@ video_url = "https://vimeo.com/307136805"
 [[modules.sections]]
 section_heading = "Monique Alaniz (Director)"
 template = "course-video"
-video_url = "https://vimeo.com/307186734"
+video_url = "https://vimeo.com/307138849"
 [[modules.sections]]
 section_heading = "Steve Escamilla (Senior Rep)"
 template = "course-video"
