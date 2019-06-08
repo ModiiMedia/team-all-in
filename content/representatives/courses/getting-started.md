@@ -28,7 +28,7 @@ featured_image = "/v1558467604/team-all-in/facebook%20screenshot.jpg"
 heading = ""
 title = "3) Join Our Facebook Groups"
 [[modules.sections]]
-content = "Your sponsor will connect you to our private Facebook team pages! Click on the links below to make sure you've been added to the necessary private groups.\n\n* Team All In - [Click Here To Test](https://www.facebook.com/groups/216480818941271/ \"Team All In Facebook Group\")\n* Team Unity Rockstars - [Click Here To Test](https://www.facebook.com/groups/teamunityrockstars/ \"Team Unity Rockstars Facebook Group\")\n* Vacation Membership Hub - [Click Here To Test](https://www.facebook.com/groups/1984025638581031/ \"Vacation Membership Hub Facebook Group\")\n\nIf the private page opens then you are good to go! **If it doesn't open make sure to contact your sponsor so that they can add you!**"
+content = "Your sponsor will connect you to our private Facebook team pages! Click on the links below to make sure you've been added to the necessary private groups.\n\n* Team All In - [Click Here To Test](https://www.facebook.com/groups/216480818941271/ \"Team All In Facebook Group\")\n* Team Unity Rockstars - [Click Here To Test](https://www.facebook.com/groups/teamunityrockstars/ \"Team Unity Rockstars Facebook Group\")\n* Vacation Membership Hub - [Click Here To Test](https://www.facebook.com/groups/1984025638581031/ \"Vacation Membership Hub Facebook Group\")\n\nIf the private page opens then you are good to go! **If it doesn't open, make sure to contact your sponsor so that they can add you!**"
 template = "text-section"
 
 +++
