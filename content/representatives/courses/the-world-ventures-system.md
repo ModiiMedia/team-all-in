@@ -2,7 +2,7 @@
 detailed_description = ""
 featured_image = "/v1560028741/team-all-in/next.jpg"
 introduction = "Now that you’re connected to our Team, it’s time to learn how to master the elements of the WorldVentures' System.\n\nThis system is made up of seven fundamental skills. Master these skills and you will find success!\n\n> Twenty years from now, I want this company to be celebrated around the world for touching every aspect of people's lives - All we have to do is stick together. As Henry Ford said \"Coming together is a start. Working together is progress. Staying together is success.\"\n>\n> \\-Wayne Nugent (WorldVentures Founder and Chief Visionary Officer)"
-short_description = "This course will help you develop seven essential skills that you will need to succeed here at WorldVentures. "
+short_description = "The WorldVentures' System is comprised of seven essential skills you will need to develop to succeed. "
 title = "The WorldVentures System"
 type = "course"
 [restriction_settings]
@@ -85,7 +85,7 @@ video_url = "https://youtu.be/twbacwhiEvo"
 content = "3-Step Setup Examples "
 template = "heading"
 [[modules.sections]]
-section_heading = "Kari & Lisha Schneider (IMDs)"
+section_heading = "Kari & Lisha Schneider (2X IMDs)"
 template = "course-video"
 video_url = "https://vimeo.com/307136078"
 [[modules.sections]]
