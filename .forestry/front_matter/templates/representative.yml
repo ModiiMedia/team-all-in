@@ -30,4 +30,5 @@ fields:
     pages on this website regardless of any other restrictions.
   label: Is Administrator
 pages:
+- content/users/jose-moreno.md
 - content/users/guest-user.md
