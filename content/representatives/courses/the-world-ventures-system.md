@@ -1,6 +1,6 @@
 +++
 detailed_description = ""
-featured_image = "/v1559246828/team-all-in/world-ventures-logo.png"
+featured_image = "/v1560028741/team-all-in/next.jpg"
 introduction = "Now that you’re connected to our Team, it’s time to learn how to master the elements of the WorldVentures' System.\n\nThis system is made up of seven fundamental skills. Master these skills and you will find success!\n\n> Twenty years from now, I want this company to be celebrated around the world for touching every aspect of people's lives - All we have to do is stick together. As Henry Ford said \"Coming together is a start. Working together is progress. Staying together is success.\"\n>\n> \\-Wayne Nugent (WorldVentures Founder and Chief Visionary Officer)"
 short_description = "This course will help you develop seven essential skills that you will need to succeed here at WorldVentures. "
 title = "The World Ventures System"
