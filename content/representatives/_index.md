@@ -28,7 +28,7 @@ sections:
 - template: text-w-button
   button_text: Watch now
   button_link: "/representatives/leader-videos/"
-  content: "## Hear from some of our leaders"
+  content: "## Hear from some of our Leaders"
   show_button: true
   background_image: "/v1559804380/team-all-in/team-all-in-leaders-imds.jpg"
 
