@@ -30,5 +30,6 @@ fields:
     pages on this website regardless of any other restrictions.
   label: Is Administrator
 pages:
+- content/users/ed-aguilar.md
 - content/users/jose-moreno.md
 - content/users/guest-user.md
