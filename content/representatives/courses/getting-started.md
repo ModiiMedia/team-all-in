@@ -14,7 +14,7 @@ featured_image = "/v1558467161/team-all-in/texting-photo.jpg"
 heading = ""
 title = "1) Join Our Team Texts"
 [[modules.sections]]
-content = "Text your name to Linda Muth at [**(850) 525-7547**](tel:8505257547)\n\nAfter doing this the we will add your to our Team Texts! These texts will keep you informed of important updates and events effecting your business. "
+content = "Text your name to Linda Muth at [**(850) 525-7547**](tel:8505257547)\n\nAfter doing this, we will add you to our Team Texts! These texts will keep you informed of important updates and events effecting your business."
 template = "text-section"
 [[modules]]
 featured_image = "/v1558467489/team-all-in/gmail-screenshot.jpg"
