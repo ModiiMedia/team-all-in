@@ -4,6 +4,7 @@ introduction = "## Congratulations!! You've completed the 1st step to achieving 
 short_description = "Once you get your 4 you can start our advanced training program."
 title = "Success Roadmap - Your Advanced Training"
 type = "course"
+under_construction = true
 [restriction_settings]
 access_list = ["users/64182627.md", "users/61648056.md"]
 restrict_access = true

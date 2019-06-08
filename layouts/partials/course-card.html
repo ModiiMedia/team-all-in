@@ -1,8 +1,18 @@
 {{ $cloudinary := .Cloudinary }}
 <div class="column is-one-quarter-widescreen is-one-third-desktop is-half-tablet">
-    <a class="card courseCard" href="{{ .Page.RelPermalink }}">
+    {{ if .Page.Params.under_construction }}
+        <div class="card courseCard underConstruction">
+    {{ else }}
+        <a class="card courseCard" href="{{ .Page.RelPermalink }}">
+    {{ end }}
         <div class="card-image">
             <figure class="image is-16by9{{ if not .Page.Params.featured_image }} icon{{ end }}">
+                    {{ if .Page.Params.under_construction }}
+                    <div class="constructionText">
+                        <i class="fas fa-exclamation-triangle"></i> 
+                        <div>Under Construction</div>
+                    </div>
+                    {{ end }}
                 {{- if .Page.Params.featured_image -}}
                     <img src="{{ $cloudinary }}w_460,h_260,c_fill,q_80{{ .Page.Params.featured_image }}">
                 {{- else -}}
@@ -14,5 +24,9 @@
             <h2 class="subtitle">{{ .Page.Title }}</h2>
             <p>{{ .Page.Params.short_description | truncate 100 }}</p>
         </div>
-    </a>
+    {{ if .Page.Params.under_construction }}
+        </div>
+    {{ else }}
+        </a>
+    {{ end }}
 </div>

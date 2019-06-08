@@ -7190,6 +7190,30 @@ body {
     cursor: pointer; }
     .card.courseCard:hover {
       transform: scale(1.025); }
+    .card.courseCard.underConstruction {
+      cursor: not-allowed; }
+      .card.courseCard.underConstruction .constructionText {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        display: block;
+        display: flex;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        z-index: 10;
+        background: rgba(255, 0, 0, 0.5);
+        color: rgba(255, 255, 255, 0.9);
+        font-size: 2rem; }
+        .card.courseCard.underConstruction .constructionText div {
+          font-size: 1.3rem;
+          padding-top: 0.5rem;
+          width: 100%;
+          text-align: center; }
     .card.courseCard .icon {
       background: #333333;
       opacity: 0.3;

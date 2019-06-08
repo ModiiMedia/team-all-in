@@ -110,6 +110,33 @@ body {
             // opacity: 0.8;
             transform: scale(1.025)
         }
+        &.underConstruction {
+            cursor: not-allowed;
+            .constructionText {
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                display: block;
+                display: flex;
+                display: -ms-flexbox;
+                display: -webkit-flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                z-index: 10;
+                background: rgba(255, 0, 0, 0.5);
+                color: rgba(255, 255, 255, 0.9);
+                font-size: 2rem;
+                div {
+                    font-size: 1.3rem;
+                    padding-top: 0.5rem;
+                    width: 100%;
+                    text-align: center;
+                }
+            }
+        }
         .icon {
             background: $dark-gray;
             opacity: 0.3;
