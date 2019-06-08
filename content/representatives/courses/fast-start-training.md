@@ -1,4 +1,5 @@
 +++
+draft = true
 featured_image = "/v1558466492/team-all-in/runner-at-the-starting-line.jpg"
 introduction = "#### Everyone who begins their WorldVentures journey starts at a different place.  We want to help you have the BEST START possible!  Check out these great videos to help you get off the right start!\n\n### Welcome to one of the BEST DECISIONS you've ever made!!\n\n<iframe title=\"vimeo-player\" src=\"https://player.vimeo.com/video/309296816\" width=\"640\" height=\"360\" frameborder=\"0\" allowfullscreen></iframe>\n\n### Let's get you started: Fast Start Training\n\n<iframe title=\"vimeo-player\" src=\"https://player.vimeo.com/video/338737417\" width=\"640\" height=\"360\" frameborder=\"0\" allowfullscreen></iframe>"
 modules = []
