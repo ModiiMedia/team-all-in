@@ -19,7 +19,7 @@ sections:
 
     Step #2:  Get Connected to Our Team
 
-    Step #3:  Complete the WorldVentures "Success System" Training Series
+    Step #3:  Complete the WorldVentures' "Success System" Training Series
 
     Step #4:  Follow the Success Roadmap
   show_button: true
