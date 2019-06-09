@@ -3,6 +3,7 @@ title: Photo Gallery
 featured_image: "/v1559934065/team-all-in/group%20dinner%20on%20ship.png"
 type: gallery
 photos:
+- "/v1560091007/team-all-in/04q_.jpg"
 - "/v1559930288/team-all-in/448eb4_523a27753f8349f5be767981dfef8fb7_mv2_d_3264_2448_s_4_2.jpg"
 - "/v1559927656/team-all-in/448eb4_7345547654e64ab399ef3bac04eb6efc_mv2_d_4200_3000_s_4_2.jpg"
 - "/v1559930207/team-all-in/448eb4_c9f1f077e22542b98c854372b655c5a4_mv2_d_2149_2326_s_2-1.jpg"
@@ -11,6 +12,7 @@ photos:
 - "/v1559929945/team-all-in/448eb4_2412c0a8feed4824b729c8b5c181cb1b_mv2_d_5312_2988_s_4_2.jpg"
 - "/v1559929924/team-all-in/448eb4_454915e7ea6245608a9248d052bf68dc_mv2_d_2448_3264_s_4_2.jpg"
 - "/v1559929806/team-all-in/448eb4_c1cede3946684ff2a16a19f90844ef0f_mv2_d_3264_2448_s_4_2.jpg"
+- "/v1560091027/team-all-in/20150214_114703.jpg"
 - "/v1559929721/team-all-in/448eb4_f7b0c5ee6fad49249033f88f6298c146_mv2_d_3264_2448_s_4_2.jpg"
 - "/v1559929643/team-all-in/448eb4_51d025f72f5f488582288b1fb0d94886_mv2.jpg"
 - "/v1559929593/team-all-in/448eb4_e0191f51fb58415e823c2949cb1c75cb_mv2_d_2448_3264_s_4_2.jpg"
