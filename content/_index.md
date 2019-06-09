@@ -5,7 +5,7 @@ banner:
   top_text_large: DreamTrips
   video:
     url: https://vimeo.com/338744986
-    slogan: I haven't been everywhere but it's on my list
+    slogan: I haven't been everywhere ... but it's on my list!
   background_photo: "/v1559443422/team-all-in/beach-clear-water-white-boat.jpg"
 photo_links:
   gallery:
