@@ -8,6 +8,7 @@ fields:
   config:
     required: false
   label: Section Heading
+  description: Title that will appear above the video.
 - name: video_url
   type: text
   config:
