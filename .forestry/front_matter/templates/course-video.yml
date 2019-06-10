@@ -13,3 +13,4 @@ fields:
   config:
     required: true
   label: Video Url
+  description: Paste your Vimeo or Youtube link here
