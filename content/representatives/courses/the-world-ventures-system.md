@@ -129,7 +129,7 @@ template = "text-section"
 [[modules.sections]]
 section_heading = "Earnavaction.com - $149.99 Promo"
 template = "course-video"
-video_url = "https://vimeo.com/316100993"
+video_url = "https://vimeo.com/341463608"
 [[modules.sections]]
 section_heading = "EarnTravel.club (Membership Only)"
 template = "course-video"
