@@ -3,6 +3,12 @@ title: Photo Gallery
 featured_image: "/v1559934065/team-all-in/group%20dinner%20on%20ship.png"
 type: gallery
 photos:
+- "/v1560696629/team-all-in/20190615_100016.jpg"
+- "/v1560696631/team-all-in/20190614_201818.jpg"
+- "/v1560696630/team-all-in/20190614_112638.jpg"
+- "/v1560696630/team-all-in/20190613_181635.jpg"
+- "/v1560696626/team-all-in/20190613_181052.jpg"
+- "/v1560696631/team-all-in/20190613_175615.jpg"
 - "/v1560695939/team-all-in/Sunset%20Cruise.jpg"
 - "/v1560091007/team-all-in/04q_.jpg"
 - "/v1559930288/team-all-in/448eb4_523a27753f8349f5be767981dfef8fb7_mv2_d_3264_2448_s_4_2.jpg"
