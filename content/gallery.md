@@ -3,6 +3,7 @@ title: Photo Gallery
 featured_image: "/v1559934065/team-all-in/group%20dinner%20on%20ship.png"
 type: gallery
 photos:
+- "/v1560695939/team-all-in/Sunset%20Cruise.jpg"
 - "/v1560091007/team-all-in/04q_.jpg"
 - "/v1559930288/team-all-in/448eb4_523a27753f8349f5be767981dfef8fb7_mv2_d_3264_2448_s_4_2.jpg"
 - "/v1559927656/team-all-in/448eb4_7345547654e64ab399ef3bac04eb6efc_mv2_d_4200_3000_s_4_2.jpg"
