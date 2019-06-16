@@ -3,6 +3,7 @@ title: Photo Gallery
 featured_image: "/v1559934065/team-all-in/group%20dinner%20on%20ship.png"
 type: gallery
 photos:
+- "/v1560696760/team-all-in/IMG-20190608-WA0003.jpg"
 - "/v1560696629/team-all-in/20190615_100016.jpg"
 - "/v1560696631/team-all-in/20190614_201818.jpg"
 - "/v1560696630/team-all-in/20190614_112638.jpg"
