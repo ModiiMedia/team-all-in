@@ -59,4 +59,4 @@ videos:
 ---
 ## How to get the MOST from of your DreamTrips membership
 
-We have created a series of videos to act as a resource for DreamTrips members. These videos will help you better understand how to use your membership and maximize its value.
+We have created a series of videos to act as a resource for DreamTrips members. These videos will help you better understand how to use your membership and maximize its value. 
