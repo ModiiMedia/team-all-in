@@ -1,6 +1,6 @@
 ---
 title: Member Benefits
-featured_image: "/v1558997104/team-all-in/beach-sunset-waves.jpg"
+featured_image: "/v1560786374/team-all-in/beach-sunset-waves-12983112313102128.jpg"
 type: video-gallery
 videos:
 - title: Overview of the DreamTrips Membership
