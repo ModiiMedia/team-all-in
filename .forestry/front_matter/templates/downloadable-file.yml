@@ -24,7 +24,9 @@ fields:
   config:
     maxSize: '25'
   label: File
-  description: This is the file that users will be able to download
+  description: This is the file that users will be able to download. DOES NOT work
+    with Word Documents or Excel Spreadsheets. Please convert them to PDFs for best
+    results.
 - name: button_text
   type: text
   config:
