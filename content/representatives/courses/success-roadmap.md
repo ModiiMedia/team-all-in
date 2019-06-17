@@ -10,7 +10,7 @@ access_list = ["users/64182627.md", "users/61648056.md"]
 restrict_access = true
 restriction_message = "## Sorry you don't have permission to view this page.\n\nPlease complete the previous training sessions in order to unlock this page.\n\nIf you have already completed the previous sections please contact **Linda Muth** and let her know so that you can be granted access."
 [[modules]]
-featured_image = "/v1559707569/team-all-in/blueprint-thumbnail.jpg"
+featured_image = "/v1560786610/team-all-in/blueprint-thumbnail-asdofiasdlkfjas.jpg"
 heading = "Video Portal 1 - Video Walkthrough of Blueprint"
 title = "1) Blueprint Walkthrough"
 [[modules.sections]]
@@ -57,7 +57,7 @@ video_url = "https://www.youtube.com/watch?v=988EBFlfC-A"
 content = "## Personal tip:\n\nPeople ask leaders all the time, what are the secrets to building a big business and making a significant income. One, is learning to ask more questions, so critical. But a close second is being able to**feel** **confident** in the company, profession and product you represent.  \n  \nThis confidence changes how you react, respond and control your action when engaging with a future customer or associate.  \n  \n**Where does this confidence come from?**  \n  \n**Knowledge**. Use these videos to improve your knowledge and watch your excitement and results improve!"
 template = "text-section"
 [[modules]]
-featured_image = "/v1559711123/team-all-in/money-100-dollar-bills-2.jpg"
+featured_image = "/v1560786598/team-all-in/money-100-dollar-bills-aslkdfjaslkdfjadslkfj.jpg"
 heading = "Video Portal 3 - Understanding the WorldVentures Compensation Plan"
 title = "3) How Do I Get Paid"
 [[modules.sections]]
