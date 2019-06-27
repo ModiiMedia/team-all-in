@@ -68,4 +68,6 @@ build:
   output_directory: public
   instant_preview_command: hugo server -D -F -E --renderToDisk --port 8080 --bind
     0.0.0.0
+  preview_docker_image: forestryio/build:latest
+  mount_path: "/opt/buildhome/repo"
 version: 0.55.2
