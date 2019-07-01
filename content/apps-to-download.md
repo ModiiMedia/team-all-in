@@ -10,7 +10,7 @@ photos:
 - "/v1559665584/team-all-in/app-photo-2-2.webp"
 - "/v1559666075/team-all-in/app-photo-3.webp"
 - "/v1559666076/team-all-in/app-photo-4.webp"
-featured_image: "/v1559445909/team-all-in/mobile-phone-photo.jpg"
+featured_image: "/v1561997937/team-all-in/225435163543254731354861315384251-_mobile-phone-photo.jpg"
 
 ---
 ## Get The DreamTrips App!
