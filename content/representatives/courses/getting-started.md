@@ -24,7 +24,7 @@ title = "2) Send Us Your Email"
 content = "Send your email address to [**mataylor143@gmail.com**](mailto:mataylor143@gmail.com)​​\n\nWe will use your email address to keep you informed of important updates and events effecting your business."
 template = "text-section"
 [[modules]]
-featured_image = "/v1558467604/team-all-in/facebook%20screenshot.jpg"
+featured_image = "/v1561998341/team-all-in/6546a51sd6f8as4f3as516351sf513sf___facebook%20screenshot.jpg"
 heading = ""
 title = "3) Join Our Facebook Groups"
 [[modules.sections]]
