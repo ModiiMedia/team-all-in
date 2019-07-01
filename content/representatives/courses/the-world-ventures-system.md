@@ -32,7 +32,7 @@ file = "/v1559243429/team-all-in/your-list-worksheet.pdf"
 section_heading = "Your List PDF"
 template = "downloadable-file"
 [[modules]]
-featured_image = "/v1559602503/team-all-in/group-having-fun.jpg"
+featured_image = "/v1561998537/team-all-in/___lkasjdflaksdjfasa351884332184666214_group-having-fun.jpg"
 heading = "Skill 2: Invite Your Prospects to See Your Product or Opportunity"
 title = "2) Invite Prospects"
 [[modules.sections]]
@@ -60,11 +60,11 @@ video_url = "https://www.youtube.com/watch?v=_LbGpUMnv3I"
 [[modules.sections]]
 button_text = "Download File"
 description = "These are a collection of scripts that can help you when inviting prospects."
-file = "/v1559598894/team-all-in/inviting-scripts.pdf"
+file = "/v1561998642/team-all-in/inviting-scripts____254a6846.pdf"
 section_heading = "Inviting Scripts"
 template = "downloadable-file"
 [[modules]]
-featured_image = "/v1559679645/team-all-in/man-and-woman-on-date-sharing-drinks.jpg"
+featured_image = "/v1561998492/team-all-in/65a1s3d21fsa681fe3s2f1e53man-__and-woman-on-date-sharing-drinks.jpg"
 heading = "Skill 3: Showing your Product or Opportunity to your prospect"
 title = "3) Share"
 [[modules.sections]]
@@ -171,7 +171,7 @@ section_heading = "Representative Agreement"
 template = "downloadable-file"
 [[modules.sections]]
 button_text = "Download File"
-file = "/v1559677650/team-all-in/income-disclosure-statement.pdf"
+file = "/v1561998739/team-all-in/income-disclosure-statement__1123541.pdf"
 section_heading = "Income Disclosure Statement"
 template = "downloadable-file"
 [[modules]]
@@ -191,7 +191,7 @@ template = "text-section"
 [[modules.sections]]
 button_text = "Download Example List"
 description = "This document is an example of a follow up list that you can use for reference when creating your own. We recommend creating a spreadsheet in Excel or Google docs to help you stay organized."
-file = "/v1559678477/team-all-in/Follow%20Up%20List%20Example.pdf"
+file = "/v1561998770/team-all-in/Follow%20Up%20List%20Example__4536132158.pdf"
 section_heading = "Example Follow Up List"
 template = "downloadable-file"
 [[modules]]
