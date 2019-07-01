@@ -15,6 +15,6 @@ photo_links:
   dreamtrips_app:
     text: Get The DreamTrips App
     page: apps-to-download.md
-    background_photo: "/v1559445909/team-all-in/mobile-phone-photo.jpg"
+    background_photo: "/v1561997937/team-all-in/225435163543254731354861315384251-_mobile-phone-photo.jpg"
 
 ---
