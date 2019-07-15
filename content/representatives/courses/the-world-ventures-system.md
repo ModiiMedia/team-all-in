@@ -209,7 +209,7 @@ video_url = "https://vimeo.com/307196143"
 content = "## Personal tip:\n\n* The teaching and training portion of our business is critical.\n* Here is our best advice - this SYSTEM Online Training is meant to be a back up to your efforts with your new representative.\n* This is not meant to replace you and the RELATIONSHIP you will build with your team - this business is about building a \"family\" - it will not grow if you are not part of it\n* Use this website and our System to help duplicate your successes!"
 template = "text-section"
 [[modules]]
-featured_image = "/v1559679410/team-all-in/concert-event-large-crowd.jpg"
+featured_image = "/v1563207684/team-all-in/concert-event-large-crowd_l2112kljalkfdj12o12nflalfjasdjf1l12k2alskdfjasfn.jpg"
 heading = "Skill 7 - Promoting Events"
 title = "7) Promote Events"
 [[modules.sections]]
