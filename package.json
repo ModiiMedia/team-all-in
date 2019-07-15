@@ -21,7 +21,7 @@
     "bulma": "^0.7.5"
   },
   "devDependencies": {
-    "concurrently": "^4.1.0",
+    "concurrently": "^4.1.1",
     "node-sass": "^4.12.0"
   }
 }
