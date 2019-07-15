@@ -30,6 +30,7 @@ fields:
     pages on this website regardless of any other restrictions.
   label: Is Administrator
 pages:
+- content/users/terri-darkentell.md
 - content/users/shirley-roth.md
 - content/users/isabel-jeremy-dunnahoo.md
 - content/users/reggie-stephens.md
@@ -37,7 +38,6 @@ pages:
 - content/users/laura-guerra.md
 - content/users/joshue-deleon.md
 - content/users/debbi-suitor.md
-- content/users/terri-darkentell.md
 - content/users/alicia-harper-1.md
 - content/users/david-perales.md
 - content/users/alicia-harper.md
