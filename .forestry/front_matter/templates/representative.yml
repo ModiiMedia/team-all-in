@@ -30,6 +30,7 @@ fields:
     pages on this website regardless of any other restrictions.
   label: Is Administrator
 pages:
+- content/users/carol-martinez.md
 - content/users/jerry-ledet.md
 - content/users/jenna-mcbride.md
 - content/users/brent-gilcrease.md
