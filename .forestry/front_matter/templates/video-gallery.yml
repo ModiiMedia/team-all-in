@@ -51,5 +51,5 @@ fields:
   config:
     labelField: title
 pages:
-- content/member-resources.md
 - content/representatives/leader-videos.md
+- content/member-resources.md
