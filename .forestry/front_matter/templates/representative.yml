@@ -30,6 +30,7 @@ fields:
     pages on this website regardless of any other restrictions.
   label: Is Administrator
 pages:
+- content/users/jason-setzer.md
 - content/users/terri-darkentell.md
 - content/users/shirley-roth.md
 - content/users/isabel-jeremy-dunnahoo.md
