@@ -30,11 +30,13 @@ fields:
     pages on this website regardless of any other restrictions.
   label: Is Administrator
 pages:
+- content/users/victoria-coley.md
 - content/users/terri-darkentell-1.md
+- content/users/breanna-leigh.md
+- content/users/jason-setzer.md
 - content/users/trenity-gardner.md
 - content/users/isabel-jeremy-dunnahoo.md
 - content/users/martha-hernandez.md
-- content/users/breanna-leigh.md
 - content/users/laurry-bunce.md
 - content/users/carol-martinez.md
 - content/users/jerry-ledet.md
@@ -43,7 +45,6 @@ pages:
 - content/users/roxann-riojas-martinez.md
 - content/users/sharon-rowe.md
 - content/users/chase-setzer.md
-- content/users/jason-setzer.md
 - content/users/terri-darkentell.md
 - content/users/shirley-roth.md
 - content/users/reggie-stephens.md
