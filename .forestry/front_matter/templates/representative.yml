@@ -30,6 +30,7 @@ fields:
     pages on this website regardless of any other restrictions.
   label: Is Administrator
 pages:
+- content/users/renee-daye.md
 - content/users/dempsey-woods-iii.md
 - content/users/jenny-bellamy.md
 - content/users/christine-sengbe.md
