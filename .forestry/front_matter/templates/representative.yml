@@ -30,6 +30,7 @@ fields:
     pages on this website regardless of any other restrictions.
   label: Is Administrator
 pages:
+- content/users/doug-mary-mccary.md
 - content/users/larry-smtih.md
 - content/users/christine-allen.md
 - content/users/linda-guartuche.md
