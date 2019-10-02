@@ -1,4 +1,29 @@
 ---
 label: Blog Post
 hide_body: false
-fields: []
+fields:
+- name: title
+  type: text
+  config:
+    required: true
+  label: Title
+- name: date
+  type: datetime
+  label: Date
+  description: ''
+  config:
+    required: true
+    date_format: MM/DD/YYYY
+    time_format: 
+    display_utc: false
+  default: now
+- name: featured_image
+  type: file
+  config:
+    maxSize: '15'
+  label: Featured Image
+- name: vimeo_url
+  type: text
+  config:
+    required: false
+  label: vimeo_url
