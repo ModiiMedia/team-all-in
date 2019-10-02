@@ -17,13 +17,13 @@ fields:
     time_format: 
     display_utc: false
   default: now
-- name: featured_image
-  type: file
-  config:
-    maxSize: '15'
-  label: Featured Image
 - name: vimeo_url
   type: text
   config:
     required: false
   label: vimeo_url
+- name: featured_image
+  type: file
+  config:
+    maxSize: '15'
+  label: Featured Image
