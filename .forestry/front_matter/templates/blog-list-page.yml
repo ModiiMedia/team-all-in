@@ -4,7 +4,9 @@ hide_body: true
 fields:
 - type: text
   name: title
-  label: title
+  label: Title
+  config:
+    required: true
 - type: text
   name: subtitle
-  label: subtitle
+  label: Subtitle
