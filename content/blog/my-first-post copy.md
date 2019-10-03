@@ -1,6 +1,6 @@
 ---
 title: June 2019 Team Unity DreamTrip
-date: 2019-10-03T04:05:07.000+00:00
+date: 2019-10-02T23:05:07-05:00
 author: users/21580901.md
 
 ---
