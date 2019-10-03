@@ -1,4 +1,6 @@
-{{ $url := replace .Inner " " "" }}
+{{ $md := markdownify .Inner }}
+{{ $plain := plainify $md }}
+{{ $url := replace $plain " " "" }}
 <div class="video-shortcode">
     {{ if hasPrefix $url "https://" }}
         {{ if in $url "vimeo" }}
