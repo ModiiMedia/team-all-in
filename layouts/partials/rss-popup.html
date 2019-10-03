@@ -1,0 +1,15 @@
+<div class="modal" id="rss-modal">
+  <div class="modal-background close-rss-link"></div>
+  <div class="modal-content">
+    <div class="subtitle">
+      Copy this link into your rss feed reader
+    </div>
+    <input
+      type="text"
+      style="width:100%;color:#333;font-size:14px;padding:10px"
+      value="{{ $.Site.BaseURL }}blog/index.xml"
+      id="podcast-link"
+    />
+  </div>
+  <button class="modal-close is-large close-rss-link" aria-label="close"></button>
+</div>

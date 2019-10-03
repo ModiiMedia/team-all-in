@@ -5,13 +5,13 @@
       <div class="columns">
         <div class="column title-meta is-two-thirds">
             {{ with $.Site.GetPage "blog/_index.md" }}
-                <h1 class="title">{{ .Title }}</h1>
+                <h1 class="title"><a href="/blog/">{{ .Title }}</a></h1>
                 <div class="subtitle">{{ .Params.subtitle }}</div>
             {{ end }}
         </div>
         <div class="column">
           <div class="rss-subscribe">
-            <span> <i class="fas fa-rss"></i>&nbsp; Subscribe via RSS </span>
+            {{ partial "rss-button"}}
           </div>
         </div>
       </div>
@@ -27,4 +27,7 @@
     </div>
   </div>
 </section>
+
+{{ partial "rss-popup" . }}
+
 {{ end }}

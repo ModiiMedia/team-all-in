@@ -39,3 +39,25 @@ imageUploadField.onchange = function(){
       document.getElementById('imageUploadFilename').innerHTML = imageUploadField.files[0].name;
     }
 };
+
+// RSS modal
+let rssOpener = document.getElementById('open-rss-link')
+let rssClosers = document.querySelectorAll('.close-rss-link')
+let rssModal = document.querySelector("#rss-modal")
+
+rssOpener.addEventListener('click', function(){
+    openRssModal();
+})
+
+for(let i = 0; i < rssClosers.length; i++){
+    rssClosers[i].addEventListener("click", function(){
+        closeRssModal();
+    })
+}
+
+function openRssModal() {
+    rssModal.classList.add('is-active');
+}
+function closeRssModal() {
+    rssModal.classList.remove("is-active")
+}

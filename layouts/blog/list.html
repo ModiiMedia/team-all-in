@@ -9,10 +9,7 @@
                 </div>
                 <div class="column">
                     <div class="rss-subscribe">
-                        <span>
-                            <i class="fas fa-rss"></i>&nbsp;
-                            Subscribe via RSS        
-                        </span>
+                        {{ partial "rss-button" }}
                     </div>
                 </div>
             </div>
@@ -32,4 +29,5 @@
         {{ end }}
     </div>
 </section>
+{{ partial "rss-popup" . }}
 {{ end }}
