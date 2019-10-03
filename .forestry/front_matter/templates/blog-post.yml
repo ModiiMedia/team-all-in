@@ -17,13 +17,15 @@ fields:
     time_format: 
     display_utc: false
   default: now
-- name: vimeo_url
-  type: text
+- name: author
+  type: select
+  default: users/21580901.md
   config:
     required: false
-  label: vimeo_url
-- name: featured_image
-  type: file
-  config:
-    maxSize: '15'
-  label: Featured Image
+    options: []
+    source:
+      type: pages
+      section: users
+      file: 
+      path: 
+  label: Author
