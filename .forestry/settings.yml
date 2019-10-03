@@ -18,9 +18,6 @@ sections:
 - type: document
   path: content/apps-to-download.md
   label: App Page
-- type: document
-  path: content/blog/_index.md
-  label: Blog Settings
 - type: directory
   path: content/blog
   label: Blog
@@ -60,6 +57,9 @@ sections:
 - type: document
   path: data/site_settings.yaml
   label: Site Settings
+- type: document
+  path: content/blog/_index.md
+  label: Blog Settings
 upload_dir: team-all-in
 public_path: https://res.cloudinary.com/modii/w_800,q_60,f_auto
 front_matter_path: ''
