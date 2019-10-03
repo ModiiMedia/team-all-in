@@ -17,15 +17,3 @@ fields:
     time_format: 
     display_utc: false
   default: now
-- name: author
-  type: select
-  default: users/21580901.md
-  config:
-    required: false
-    options: []
-    source:
-      type: pages
-      section: users
-      file: 
-      path: 
-  label: Author
