@@ -26,6 +26,10 @@ sections:
   exclude: _index.md
   templates:
   - blog-post
+- type: document
+  path: content/blog/_index.md
+  label: Blog Settings
+  match: "**/*"
 - type: heading
   label: Representative Area
 - type: document
