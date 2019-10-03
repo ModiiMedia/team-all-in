@@ -5,3 +5,5 @@ author: users/21580901.md
 
 ---
 {{< video >}} https://vimeo.com/363925055 {{< /video >}}
+
+In June we took a week long dream trip to Cabo with our team.
