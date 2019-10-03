@@ -7529,6 +7529,9 @@ html.noScroll {
 .authenticationForm .formButtons .standardButton {
   border: none; }
 
+.container.blog {
+  max-width: 1200px; }
+
 .standardButton {
   cursor: pointer;
   display: inline-block;
