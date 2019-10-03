@@ -1,6 +1,7 @@
 ---
-title: My First Post
-date: 2019-10-02 23:05:07.7391566 -0500
----
+title: June 2019 Team Unity DreamTrip
+date: 2019-10-02T23:05:07-05:00
+author: users/21580901.md
 
-{{< video >}} https://www.youtube.com/watch?v=KYYjdWSrRjI {{< /video >}}
+---
+{{< video >}} [https://vimeo.com/363925055](https://vimeo.com/363925055 "https://vimeo.com/363925055") {{< /video >}}
