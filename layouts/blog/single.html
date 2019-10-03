@@ -1,3 +1,30 @@
 {{ define "main" }}
-
+<section class="section blog">
+  <div class="container blog">
+    <div class="blog-title">
+      <div class="columns">
+        <div class="column title-meta is-two-thirds">
+            {{ with $.Site.GetPage "blog/_index.md" }}
+                <h1 class="title">{{ .Title }}</h1>
+                <div class="subtitle">{{ .Params.subtitle }}</div>
+            {{ end }}
+        </div>
+        <div class="column">
+          <div class="rss-subscribe">
+            <span> <i class="fas fa-rss"></i>&nbsp; Subscribe via RSS </span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="blog-card">
+      <h2 class="title">
+          {{ .Title }}
+      </h2>
+      <p class="subtitle">{{ dateFormat "January 2, 2006" .Date }}</p>
+      <div class="content">
+        {{ .Content }}
+      </div>
+    </div>
+  </div>
+</section>
 {{ end }}
