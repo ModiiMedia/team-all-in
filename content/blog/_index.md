@@ -1,5 +1,5 @@
 ---
 title: Team All In Blog
-subtitle: Videos and photos from our DreamTrips.
+subtitle: Videos from our DreamTrips.
 
 ---
