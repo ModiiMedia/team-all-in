@@ -4,14 +4,6 @@ auto_deploy: false
 admin_path: static/admin
 webhook_url: 
 sections:
-- type: directory
-  path: content/blog
-  label: Blog
-  create: documents
-  match: "**/*"
-  exclude: _index.md
-  templates:
-  - blog-post
 - type: heading
   label: Members Area
 - type: document
@@ -26,6 +18,14 @@ sections:
 - type: document
   path: content/apps-to-download.md
   label: App Page
+- type: directory
+  path: content/blog
+  label: Blog
+  create: documents
+  match: "**/*"
+  exclude: _index.md
+  templates:
+  - blog-post
 - type: heading
   label: Representative Area
 - type: document
