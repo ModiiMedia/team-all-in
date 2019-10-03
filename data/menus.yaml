@@ -8,6 +8,8 @@ member_navigation:
     page: gallery.md
   - label: DreamTrips App
     page: apps-to-download.md
+  - label: Blog
+    page: blog/_index.md
   mobile:
   - label: Home
     page: _index.md

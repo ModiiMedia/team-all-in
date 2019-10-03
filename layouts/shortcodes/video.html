@@ -1,0 +1,16 @@
+{{ $url := replace .Inner " " "" }}
+<div class="video-shortcode">
+    {{ if hasPrefix $url "https://" }}
+        {{ if in $url "vimeo" }}
+            {{- $jsonURL := print "https://vimeo.com/api/oembed.json?url=" $url -}}
+            {{- $json := getJSON $jsonURL -}}
+            {{ $json.html | safeHTML }}
+        {{ else if in $url "youtu" }}
+            {{ $rmUrl := replace $url "https://www.youtube.com/watch?v=" "" }}
+            {{ $id := replace $rmUrl "https://youtu.be/" "" }}
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/{{ $id }}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        {{ end }}
+    {{ else }}
+        <div class="vid-warning">Please enter valid video url</div>
+    {{ end }}
+</div>

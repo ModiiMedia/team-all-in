@@ -76,8 +76,8 @@ nav.headerMainNav {
     display: -ms-flexbox;
     align-items: center;
     font-size: 1.15rem;
-    @media(max-width: $desktop){
-        font-size: 1rem;
+    @media(max-width: 1337px){
+        font-size: 0.9rem;
     }
     @media (max-width: $tablet){
         display: none
@@ -111,6 +111,11 @@ nav > .navButton {
     align-items: center;
     .title {
         margin-left: 0.5rem;
+    }
+    @media(max-width: $desktop) {
+        img {
+            height: 60px;
+        }
     }
     @media (max-width: $tablet){
         .title {

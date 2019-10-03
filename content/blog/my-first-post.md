@@ -1,8 +1,6 @@
 ---
 title: My First Post
-date: 
+date: 2019-10-02 23:05:07.7391566 -0500
 ---
 
-## This is my first post
-
-lorem ipsum lorem ipsum
+{{< video >}} https://vimeo.com/363929086 {{< /video >}}

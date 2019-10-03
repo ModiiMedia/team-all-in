@@ -1,3 +1,128 @@
 .container.blog {
-    max-width: 1200px;
+  max-width: 800px;
+}
+
+.section.blog {
+  background: $light-gray;
+  box-shadow: inset 1px 4px 9px -6px rgba(0, 0, 0, 0.25);
+}
+
+.blog-title {
+  position: relative;
+  margin-bottom: 5rem;
+  .title-meta {
+    opacity: 0.7;
+  }
+  .rss-subscribe {
+    text-align: right;
+    span {
+      background: rgb(241, 109, 0);
+      padding: 0.5rem;
+      color: white;
+      cursor: pointer;
+    }
+    @media (max-width: $tablet) {
+      text-align: left;
+    }
+  }
+}
+$spacing: 1.5em;
+$video-spacing: 3em;
+
+.blog-card {
+  margin-bottom: 5rem;
+  &:last-child {
+    margin-bottom: 0rem;
+  }
+  border: 1px solid $light-gray;
+  background: white;
+  padding: 5rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25);
+
+  .title {
+    text-align: center;
+    a {
+      color: $text;
+      &:hover {
+        color: $info;
+      }
+    }
+  }
+
+  .subtitle {
+    text-align: center;
+  }
+
+  .video-shortcode {
+    background: black;
+    margin: $video-spacing -5rem;
+    position: relative;
+    padding-bottom: 72%;
+    height: 0;
+    overflow: hidden;
+    .vid-warning {
+      display: flex;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      font-size: 1.5rem;
+      color: white;
+    }
+    iframe {
+      position: absolute!important;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      height: 100%;
+      width: 100%;
+    }
+    @media (max-width: $tablet){
+        margin: $video-spacing -3rem;
+        padding-bottom: 64%;
+    }
+
+    @media (max-width: $mobile){
+        margin: $video-spacing -2rem;
+    }
+  }
+
+  .content {
+    margin: 0 auto;
+    font-size: 0.85rem;
+    p {
+      font-size: 1.2em;
+      margin: $spacing 0;
+      img {
+        margin: 0;
+      }
+    }
+    ul {
+      font-size: 1.2em;
+      margin-top: $spacing;
+      margin-bottom: $spacing;
+    }
+    ol {
+      font-size: 1.2em;
+      margin-top: $spacing;
+      margin-bottom: $spacing;
+    }
+    img {
+      margin-top: $spacing;
+      margin-bottom: $spacing;
+    }
+  }
+  @media (max-width: $tablet) {
+    padding: 5rem 3rem;
+  }
+
+  @media (max-width: $mobile) {
+    padding: 3rem 2rem;
+  }
 }
