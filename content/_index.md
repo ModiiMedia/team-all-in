@@ -19,6 +19,6 @@ photo_links:
   blog:
     text: Check Out Some Of Our DreamTrips
     page: blog/_index.md
-    background_photo: "/v1571242712/team-all-in/819213843_640_yfebq4.jpg"
+    background_photo: "/v1571243442/team-all-in/denys-nevozhai-guNIjIuUcgY-unsplash_nkskpo.jpg"
 
 ---
