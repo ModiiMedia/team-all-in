@@ -18,6 +18,7 @@ photo_links:
     background_photo: "/v1561997937/team-all-in/225435163543254731354861315384251-_mobile-phone-photo.jpg"
   blog:
     text: Check Out Some Of Our DreamTrips
+    page: blog/_index.md
     background_photo: "/v1571242712/team-all-in/819213843_640_yfebq4.jpg"
 
 ---
