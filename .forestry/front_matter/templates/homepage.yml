@@ -51,6 +51,12 @@ fields:
       config:
         required: true
       label: Text
+    - name: page
+      type: text
+      config:
+        required: true
+      label: Page
+      hidden: true
     - name: background_photo
       type: file
       config:
@@ -66,6 +72,12 @@ fields:
       config:
         required: true
       label: Text
+    - name: page
+      type: text
+      config:
+        required: true
+      label: Page
+      hidden: true
     - name: background_photo
       type: file
       config:
@@ -81,6 +93,12 @@ fields:
       config:
         required: true
       label: Text
+    - name: page
+      type: text
+      config:
+        required: true
+      label: Page
+      hidden: true
     - name: background_photo
       type: file
       config:
