@@ -107,7 +107,7 @@ fields:
       config:
         maxSize: '10'
       label: Background Photo
-    label: Blog
+    label: Link To Blog
   label: Photo Links
 pages:
 - content/_index.md
