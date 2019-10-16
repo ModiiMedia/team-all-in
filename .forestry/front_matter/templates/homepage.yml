@@ -54,7 +54,7 @@ fields:
     - name: background_photo
       type: file
       config:
-        maxSize: '5'
+        maxSize: '10'
       label: Background Photo
     label: Link To Gallery
   - name: dreamtrips_app
@@ -69,9 +69,24 @@ fields:
     - name: background_photo
       type: file
       config:
-        maxSize: '5'
+        maxSize: '10'
       label: Background Photo
     label: Link To DreamTrips App
+  - name: blog
+    type: field_group
+    config: {}
+    fields:
+    - name: text
+      type: text
+      config:
+        required: true
+      label: Text
+    - name: background_photo
+      type: file
+      config:
+        maxSize: '10'
+      label: Background Photo
+    label: Blog
   label: Photo Links
 pages:
 - content/_index.md
