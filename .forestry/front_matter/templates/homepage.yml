@@ -57,6 +57,7 @@ fields:
         required: true
       label: Page
       hidden: true
+      default: gallery.md
     - name: background_photo
       type: file
       config:
@@ -78,6 +79,7 @@ fields:
         required: true
       label: Page
       hidden: true
+      default: apps-to-download.md
     - name: background_photo
       type: file
       config:
@@ -99,6 +101,7 @@ fields:
         required: true
       label: Page
       hidden: true
+      default: blog/_index.md
     - name: background_photo
       type: file
       config:
