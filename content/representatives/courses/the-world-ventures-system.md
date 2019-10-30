@@ -138,6 +138,10 @@ video_url = "https://vimeo.com/363929086"
 section_heading = "Spanish Version - VacationSooner.com"
 template = "course-video"
 video_url = "https://vimeo.com/363924873"
+[[modules.sections]]
+section_heading = "Vacation Sooner"
+template = "course-video"
+video_url = "www.vacationsooner.com"
 [[modules]]
 featured_image = "/v1559678986/team-all-in/women-whispering-to-each-ther.jpg"
 heading = "Skill 4 - Enrolling a new Member / Representative"
