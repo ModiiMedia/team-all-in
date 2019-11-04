@@ -60,7 +60,7 @@ video_url = "https://www.youtube.com/watch?v=_LbGpUMnv3I"
 [[modules.sections]]
 button_text = "Download File"
 description = "These are a collection of scripts that can help you when inviting prospects."
-file = "/v1561998642/team-all-in/inviting-scripts____254a6846.pdf"
+file = "/v1572882874/team-all-in/Inviting_Scripts_with_DGC_nifx8z.pdf"
 section_heading = "Inviting Scripts"
 template = "downloadable-file"
 [[modules]]
