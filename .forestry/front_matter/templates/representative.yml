@@ -30,6 +30,7 @@ fields:
     pages on this website regardless of any other restrictions.
   label: Is Administrator
 pages:
+- content/users/patrcia-de-la-rosa.md
 - content/users/maria-rodriguez.md
 - content/users/doug-mary-mccary.md
 - content/users/chase-setzer.md
