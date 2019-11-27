@@ -17,3 +17,5 @@ fields:
     time_format: 
     display_utc: false
   default: now
+pages:
+- content/blog/november-cruise-2019-team-unity-dreamtrip.md
