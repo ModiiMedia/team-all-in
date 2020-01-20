@@ -200,7 +200,7 @@ section_heading = "Example Follow Up List"
 template = "downloadable-file"
 [[modules]]
 featured_image = "/v1559679164/team-all-in/woman-working-on-computer-1.png"
-heading = "Skill 6 - Educate: Helping your new Representatives get started right"
+heading = "Skill 6 - Helping your new Representatives get started right"
 title = "6) Getting New Rep Started"
 [[modules.sections]]
 content = "## Key Points:\n\n* We are going to HELP them; they are NOT on their own!\n* 5 Step Start Up\n  * Understand their \"WHY\"\n  * Schedule their Launch party\n  * Make their list\n  * Teach them how to Invite\n  * Schedule them for next training event\n* Book your next meeting with them\n* Plug then in to our team calls/webinars\n* Invite them to our Facebook pages\n* Send them to this website!\n* Teach them to do the same!"
