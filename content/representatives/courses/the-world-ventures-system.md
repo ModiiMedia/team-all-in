@@ -129,7 +129,7 @@ template = "text-section"
 [[modules.sections]]
 section_heading = "Earnavacation.com"
 template = "course-video"
-video_url = "https://earnavaction.com"
+video_url = "https://vimeo.com/user25313687/download/391796733/08327bc1c5"
 [[modules.sections]]
 section_heading = "EarnTravel.club (Membership Only)"
 template = "course-video"
