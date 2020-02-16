@@ -135,10 +135,6 @@ section_heading = "EarnTravel.club (Membership Only)"
 template = "course-video"
 video_url = "https://vimeo.com/363929086"
 [[modules.sections]]
-section_heading = "Spanish Version - VacationSooner.com"
-template = "course-video"
-video_url = "https://vimeo.com/363924873"
-[[modules.sections]]
 section_heading = "Vacation Sooner"
 template = "course-video"
 video_url = "https://vimeo.com/user25313687/review/391793311/6217194634"
