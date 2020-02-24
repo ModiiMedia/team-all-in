@@ -26,10 +26,6 @@ header {
   margin: 0 auto 4rem auto;
   max-width: 700px; }
 
-section.videoSection h2 {
-  margin: 0;
-}
-
 .heroBanner section {
   margin: 0 auto 0 auto;
   max-width: 700px; }
@@ -69,6 +65,13 @@ section.videoSection h2 {
   padding: 2rem; }
   .error strong {
     margin: 0 5px; }
+
+section.videoSection h2 {
+  margin: 0; }
+
+.errorMessage {
+  background: #f0f0f0;
+  padding: 1.5rem; }
 
 .file-preview {
   display: block;
