@@ -15,3 +15,10 @@ fields:
     required: true
   label: Video Url
   description: Paste your Vimeo or Youtube link here
+- name: download_url
+  type: text
+  config:
+    required: false
+  label: Download Link
+  description: If you want users to be able to download the video you can copy and
+    paste the Vimeo "Download Link" here.
