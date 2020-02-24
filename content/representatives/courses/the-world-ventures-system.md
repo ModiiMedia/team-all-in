@@ -129,7 +129,10 @@ template = "text-section"
 [[modules.sections]]
 section_heading = "Earnavacation.com"
 template = "course-video"
-video_url = "https://vimeo.com/user25313687/download/391796733/08327bc1c5"
+video_url = "https://vimeo.com/391796733"
+[[modules.sections]]
+content = "[Download This Video](https://vimeo.com/user25313687/download/391796733/08327bc1c5)"
+template = "text-section"
 [[modules.sections]]
 section_heading = "EarnTravel.club (Membership Only)"
 template = "course-video"
@@ -137,7 +140,10 @@ video_url = "https://vimeo.com/363929086"
 [[modules.sections]]
 section_heading = "Vacation Sooner"
 template = "course-video"
-video_url = "https://vimeo.com/user25313687/review/391793311/6217194634"
+video_url = "https://vimeo.com/391793311"
+[[modules.sections]]
+content = "[Download This Video](https://vimeo.com/user25313687/download/391793311/c013e8b121)"
+template = "text-section"
 [[modules]]
 featured_image = "/v1559678986/team-all-in/women-whispering-to-each-ther.jpg"
 heading = "Skill 4 - Enrolling a new Member / Representative"
