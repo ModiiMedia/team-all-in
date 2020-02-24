@@ -26,6 +26,10 @@ header {
   margin: 0 auto 4rem auto;
   max-width: 700px; }
 
+section.videoSection h2 {
+  margin: 0;
+}
+
 .heroBanner section {
   margin: 0 auto 0 auto;
   max-width: 700px; }

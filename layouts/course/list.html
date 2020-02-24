@@ -1,26 +1,26 @@
 {{ define "header" }}
-    {{ partial "header.html"  (dict "Page" . "Site" $.Site "Nav" "representative") }}
+{{ partial "header.html"  (dict "Page" . "Site" $.Site "Nav" "representative") }}
 {{ end }}
 
 {{ define "main" }}
-    {{- $cloudinary := $.Site.Params.cloudinaryBase -}}
-    {{- partial "hero-banner.html" . -}}
-    <section class="section">
-        <div class="container">
-            {{ with .Content }}
-                <div class="content limitMax" style="margin-bottom: 4rem;">
-                    {{ . }}
-                </div>
-            {{ end }}
-            <div class="columns is-multiline">
-                {{ range $i, $e := .Params.courses }}
-                    {{ with $.Site.GetPage . }}
-                        {{ partial "course-card.html" (dict "Page" . "Cloudinary" $cloudinary)}}
-                    {{ end }}
-                {{ end }}
-            </div>
+{{- $cloudinary := $.Site.Params.cloudinaryBase -}}
+{{- partial "hero-banner.html" . -}}
+<section class="section">
+    <div class="container">
+        {{ with .Content }}
+        <div class="content limitMax" style="margin-bottom: 4rem;">
+            {{ . }}
         </div>
-    </section>
+        {{ end }}
+        <div class="columns is-multiline">
+            {{ range $i, $e := .Params.courses }}
+            {{ with $.Site.GetPage . }}
+            {{ partial "course-card.html" (dict "Page" . "Cloudinary" $cloudinary)}}
+            {{ end }}
+            {{ end }}
+        </div>
+    </div>
+</section>
 {{ end }}
 
 {{ define "addJS" }}

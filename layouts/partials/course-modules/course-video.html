@@ -2,14 +2,19 @@
     "section_heading": {{ .section_heading | jsonify }},
     "video": {
         {{- if in .video_url "vimeo" }}
-            {{- $jsonURL := print "https://vimeo.com/api/oembed.json?url=" .video_url "&width=640" -}}
-            {{- $json := getJSON $jsonURL -}}
-            "author": {{ $json.author_name | jsonify }},
-            "vimeo_description": {{ $json.description | jsonify }},
-            "video_id": {{ $json.video_id | jsonify }},
-            "upload_date": {{ $json.upload_date |jsonify }},
-            "embed_code": {{ $json.html | jsonify }},
-            "platform": "vimeo",
+            {{ $count := split .video_url "/" }}
+            {{ if gt (len $count) 5 }} 
+                "error": true,
+            {{ else }}
+                {{- $jsonURL := print "https://vimeo.com/api/oembed.json?url=" .video_url "&width=640" -}}
+                {{- $json := getJSON $jsonURL -}}
+                "author": {{ $json.author_name | jsonify }},
+                "vimeo_description": {{ $json.description | jsonify }},
+                "video_id": {{ $json.video_id | jsonify }},
+                "upload_date": {{ $json.upload_date |jsonify }},
+                "embed_code": {{ $json.html | jsonify }},
+                "platform": "vimeo",
+            {{ end }}
         {{- end -}}
         {{- if in .video_url "youtu" }}
             {{ $rmUrl := replace .video_url "https://www.youtube.com/watch?v=" "" }}
@@ -18,7 +23,8 @@
             {{ $embed := print "<iframe id='ytplayer' type='text/html' width='720' height='405' src='https://www.youtube.com/embed/" $id "?modestbranding=1' frameborder='0' allowfullscreen>"}}
             "embed_code": {{ $embed | jsonify }},
         {{ end }}
-        "url": {{ .video_url | jsonify }}
+        "url": {{ .video_url | jsonify }},
+        "download_url": {{ .download_url | jsonify }}
     },
     "template": {{ .template | jsonify }}
 }
