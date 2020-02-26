@@ -134,7 +134,7 @@ video_url = "https://vimeo.com/391796733"
 [[modules.sections]]
 section_heading = "EarnTravel.club (Membership Only)"
 template = "course-video"
-video_url = "https://vimeo.com/363929086"
+video_url = "https://vimeo.com/394045683"
 [[modules.sections]]
 download_url = "https://vimeo.com/user25313687/download/391793311/c013e8b121"
 section_heading = "Vacation Sooner"
