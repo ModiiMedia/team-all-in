@@ -14,7 +14,7 @@ videos:
 - url: https://vimeo.com/338746470
   title: 'Video #2 - Silver / Rewards Site'
   subtitle: ''
-- title: 'Video #3 - How Do I Book A DreamTrip'
+- title: 'Video #3 - How to Book A DreamTrip'
   description: ''
   url: https://vimeo.com/338745725
   subtitle: ''
