@@ -3,6 +3,9 @@ title: Member Benefits
 featured_image: "/v1560786374/team-all-in/beach-sunset-waves-12983112313102128.jpg"
 type: video-gallery
 videos:
+- url: https://vimeo.com/406670918
+  title: Telemedicine
+  subtitle: ''
 - title: Overview of the DreamTrips Membership
   description: ''
   url: https://vimeo.com/321149475
