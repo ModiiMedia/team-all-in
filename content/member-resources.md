@@ -11,7 +11,7 @@ videos:
   description: ''
   url: https://vimeo.com/338745206
   subtitle: ''
-- title: 'Video #2 - How Do I Book A DreamTrip'
+- title: 'Video #3 - How Do I Book A DreamTrip'
   description: ''
   url: https://vimeo.com/338745725
   subtitle: ''
