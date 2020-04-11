@@ -3,9 +3,6 @@ title: Member Benefits
 featured_image: "/v1560786374/team-all-in/beach-sunset-waves-12983112313102128.jpg"
 type: video-gallery
 videos:
-- url: https://vimeo.com/406670918
-  title: 'Video #10_Telemedicine'
-  subtitle: ''
 - title: Overview of the DreamTrips Membership
   description: ''
   url: https://vimeo.com/321149475
@@ -45,7 +42,10 @@ videos:
   description: ''
   url: https://vimeo.com/338802521
   subtitle: ''
-- title: 'Video #10 - DreamTrips App & DTL'
+- url: https://vimeo.com/406670918
+  title: 'Video #10_Telemedicine'
+  subtitle: ''
+- title: 'Video #11 - DreamTrips App & DTL'
   description: ''
   url: https://vimeo.com/338802631
   subtitle: ''
