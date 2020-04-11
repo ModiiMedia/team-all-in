@@ -47,7 +47,7 @@ videos:
   description: ''
   url: https://vimeo.com/338747914
   subtitle: ''
-- title: 'Video #11 - Update Personal Information'
+- title: 'Video #12 - Update Personal Information'
   description: ''
   url: https://vimeo.com/338748039
   subtitle: ''
