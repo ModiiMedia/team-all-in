@@ -27,7 +27,7 @@ videos:
   description: ''
   url: https://vimeo.com/338907898
   subtitle: ''
-- title: 'Video #6 - Online Shopping Mall'
+- title: 'Video #7 - Online Shopping Mall'
   description: ''
   url: https://vimeo.com/338802418
   subtitle: ''
