@@ -3,9 +3,6 @@ title: Member Benefits
 featured_image: "/v1560786374/team-all-in/beach-sunset-waves-12983112313102128.jpg"
 type: video-gallery
 videos:
-- url: https://vimeo.com/338746470/3b0ef0e822
-  title: 'Video #2 - Silver / Rewards Site'
-  subtitle: ''
 - title: Overview of the DreamTrips Membership
   description: ''
   url: https://vimeo.com/321149475
@@ -13,6 +10,9 @@ videos:
 - title: 'Video #1 - How Do I Log On To My Website'
   description: ''
   url: https://vimeo.com/338745206
+  subtitle: ''
+- url: https://vimeo.com/338746470/3b0ef0e822
+  title: 'Video #2 - Silver / Rewards Site'
   subtitle: ''
 - title: 'Video #3 - How Do I Book A DreamTrip'
   description: ''
