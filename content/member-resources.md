@@ -4,7 +4,7 @@ featured_image: "/v1560786374/team-all-in/beach-sunset-waves-12983112313102128.j
 type: video-gallery
 videos:
 - url: https://vimeo.com/406670918
-  title: Telemedicine
+  title: 'Video #10_Telemedicine'
   subtitle: ''
 - title: Overview of the DreamTrips Membership
   description: ''
