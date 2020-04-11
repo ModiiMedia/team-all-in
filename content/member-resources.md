@@ -35,7 +35,7 @@ videos:
   description: ''
   url: https://vimeo.com/338801997
   subtitle: ''
-- title: 'Video #8 - Travel Advisor'
+- title: 'Video #9 - Travel Advisor'
   description: ''
   url: https://vimeo.com/338802521
   subtitle: ''
