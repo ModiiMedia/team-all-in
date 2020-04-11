@@ -28,7 +28,7 @@ videos:
   subtitle: ''
 - title: 'Video #6 - Rovia Booking Engine'
   description: ''
-  url: https://vimeo.com/338907898
+  url: https://vimeo.com/338746672
   subtitle: ''
 - title: 'Video #7 - Online Shopping Mall'
   description: ''
