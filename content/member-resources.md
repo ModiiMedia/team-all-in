@@ -33,11 +33,11 @@ videos:
 - title: 'Video #7 - Online Shopping Mall'
   description: ''
   url: https://vimeo.com/338802418
-  subtitle: ''
+  subtitle: Updated Mar 2020
 - title: 'Video #8 - Concierge'
   description: ''
   url: https://vimeo.com/338801997
-  subtitle: ''
+  subtitle: Updated Mar 2020
 - title: 'Video #9 - Travel Advisor'
   description: ''
   url: https://vimeo.com/338802521
