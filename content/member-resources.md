@@ -44,7 +44,7 @@ videos:
   subtitle: Updated Mar 2020
 - url: https://vimeo.com/406670918
   title: 'Video #10_Telemedicine'
-  subtitle: Updated Mae 2020
+  subtitle: Updated Mar 2020
 - title: 'Video #11 - DreamTrips App & DTL'
   description: ''
   url: https://vimeo.com/338802631
