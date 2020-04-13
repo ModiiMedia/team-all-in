@@ -48,7 +48,7 @@ videos:
 - title: 'Video #11 - DreamTrips App & DTL'
   description: ''
   url: https://vimeo.com/338802631
-  subtitle: ''
+  subtitle: Updated Mar 2020
 - title: 'Video #12 - Important Phone Numbers'
   description: ''
   url: https://vimeo.com/338747914
