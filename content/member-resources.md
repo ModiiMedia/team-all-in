@@ -21,7 +21,7 @@ videos:
 - title: 'Video #4 - DreamTrips Rewards'
   description: ''
   url: https://vimeo.com/338746135
-  subtitle: ''
+  subtitle: Updated Mar 2020
 - title: 'Video #5 - Anytimes Escape'
   description: ''
   url: https://vimeo.com/338801592
