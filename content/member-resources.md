@@ -10,7 +10,7 @@ videos:
 - title: 'Video #1 - How to Log On to your Website'
   description: ''
   url: https://vimeo.com/338745206
-  subtitle: ''
+  subtitle: Updated Mar 2020
 - url: https://vimeo.com/338746470
   title: 'Video #2 - Silver / Rewards Site'
   subtitle: ''
