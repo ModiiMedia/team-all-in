@@ -17,7 +17,7 @@ videos:
 - title: 'Video #3 - How to Book A DreamTrip'
   description: ''
   url: https://vimeo.com/338745725
-  subtitle: ''
+  subtitle: Updated Mar 2020
 - title: 'Video #4 - DreamTrips Rewards'
   description: ''
   url: https://vimeo.com/338746135
