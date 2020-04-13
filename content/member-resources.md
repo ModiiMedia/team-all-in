@@ -13,7 +13,7 @@ videos:
   subtitle: Updated Mar 2020
 - url: https://vimeo.com/338746470
   title: 'Video #2 - Silver / Rewards Site'
-  subtitle: ''
+  subtitle: Updated Mar 2020
 - title: 'Video #3 - How to Book A DreamTrip'
   description: ''
   url: https://vimeo.com/338745725
