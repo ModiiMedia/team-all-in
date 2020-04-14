@@ -23,9 +23,6 @@ featured_image = ""
 heading = ""
 title = "Training On Your Business"
 [[modules.sections]]
-content = "How to build your WV Business\n\n[https://vimeo.com/407445548](https://vimeo.com/407445548 \"https://vimeo.com/407445548\")"
-template = "text-section"
-[[modules.sections]]
 download_url = ""
 section_heading = "How to build your WV Business"
 template = "course-video"
