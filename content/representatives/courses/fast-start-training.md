@@ -19,7 +19,7 @@ section_heading = "Welcome to our DreamTrips Membership!"
 template = "course-video"
 video_url = "https://vimeo.com/407449820"
 [[modules]]
-featured_image = ""
+featured_image = "/v1560028741/team-all-in/next.jpg"
 heading = ""
 title = "Training On Your Business"
 [[modules.sections]]
