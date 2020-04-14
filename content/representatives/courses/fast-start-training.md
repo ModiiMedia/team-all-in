@@ -16,8 +16,15 @@ heading = ""
 title = "Training On Your Membership"
 [[modules.sections]]
 download_url = ""
-section_heading = "Test Video"
+section_heading = "Welcome to our DreamTrips Membership!"
 template = "course-video"
-video_url = "https://vimeo.com/406670918"
+video_url = "https://vimeo.com/407449820"
+[[modules]]
+featured_image = ""
+heading = ""
+title = "Training On Your Business"
+[[modules.sections]]
+content = "Test test"
+template = "text-section"
 
 +++
