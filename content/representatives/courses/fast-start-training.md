@@ -10,7 +10,7 @@ access_list = []
 restrict_access = false
 restriction_message = "## Sorry you don't have permission to view this page.\n\nPlease complete the previous training sessions in order to unlock this page.\n\nIf you have already completed the previous sections please contact **Linda Muth** and let her know so that you can be granted access."
 [[modules]]
-featured_image = ""
+featured_image = "/v1559885486/team-all-in/448eb4_03722d81242048d1bd45e9aa81f83253_mv2_d_2988_5312_s_4_2.jpg"
 heading = ""
 title = "Training On Your Membership"
 [[modules.sections]]
