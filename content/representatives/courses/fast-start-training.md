@@ -1,6 +1,6 @@
 +++
 featured_image = "/v1558466492/team-all-in/runner-at-the-starting-line.jpg"
-introduction = "#### Everyone who begins their WorldVentures journey starts at a different place.  We want to help you have the BEST START possible!  Check out these great videos to help you get off to the right start!\n\n### Welcome to one of the BEST DECISIONS you've ever made!!\n\n<iframe title=\"vimeo-player\" src=\"https://player.[vimeo.com/4](https://vimeo.com/407770688 \"https://vimeo.com/407770688\")08171104\" width=\"640\" height=\"360\" frameborder=\"0\" allowfullscreen></iframe>\n\n### Let's get you started: Fast Start Training"
+introduction = "#### Everyone who begins their WorldVentures journey starts at a different place.  We want to help you have the BEST START possible!  Check out these great videos to help you get off to the right start!\n\n### Welcome to one of the BEST DECISIONS you've ever made!!\n\n<iframe src=\"[https://player.vimeo.com/video/408171104](https://player.vimeo.com/video/408171104 \"https://player.vimeo.com/video/408171104\")\" width=\"640\" height=\"564\" frameborder=\"0\" allow=\"autoplay; fullscreen\" allowfullscreen></iframe>\n\n### Let's get you started: Fast Start Training"
 short_description = "Everyone who gets started on their WorldVentures journey starts at a different place.  We want to help you have the BEST START possible!  The best way to do that is to listen to this Fast Start Training video!  Enjoy!\n"
 title = "Let's Get You Started!!"
 type = "course"
