@@ -53,6 +53,16 @@ sections:
   templates:
   - representative
 - type: heading
+  label: Marketing Content
+- type: directory
+  path: content/email-videos
+  label: Email Videos
+  create: documents
+  match: "**/*"
+  exclude: _index.md
+  templates:
+  - email-video
+- type: heading
   label: Settings
 - type: document
   path: data/site_settings.yaml
