@@ -55,7 +55,7 @@ sections:
 - type: heading
   label: Marketing Content
 - type: directory
-  path: content/email-videos
+  path: content/ev
   label: Email Videos
   create: documents
   match: "**/*"
