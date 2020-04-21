@@ -2,3 +2,4 @@ User-agent: *
 
 Dissallow: /users
 Dissalow: /representatives
+Dissallow: /ev

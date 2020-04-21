@@ -1,0 +1,73 @@
+{{ define "header"}}
+{{ $cloudinary := .Site.Params.cloudinaryBase }}
+{{ $Site := .Site }}
+<div class="header" style="padding: 0.5rem">
+    <div class="has-text-centered">
+        <a href="/">
+            <img src="{{ $cloudinary }}w_60,q_80{{ $.Site.Data.site_settings.branding.logo }}">        
+        </a>
+    </div>    
+</div>
+{{ end }}
+
+{{ define "main" }}
+   <section class="section blog">
+       <div class="container has-text-centered" style="max-width: 1000px">
+            {{ if .Site.IsServer }}
+                <div class="box" style="margin-bottom: 6rem;">
+                    <div class="title is-size-4 has-text-grey">You are in preview mode</div>
+                    <div class="subtitle has-text-grey">Copy and paste the link below to share this page in an email.</div>
+                    <div class="field">
+                        <div class="columns is-mobile">
+                            <div class="column">
+                                <input class="input" type="text" name="copyShareLinkInput" id="copyShareLinkInput" value="https://teamallin.net{{ .RelPermalink }}">
+                            </div>
+                            <div class="column is-narrow">
+                                <button class="button is-primary" id="copyShareLinkButton">Copy Link</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="field has-text-grey" style="margin-top: 1.5rem;">
+                        <div class="help">
+                            (Make sure "draft" is set to "off" before sharing.)
+                        </div>
+                    </div>
+                </div>
+            {{ end }}
+           <h1 class="title">{{ .Title }}</h1>
+           <p class="subtitle">{{ .Params.description }}</p>
+           {{ with .Params.video_url }}
+                {{- if in . "vimeo" -}}
+                {{ $url := urls.Parse . }}
+                {{ $videoId := replace (print $url.Path) "/" "" }}
+                <div class="iframeContainer">
+                    <iframe src="https://player.vimeo.com/video/{{ $videoId }}?autoplay=1&autopause=0" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+                </div>
+                {{- end -}}
+            {{ end }}
+       </div>
+   </section>
+{{ end }}
+
+{{ define "footer"}}
+<script>
+    const shareLinkInput = document.getElementById('copyShareLinkInput')
+    const shareLinkButton = document.getElementById('copyShareLinkButton')
+
+    const selectLinkText = () => {
+        shareLinkInput.select()
+        shareLinkInput.setSelectionRange(0, 999999)
+    }
+
+    shareLinkInput.addEventListener('focus', () => {
+        selectLinkText()
+    })
+
+    shareLinkButton.addEventListener('click', () => {
+        selectLinkText()
+        document.execCommand('copy')
+        alert(`Copied the following text to clipboard:\n\n${shareLinkInput.value}`)
+    })
+</script>
+<div></div>
+{{ end }}
