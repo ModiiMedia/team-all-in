@@ -24,3 +24,5 @@ fields:
     required: true
   label: Video Url
   description: Copy and paste your vimeo video link here.
+pages:
+- content/email-videos/example-video-page.md
