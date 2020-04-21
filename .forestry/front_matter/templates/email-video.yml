@@ -23,5 +23,5 @@ fields:
   config:
     required: true
   label: Video Url
-  description: Copy and paste your vimeo video link here.<br><br><strong>To get the
-    email link for sharing open this page in preview.</strong>
+  description: Copy and paste your Vimeo video link here. To get the email link for
+    sharing open this page in preview.
