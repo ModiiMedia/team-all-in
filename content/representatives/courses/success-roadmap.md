@@ -2,7 +2,7 @@
 featured_image = "/v1559711394/team-all-in/pathway-to-mountain.jpg"
 introduction = "## Congratulations!! You've completed the 1st step to achieving success!\n\nNow you're ready for our more advanced course, where we will create a roadmap for your success. This course will work to 1) build your belief 2) help you fully understand WorldVenture's compensation plan 3) help you develop on a personal level to become a successful entrepreneur"
 short_description = "Once you get your 4 you can start our advanced training program."
-title = "Success Roadmap - Your Advanced Training"
+title = "Step #4 - Success Roadmap - Your Advanced Training"
 type = "course"
 under_construction = true
 [restriction_settings]
