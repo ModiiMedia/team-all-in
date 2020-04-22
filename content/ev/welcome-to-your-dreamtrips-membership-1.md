@@ -1,6 +1,6 @@
 +++
 description = "Let's talk about your MANY Benefits!"
-title = "Welcome To Your DreamTrips membership!"
+title = "Welcome To Your DreamTrips membership many benefits!"
 video_url = "https://vimeo.com/409561592"
 
 +++
