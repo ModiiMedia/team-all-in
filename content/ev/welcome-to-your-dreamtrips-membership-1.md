@@ -1,6 +1,5 @@
 +++
 description = "Let's talk about your MANY Benefits!"
-draft = true
 title = "Welcome To Your DreamTrips membership!"
 video_url = "https://vimeo.com/409561592"
 
