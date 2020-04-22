@@ -127,10 +127,10 @@ title = "3.1) Resources For Sharing"
 content = "Included below are some helpful resources you can use when presenting."
 template = "text-section"
 [[modules.sections]]
-download_url = "https://vimeo.com/user25313687/download/391796733/08327bc1c5"
+download_url = "https://vimeo.com/user25313687/download/410665623/4710f51032"
 section_heading = "Earnavacation.com"
 template = "course-video"
-video_url = "https://vimeo.com/391796733"
+video_url = "https://vimeo.com/410665623"
 [[modules.sections]]
 section_heading = "EarnTravel.club (Membership Only)"
 template = "course-video"
