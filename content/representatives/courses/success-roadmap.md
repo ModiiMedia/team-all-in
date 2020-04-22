@@ -54,7 +54,7 @@ section_heading = "-- Belief in our Profession --  Rise of the Entrepreneur"
 template = "course-video"
 video_url = "https://www.youtube.com/watch?v=988EBFlfC-A"
 [[modules.sections]]
-content = "## Personal tip:\n\nPeople ask leaders all the time, what are the secrets to building a big business and making a significant income. One, is learning to ask more questions, so critical. But a close second is being able to**feel** **confident** in the company, profession and product you represent.  \n  \nThis confidence changes how you react, respond and control your action when engaging with a future customer or associate.  \n  \n**Where does this confidence come from?**  \n  \n**Knowledge**. Use these videos to improve your knowledge and watch your excitement and results improve!"
+content = "## Personal tip:\n\nPeople ask leaders all the time, what are the secrets to building a big business and making a significant income. One, is learning to ask more questions, so critical. But a close second is being able to **feel** **confident** in the company, profession and product you represent.\n\nThis confidence changes how you react, respond and control your action when engaging with a future customer or associate.\n\n**Where does this confidence come from?**\n\n**Knowledge**. Use these videos to improve your knowledge and watch your excitement and results improve!"
 template = "text-section"
 [[modules]]
 featured_image = "/v1560786598/team-all-in/money-100-dollar-bills-aslkdfjaslkdfjadslkfj.jpg"
