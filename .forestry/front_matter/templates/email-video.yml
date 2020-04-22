@@ -26,5 +26,6 @@ fields:
   description: Copy and paste your Vimeo video link here. To get the email link for
     sharing open this page in preview.
 pages:
+- content/ev/more-great-benefits-of-your-platinum-membership.md
 - content/ev/welcome-to-your-dreamtrips-membership-1.md
 - content/ev/welcome-to-your-dreamtrips-membership.md
