@@ -75,7 +75,6 @@ public_path: https://res.cloudinary.com/modii/w_800,q_60,f_auto
 front_matter_path: ''
 use_front_matter_path: true
 file_template: ":filename:"
-instant_preview: true
 build:
   preview_env:
   - HUGO_VERSION=0.55.6
@@ -85,5 +84,4 @@ build:
   mount_path: "/srv"
   instant_preview_command: hugo server -D -F -E --renderToDisk --port 8080 --bind
     0.0.0.0
-  preview_command: hugo -D -F -E -b $DEPLOY_URL -d public
 version: 0.55.2
