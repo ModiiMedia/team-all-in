@@ -1,6 +1,6 @@
 +++
 draft = true
-featured_image = ""
+featured_image = "/v1559254036/team-all-in/man-standing-on-a-mountain-during-sunset.jpg"
 introduction = ""
 short_description = ""
 title = "Bonus Training!"
