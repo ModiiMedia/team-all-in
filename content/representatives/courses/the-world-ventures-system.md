@@ -239,7 +239,7 @@ video_url = "https://www.youtube.com/watch?v=DmVC1-zUwgw&list=PLGOYBpURFhxE97lDw
 [[modules]]
 featured_image = "/v1560027765/team-all-in/Top%2020%20Income.jpg"
 heading = ""
-title = "Bonus Training #1 - How do I get paid?"
+title = "Bonus Training  - How do I get paid?"
 [[modules.sections]]
 download_url = "https://vimeo.com/user25313687/download/395225529/57f371ab58"
 section_heading = "WorldVentures Compensation Plan"
