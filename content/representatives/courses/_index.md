@@ -1,6 +1,6 @@
 ---
 title: Success System
-featured_image: "/v1559367790/team-all-in/nik-macmillan-280300-unsplash.jpg"
+featured_image: "/v1560028741/team-all-in/next.jpg"
 type: course
 courses:
 - representatives/courses/fast-start-training.md
