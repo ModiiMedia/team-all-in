@@ -10,6 +10,7 @@ type = "course"
 restriction_message = "## Sorry you don't have permission to view this page.\n\nPlease complete the previous training sessions in order to unlock this page.\n\nIf you have already completed the previous sections please contact **Linda Muth** and let her know so that you can be granted access."
 [[modules]]
 featured_image = "/v1588606711/team-all-in/56afcfea1a00002d00ab1c14_sil555.jpg"
+heading = "Listen to 3x IMD Matt Morris -WorldVentures' TOP INCOME EARNER teach you how to overcome objections!"
 title = "Bonus Training !!  Overcoming Objections"
 [[modules.sections]]
 section_heading = "Overcoming Objections"
