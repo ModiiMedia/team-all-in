@@ -9,14 +9,6 @@ type = "course"
 [restriction_settings]
 restriction_message = "## Sorry you don't have permission to view this page.\n\nPlease complete the previous training sessions in order to unlock this page.\n\nIf you have already completed the previous sections please contact **Linda Muth** and let her know so that you can be granted access."
 [[modules]]
-featured_image = "/v1588606711/team-all-in/56afcfea1a00002d00ab1c14_sil555.jpg"
-heading = "Listen to 3x IMD Matt Morris -WorldVentures' TOP INCOME EARNER teach you how to overcome objections!"
-title = "Bonus Training #2: Overcoming Objections"
-[[modules.sections]]
-section_heading = "Overcoming Objections"
-template = "course-video"
-video_url = "https://www.youtube.com/watch?v=DmVC1-zUwgw&list=PLGOYBpURFhxE97lDw9a3PbUnXGnHWDXdq&index=4&t=11s"
-[[modules]]
 featured_image = "/v1559241557/team-all-in/hand-writing-a-list.jpg"
 heading = "Skill 1: Make Your List - Who Will You Show?"
 title = "1) Make Your List"
@@ -236,6 +228,14 @@ template = "text-section"
 [[modules.sections]]
 content = "## Personal tip:\n\n* While there's no secret bullet to success in WorldVentures, **promoting** our training events and getting your teams to go WITH YOU is as close as it gets!\n* Start to plan now. Start to save now. Prepare for time off work and daycare for the kids if needed. Those representatives that attend our training events statistically make significantly more money than those that don't."
 template = "text-section"
+[[modules]]
+featured_image = "/v1588606711/team-all-in/56afcfea1a00002d00ab1c14_sil555.jpg"
+heading = "Listen to 3x IMD Matt Morris -WorldVentures' TOP INCOME EARNER teach you how to overcome objections!"
+title = "Bonus Training: Overcoming Objections"
+[[modules.sections]]
+section_heading = "Overcoming Objections"
+template = "course-video"
+video_url = "https://www.youtube.com/watch?v=DmVC1-zUwgw&list=PLGOYBpURFhxE97lDw9a3PbUnXGnHWDXdq&index=4&t=11s"
 [[modules]]
 featured_image = "/v1560027765/team-all-in/Top%2020%20Income.jpg"
 heading = ""
