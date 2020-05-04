@@ -124,5 +124,4 @@ fields:
     labelField: title
   label: Modules
 pages:
-- content/representatives/courses/bonus-training.md
 - content/representatives/courses/fast-start-training.md
