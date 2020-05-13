@@ -8,12 +8,18 @@
             {{ if .video }}
                 <div class="container" style="max-width: 800px; margin: 3rem auto;">
                     {{ with .video.url }}
-                        {{- $jsonURL := print "https://vimeo.com/api/oembed.json?url=" . "&width=640" -}}
-                        {{- $json := getJSON $jsonURL -}}
-                        <div class="iframeContainer">
-                            {{ $embed := replace $json.html "?app_id" "?title=0&byline=0&app_id" }}
-                            {{ $embed | safeHTML }}
-                        </div>            
+                        {{ $parsedUrl := urls.Parse . }}
+                        {{ $pathLength := split $parsedUrl.Path "/"}}
+                        {{ if lt (len $pathLength) 4 }}
+                            {{- $jsonURL := print "https://vimeo.com/api/oembed.json?url=" . "&width=640" -}}
+                            {{- $json := getJSON $jsonURL -}}
+                            <div class="iframeContainer">
+                                {{ $embed := replace $json.html "?app_id" "?title=0&byline=0&app_id" }}
+                                {{ $embed | safeHTML }}
+                            </div>
+                        {{ else }}
+                        <div class="box is-large has-background-black has-text-white is-size-7">There's an error with this Vimeo link</div>
+                        {{ end }}
                     {{ end }}
                 </div>
                 {{ .video.slogan }}
@@ -40,9 +46,15 @@
                             <div class="card-image">
                                 <figure class="image is-16by9">
                                     {{- if in .url "vimeo" -}}
-                                    {{- $jsonURL := print "https://vimeo.com/api/oembed.json?url=" .url "&width=640" -}}
-                                    {{- $json := getJSON $jsonURL -}}
-                                        <img class="videoThumbnail" src="{{ $json.thumbnail_url }}">
+                                        {{ $parsedUrl := urls.Parse .url }}
+                                        {{ $pathLength := split $parsedUrl.Path "/"}}
+                                        {{ if lt (len $pathLength) 4 }}
+                                        {{- $jsonURL := print "https://vimeo.com/api/oembed.json?url=" .url "&width=640" -}}
+                                        {{- $json := getJSON $jsonURL -}}
+                                            <img class="videoThumbnail" src="{{ $json.thumbnail_url }}">
+                                        {{- else -}}
+                                            <div class="has-background-black is-overlay has-text-white has-text-centered is-flex" style="align-items: center; justify-content: center;">There's an error with this vimeo url</div>
+                                        {{- end -}}
                                     {{- end -}}
                                 </figure>
                             </div>

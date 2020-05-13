@@ -17,11 +17,14 @@
             {{ end }}
         {{- end -}}
         {{- if in .video_url "youtu" }}
-            {{ $rmUrl := replace .video_url "https://www.youtube.com/watch?v=" "" }}
-            {{ $id := replace $rmUrl "https://youtu.be/" "" }}
-            "video_id": {{ $id | jsonify }},
-            {{ $embed := print "<iframe id='ytplayer' type='text/html' width='720' height='405' src='https://www.youtube.com/embed/" $id "?modestbranding=1' frameborder='0' allowfullscreen>"}}
-            "embed_code": {{ $embed | jsonify }},
+            {{ $url := urls.Parse .video_url }}
+            {{ $vParam := print $url.Query.v }}
+            {{ if $vParam }}
+            {{ $videoId := replace (replace $vParam "[" "") "]" "" }}
+            "video_id": {{ $videoId | jsonify }},
+            {{ $embed := print "<iframe id='ytplayer' type='text/html' width='720' height='405' src='https://www.youtube.com/embed/" $videoId "?modestbranding=1' frameborder='0' allowfullscreen>"}}
+            "embed_code": {{ print $embed | jsonify }},
+            {{ end }}
         {{ end }}
         "url": {{ .video_url | jsonify }},
         "download_url": {{ .download_url | jsonify }}

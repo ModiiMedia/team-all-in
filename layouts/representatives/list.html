@@ -20,12 +20,18 @@
                 {{ if .video }}
                     <div class="container" style="max-width: 800px; margin: 3rem auto;">
                         {{ with .video.url }}
-                            {{- $jsonURL := print "https://vimeo.com/api/oembed.json?url=" . "&width=640" -}}
-                            {{- $json := getJSON $jsonURL -}}
-                            <div class="iframeContainer">
-                                {{ $embed := replace $json.html "?app_id" "?title=0&byline=0&app_id" }}
-                                {{ $embed | safeHTML }}
-                            </div>            
+                            {{ $parsedUrl := urls.Parse . }}
+                            {{ $pathLength := split $parsedUrl.Path "/"}}
+                            {{ if lt (len $pathLength) 4 }}
+                                {{- $jsonURL := print "https://vimeo.com/api/oembed.json?url=" . "&width=640" -}}
+                                {{- $json := getJSON $jsonURL -}}
+                                <div class="iframeContainer">
+                                    {{ $embed := replace $json.html "?app_id" "?title=0&byline=0&app_id" }}
+                                    {{ $embed | safeHTML }}
+                                </div>
+                            {{ else }}
+                            <div class="box is-large has-text-white has-text-centered has-background-black is-size-6">There's an error with this Vimeo url</div>
+                            {{ end }}            
                         {{ end }}
                     </div>
                     {{ .video.slogan }}

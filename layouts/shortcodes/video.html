@@ -4,13 +4,32 @@
 <div class="video-shortcode">
     {{ if hasPrefix $url "https://" }}
         {{ if in $url "vimeo" }}
-            {{- $jsonURL := print "https://vimeo.com/api/oembed.json?url=" $url -}}
-            {{- $json := getJSON $jsonURL -}}
-            {{ $json.html | safeHTML }}
+            {{ $parsedUrl := urls.Parse $url }}
+            {{ $pathLength := split $parsedUrl.Path "/"}}
+            {{ len $pathLength }}
+            {{ if lt (len $pathLength) 4 }}
+                {{- $jsonURL := print "https://vimeo.com/api/oembed.json?url=" $url -}}
+                {{- $json := getJSON $jsonURL -}}
+                {{ $json.html | safeHTML }}
+            {{ else }}
+            <div class="has-text-grey-lighter is-overlay is-flex has-text-centered" style="justify-content: center; align-items: center;">
+                <div>
+                    <div>
+                        Error with Vimeo link. Please ensure you copied the correct link
+                    </div>
+                    <div>
+                        It usually looks something like this <strong class="has-text-white">https://vimeo.com/(someNumber)</strong>
+                    </div>    
+                </div>
+            </div>
+            {{ end }}
         {{ else if in $url "youtu" }}
-            {{ $rmUrl := replace $url "https://www.youtube.com/watch?v=" "" }}
-            {{ $id := replace $rmUrl "https://youtu.be/" "" }}
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/{{ $id }}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            {{ $parsedUrl := urls.Parse $url }}
+            {{ $vParam := print $parsedUrl.Query.v }}
+            {{ if $vParam }}
+                {{ $videoId := replace (replace $vParam "[" "") "]" "" }}
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/{{ $videoId }}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            {{ end }}
         {{ end }}
     {{ else }}
         <div class="vid-warning">Please enter valid video url</div>
