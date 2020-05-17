@@ -233,7 +233,7 @@ featured_image = "/v1560027765/team-all-in/Top%2020%20Income.jpg"
 heading = ""
 title = "Bonus Training  - How do I get paid?"
 [[modules.sections]]
-download_url = "https://vimeo.com/user25313687/download/395225529/57f371ab58"
+download_url = "https://vimeo.com/user25313687/download/419435134/73988e2cb2"
 section_heading = "WorldVentures Compensation Plan"
 template = "course-video"
 video_url = "https://vimeo.com/419435134"
