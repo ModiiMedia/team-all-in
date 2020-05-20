@@ -8,6 +8,13 @@ type = "course"
 [restriction_settings]
 restriction_message = "## Sorry you don't have permission to view this page.\n\nPlease complete the previous training sessions in order to unlock this page.\n\nIf you have already completed the previous sections please contact **Linda Muth** and let her know so that you can be granted access."
 [[modules]]
+featured_image = "/v1588606711/team-all-in/56afcfea1a00002d00ab1c14_sil555.jpg"
+heading = "Hear from 3x IMD Matt Morris - an EXPERT at teaching how to overcome objections"
+title = "Overcoming Objections"
+[[modules.sections]]
+template = "course-video"
+video_url = "https://vimeo.com/420790335/e0424226d7"
+[[modules]]
 featured_image = "/v1559241557/team-all-in/hand-writing-a-list.jpg"
 heading = "Skill 1: Make Your List - Who Will You Show?"
 title = "1) Make Your List"
