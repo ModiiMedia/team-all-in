@@ -1,5 +1,6 @@
 +++
 detailed_description = ""
+draft = true
 featured_image = "/v1560028741/team-all-in/next.jpg"
 introduction = "Now that you’re connected to our Team, it’s time to learn how to master the elements of the WorldVentures' System.\n\nThis system is made up of seven fundamental skills. Master these skills and you will find success!\n\n> Twenty years from now, I want this company to be celebrated around the world for touching every aspect of people's lives - All we have to do is stick together. As Henry Ford said \"Coming together is a start. Working together is progress. Staying together is success.\"\n>\n> \\-Wayne Nugent (WorldVentures Founder and Chief Visionary Officer)"
 short_description = "The WorldVentures' System is comprised of seven essential skills you will need to develop to succeed. "
@@ -12,6 +13,7 @@ featured_image = "/v1588606711/team-all-in/56afcfea1a00002d00ab1c14_sil555.jpg"
 heading = "Hear from 3x IMD Matt Morris - an EXPERT at teaching how to overcome objections"
 title = "Overcoming Objections"
 [[modules.sections]]
+section_heading = "Overcoming Objections"
 template = "course-video"
 video_url = "https://vimeo.com/420790335/e0424226d7"
 [[modules]]
