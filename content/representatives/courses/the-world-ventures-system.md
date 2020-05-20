@@ -11,7 +11,7 @@ restriction_message = "## Sorry you don't have permission to view this page.\n\n
 [[modules]]
 featured_image = "/v1588606711/team-all-in/56afcfea1a00002d00ab1c14_sil555.jpg"
 heading = "Hear from 3x IMD Matt Morris - an EXPERT at teaching how to overcome objections"
-title = "Overcoming Objections"
+title = "More Bonus Training - Overcoming Objections"
 [[modules.sections]]
 section_heading = "Overcoming Objections"
 template = "course-video"
