@@ -243,6 +243,6 @@ title = "More Bonus Training - Overcoming Objections"
 [[modules.sections]]
 section_heading = "Overcoming Objections"
 template = "course-video"
-video_url = "https://vimeo.com/420790335/e0424226d7"
+video_url = "https://vimeo.com/420790335"
 
 +++
