@@ -46,7 +46,7 @@ template = "text-section"
 [[modules.sections]]
 section_heading = "How we get Paid"
 template = "course-video"
-video_url = "https://vimeo.com/307286816"
+video_url = "https://vimeo.com/419435134/b842b0a1ea"
 [[modules.sections]]
 content = "## Personal tip:\n\nAdd a tip of someone of significance here. Help encourage your team members to get engaged and build belief in your company.\n\nsad fdwe f fdfa fads flkjeiuur n rewoitiru eoiwer ksdf u fads sf9u asdf asd9pj\n\nsad fdwe f fdfa fads flkjeiuur n rewoitiru eoiwer ksdf u fads sf9u asdf asd9pj sad fdwe f fdfa fads flkjeiuur n rewoitiru eoiwer ksdf u fads sf9u asdf asd9pj"
 template = "text-section"
