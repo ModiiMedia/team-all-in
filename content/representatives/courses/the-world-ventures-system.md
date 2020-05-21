@@ -235,7 +235,7 @@ title = "Bonus Training  - How do I get paid?"
 download_url = "https://vimeo.com/user25313687/download/419435134/73988e2cb2"
 section_heading = "WorldVentures Compensation Plan"
 template = "course-video"
-video_url = "https://vimeo.com/419435134"
+video_url = "https://vimeo.com/419435134/b842b0a1ea"
 [[modules]]
 featured_image = "/v1588606711/team-all-in/56afcfea1a00002d00ab1c14_sil555.jpg"
 heading = "Hear from 3x IMD Matt Morris - an EXPERT at teaching how to overcome objections"
