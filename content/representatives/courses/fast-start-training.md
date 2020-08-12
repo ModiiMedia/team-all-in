@@ -17,7 +17,7 @@ title = "Training On Your Membership"
 download_url = ""
 section_heading = "Welcome to our DreamTrips Membership!"
 template = "course-video"
-video_url = "https://vimeo.com/407449820"
+video_url = "https://vimeo.com/407734274"
 [[modules]]
 featured_image = "/v1560028741/team-all-in/next.jpg"
 heading = ""
