@@ -1,46 +1,46 @@
-{{ define "main" }}
-{{ $cloudinary := $.Site.Params.cloudinaryBase }}
-{{ with .Params.banner }}
+{{- define "main" -}}
+{{- $cloudinary := $.Site.Params.cloudinaryBase -}}
+{{- with .Params.banner -}}
     <section class="heroBanner homepageHero" style="{{ with .background_photo }}background-image: url({{ $cloudinary }}w_1920,h_1500,c_fill,q_80,f_auto{{ . }});{{ end }}">
         <div class="imageOverlay"></div>
         <div class="container">
-            <h1 class="welcomeText">{{ .top_text_small }}<br><span class="titleText">{{ .top_text_large }}</span></h1>
-            {{ if .video }}
+            <h1 class="welcomeText">{{- .top_text_small -}}<br><span class="titleText">{{- .top_text_large -}}</span></h1>
+            {{- if .video -}}
                 <div class="container" style="max-width: 800px; margin: 3rem auto;">
-                    {{ with .video.url }}
-                        {{ $parsedUrl := urls.Parse . }}
-                        {{ $pathLength := split $parsedUrl.Path "/"}}
-                        {{ if lt (len $pathLength) 4 }}
+                    {{- with .video.url -}}
+                        {{- $parsedUrl := urls.Parse . -}}
+                        {{- $pathLength := split $parsedUrl.Path "/" -}}
+                        {{- if lt (len $pathLength) 4 -}}
                             {{- $jsonURL := print "https://vimeo.com/api/oembed.json?url=" . "&width=640" -}}
                             {{- $json := getJSON $jsonURL -}}
                             <div class="iframeContainer">
-                                {{ $embed := replace $json.html "?app_id" "?title=0&byline=0&app_id" }}
-                                {{ $embed | safeHTML }}
+                                {{- $embed := replace $json.html "?app_id" "?title=0&byline=0&app_id" -}}
+                                {{- $embed | safeHTML -}}
                             </div>
-                        {{ else }}
+                        {{- else -}}
                         <div class="box is-large has-background-black has-text-white is-size-7">There's an error with this Vimeo link</div>
-                        {{ end }}
-                    {{ end }}
+                        {{- end -}}
+                    {{- end -}}
                 </div>
-                {{ .video.slogan }}
-            {{ end }}
+                {{- .video.slogan -}}
+            {{- end -}}
         </div>
     </section>
-{{ end }}
+{{- end -}}
 
-{{ with .Content }}
+{{- with .Content -}}
     <div style="display: none">{{ . }}</div>
-{{ end }}
+{{- end -}}
 
 <section class="section">
     <div class="container">
-        {{ with $.Site.GetPage "member-resources"}}
+        {{- with $.Site.GetPage "member-resources" -}}
         <h1 class="title resources">
             <a href="/member-resources/" style="color: black">Resources for Members&nbsp;&nbsp;<i class="fas fa-chevron-right"></i></a>
         </h1>
         <div class="columns hasFloatingButton">
-                {{ $href := .RelPermalink }}
-                {{ range $i, $e := first 3 .Params.videos }}
+                {{- $href := .RelPermalink -}}
+                {{- range $i, $e := first 3 .Params.videos -}}
                 <div class="column is-one-third">
                         <a href="{{ $href }}#item={{ $i }}" class="card videoGalleryItem">
                             <div class="card-image">
@@ -60,11 +60,11 @@
                             </div>
                             <div class="card-content">
                                 <h2 class="subtitle" style="font-weight: bold; margin-bottom: 0;">{{ .title }}</h2>
-                                {{ with .subtitle }}<p>{{ . }}</p>{{ end }}
+                                {{- with .subtitle -}}<p>{{ . }}</p>{{- end -}}
                             </div>
                         </a>
                     </div>
-                {{ end }}
+                {{- end -}}
                 <div class="floatingButton">
                     <a href="/member-resources/"><span>View All </span><i class="fas fa-arrow-right"></i></a>
                 </div>
@@ -74,42 +74,42 @@
 <section class="section photoGrid" style="padding-top: 0;">
     <div class="container">
         <div class="columns is-multiline">
-                {{ $site := $.Site }}
-                {{ with .Params.photo_links }}
-                    {{ with .gallery }}
+                {{- $site := $.Site -}}
+                {{- with .Params.photo_links -}}
+                    {{- with .gallery -}}
                         <div class="column is-half photoGrid">               
                             <a href="{{ with $site.GetPage .page }}{{ .RelPermalink }}{{ end }}" class="photoGridLink" style="background-image: url({{ $cloudinary }}w_500,h_500,c_fill,q_80{{ .background_photo }})">
                                 <div class="imageOverlay"></div>
                                 <div class="photoGridContent">
-                                    {{ .text }}
+                                    {{- .text -}}
                                 </div>
                             </a>
                         </div>
-                    {{ end }}
-                    {{ with .dreamtrips_app }}
+                    {{- end -}}
+                    {{- with .dreamtrips_app -}}
                         <div class="column is-half photoGrid">               
                             <a href="{{ with $site.GetPage .page }}{{ .RelPermalink }}{{ end }}" class="photoGridLink" style="background-image: url({{ $cloudinary }}w_500,h_500,c_fill,q_80{{ .background_photo }})">
                                 <div class="imageOverlay"></div>
                                 <div class="photoGridContent">
-                                    {{ .text }}
+                                    {{- .text -}}
                                 </div>
                             </a>
                         </div>
-                    {{ end }}
-                    {{ with .blog }}
+                    {{- end -}}
+                    {{- with .blog -}}
                         <div class="column photoGrid">               
                             <a href="{{ with $site.GetPage .page }}{{ .RelPermalink }}{{ end }}" class="photoGridLink" style="background-image: url({{ $cloudinary }}w_1300,h_500,c_fill,q_80{{ .background_photo }})">
                                 <div class="imageOverlay"></div>
                                 <div class="photoGridContent">
-                                    {{ .text }}
+                                    {{- .text -}}
                                 </div>
                             </a>
                         </div>
-                    {{ end }}
-                {{ end }}
+                    {{- end -}}
+                {{- end -}}
             </div>
         </div>            
     </div>
 </section>
 
-{{ end }}
+{{- end -}}
