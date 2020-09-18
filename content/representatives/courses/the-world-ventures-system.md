@@ -119,10 +119,6 @@ video_url = "https://www.youtube.com/watch?v=70Tz13FExkw"
 section_heading = "Event Etiquette: After"
 template = "course-video"
 video_url = "https://www.youtube.com/watch?v=LhAaKBjs9n4"
-[[modules.sections]]
-section_heading = "Dream Travel"
-template = "course-video"
-video_url = "https://dreamtravel.fun/"
 [[modules]]
 featured_image = "/v1559679660/team-all-in/man-and-woman-on-date-sharing-drinks-1.jpg"
 heading = "Skill 3 (Bonus) - Useful Presentation Resource for Sharing With Others"
