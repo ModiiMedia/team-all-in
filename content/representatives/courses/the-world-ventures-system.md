@@ -80,7 +80,7 @@ template = "text-section"
 [[modules.sections]]
 section_heading = "Quickcoach: 3-Step Setup"
 template = "course-video"
-video_url = "https://www.youtube.com/watch?v=twbacwhiEvo&feature=youtu.be"
+video_url = "https://youtu.be/twbacwhiEvo"
 [[modules.sections]]
 content = "3-Step Setup Examples "
 template = "heading"
