@@ -75,7 +75,7 @@ section_heading = "Skill 3 - Showing"
 template = "course-video"
 video_url = "https://vimeo.com/307188508"
 [[modules.sections]]
-content = "## Personal tip:\n\n* Let the presentation / tools do the work!\n* A powerful 3 Step Set Up will set the stage for your friends to WANT TO JOIN whatever you are so excited about.\n* Help make your guest feel comfortable\n* Establish and maintain your posture throughout the presentation; People want to follow people who know where they are going!\n\n![Examples of ways to share the opportunity](https://res.cloudinary.com/modii/w_800,q_60,f_auto/v1559674918/team-all-in/ways-to-share.png)"
+content = "## Personal tip:\n\n* Let the presentation / tools do the work!\n* A powerful 3 Step Set Up will set the stage for your friends to WANT TO JOIN whatever you are so excited about.\n* Help make your guest feel comfortable\n* Establish and maintain your posture throughout the presentation; People want to follow people who know where they are going!\n\n  ![](https://res.cloudinary.com/modii/image/upload/v1600464120/team-all-in/Capture_klo5mo.jpg)"
 template = "text-section"
 [[modules.sections]]
 section_heading = "Quickcoach: 3-Step Setup"
