@@ -171,11 +171,6 @@ button_text = "Download File"
 file = "/v1559677636/team-all-in/representative-agreement-usa.pdf"
 section_heading = "Representative Agreement"
 template = "downloadable-file"
-[[modules.sections]]
-button_text = "Download File"
-file = "/v1561998739/team-all-in/income-disclosure-statement__1123541.pdf"
-section_heading = "Income Disclosure Statement"
-template = "downloadable-file"
 [[modules]]
 featured_image = "/v1559678827/team-all-in/woman-smiling-at-man.jpg"
 heading = "Skill 5 - Follow up with your Prospects"
