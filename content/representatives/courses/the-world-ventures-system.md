@@ -140,10 +140,6 @@ download_url = "https://vimeo.com/user25313687/download/391793311/c013e8b121"
 section_heading = "Vacation Sooner"
 template = "course-video"
 video_url = "https://vimeo.com/391793311"
-[[modules.sections]]
-section_heading = "DreamTravel.fun"
-template = "course-video"
-video_url = "https://dreamtravel.fun/"
 [[modules]]
 featured_image = "/v1559678986/team-all-in/women-whispering-to-each-ther.jpg"
 heading = "Skill 4 - Enrolling a new Member / Representative"
