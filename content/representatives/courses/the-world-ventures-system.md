@@ -1,5 +1,6 @@
 +++
 detailed_description = ""
+draft = true
 featured_image = "/v1560028741/team-all-in/next.jpg"
 introduction = "Now that you’re connected to our Team, it’s time to learn how to master the elements of the WorldVentures' System.\n\nThis system is made up of seven fundamental skills. Master these skills and you will find success!\n\n> Twenty years from now, I want this company to be celebrated around the world for touching every aspect of people's lives - All we have to do is stick together. As Henry Ford said \"Coming together is a start. Working together is progress. Staying together is success.\"\n>\n> \\-Wayne Nugent (WorldVentures Founder and Chief Visionary Officer)"
 short_description = "The WorldVentures' System is comprised of seven essential skills you will need to develop to succeed. "
@@ -119,6 +120,10 @@ video_url = "https://www.youtube.com/watch?v=70Tz13FExkw"
 section_heading = "Event Etiquette: After"
 template = "course-video"
 video_url = "https://www.youtube.com/watch?v=LhAaKBjs9n4"
+[[modules.sections]]
+section_heading = "Dream Travel"
+template = "course-video"
+video_url = "https://dreamtravel.fun/"
 [[modules]]
 featured_image = "/v1559679660/team-all-in/man-and-woman-on-date-sharing-drinks-1.jpg"
 heading = "Skill 3 (Bonus) - Useful Presentation Resource for Sharing With Others"
