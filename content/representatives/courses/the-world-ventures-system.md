@@ -120,27 +120,6 @@ section_heading = "Event Etiquette: After"
 template = "course-video"
 video_url = "https://www.youtube.com/watch?v=LhAaKBjs9n4"
 [[modules]]
-featured_image = "/v1559679660/team-all-in/man-and-woman-on-date-sharing-drinks-1.jpg"
-heading = "Skill 3 (Bonus) - Useful Presentation Resource for Sharing With Others"
-title = "3.1) Resources For Sharing"
-[[modules.sections]]
-content = "Included below are some helpful resources you can use when presenting."
-template = "text-section"
-[[modules.sections]]
-download_url = "https://vimeo.com/user25313687/download/410665623/4710f51032"
-section_heading = "Earnavacation.com"
-template = "course-video"
-video_url = "https://vimeo.com/410665623"
-[[modules.sections]]
-section_heading = "EarnTravel.club (Membership Only)"
-template = "course-video"
-video_url = "https://vimeo.com/394045683"
-[[modules.sections]]
-download_url = "https://vimeo.com/user25313687/download/391793311/c013e8b121"
-section_heading = "Vacation Sooner"
-template = "course-video"
-video_url = "https://vimeo.com/391793311"
-[[modules]]
 featured_image = "/v1559678986/team-all-in/women-whispering-to-each-ther.jpg"
 heading = "Skill 4 - Enrolling a new Member / Representative"
 title = "4) Enroll"
