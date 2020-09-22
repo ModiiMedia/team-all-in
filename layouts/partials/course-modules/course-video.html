@@ -17,14 +17,20 @@
             {{ end }}
         {{- end -}}
         {{- if in .video_url "youtu" }}
-            {{ $url := urls.Parse .video_url }}
-            {{ $vParam := print $url.Query.v }}
-            {{ if $vParam }}
-            {{ $videoId := replace (replace $vParam "[" "") "]" "" }}
-            "video_id": {{ $videoId | jsonify }},
-            {{ $embed := print "<iframe id='ytplayer' type='text/html' width='720' height='405' src='https://www.youtube.com/embed/" $videoId "?modestbranding=1' frameborder='0' allowfullscreen>"}}
-            "embed_code": {{ print $embed | jsonify }},
-            {{ end }}
+            {{- $url := urls.Parse .video_url -}}
+            {{- if eq $url.Host "youtu.be" -}}
+                {{- $videoId := replace $url.Path "/" "" -}}
+                {{ $embed := print "<iframe id='ytplayer' type='text/html' width='720' height='405' src='https://www.youtube.com/embed/" $videoId "?modestbranding=1' frameborder='0' allowfullscreen>" }}
+                "embed_code": {{ print $embed | jsonify }},
+            {{- else -}}
+                {{- $vParam := print $url.Query.v -}}
+                {{- if $vParam -}}
+                {{- $videoId := replace (replace $vParam "[" "") "]" "" -}}
+                "video_id": {{- $videoId | jsonify -}},
+                {{ $embed := print "<iframe id='ytplayer' type='text/html' width='720' height='405' src='https://www.youtube.com/embed/" $videoId "?modestbranding=1' frameborder='0' allowfullscreen>" }}
+                "embed_code": {{ print $embed | jsonify }},
+                {{- end -}}
+            {{- end -}}
         {{ end }}
         "url": {{ .video_url | jsonify }},
         "download_url": {{ .download_url | jsonify }}
