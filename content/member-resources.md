@@ -6,7 +6,7 @@ videos:
 - title: Overview of the DreamTrips Membership
   description: ''
   url: https://vimeo.com/321149475
-  subtitle: Updated Mar 2020
+  subtitle: Updated Oct 2020
 - title: 'Video #1 - How to Log On to your Website'
   description: ''
   url: https://vimeo.com/338745206
