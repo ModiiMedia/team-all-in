@@ -1,0 +1,7 @@
++++
+description = "Time to join our Club SEACRET Travel!"
+draft = true
+title = "Welcome to Club SEACRET"
+video_url = "https://vimeo.com/519277671"
+
++++
