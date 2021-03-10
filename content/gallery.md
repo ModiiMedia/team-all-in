@@ -3,6 +3,9 @@ title: Photo Gallery
 featured_image: "/v1559934065/team-all-in/group%20dinner%20on%20ship.png"
 type: gallery
 photos:
+- "/v1602506684/team-all-in/M_L_v2_idczab.jpg"
+- "/v1602506666/team-all-in/Marty_Linda_Canyonland_lhmdc8.jpg"
+- "/v1602506632/team-all-in/M_L_Mt_Rainier_z83ytx.jpg"
 - "/v1580516325/team-all-in/20191217_163738_2_k03eqr.jpg"
 - "/v1580516353/team-all-in/20191217_163258_2_b1x7a4.jpg"
 - "/v1580516373/team-all-in/20191217_153849_i5o6uc.jpg"
